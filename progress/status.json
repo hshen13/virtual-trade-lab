@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "project": "Virtual Trade Lab",
+  "updated_at": "2026-11-01T23:33:21Z",
+  "summary": "新版行为模型与离线产物已生成，独立复核及远端发布尚未完成。推广暂停。",
+  "release": {
+    "published_commit": "d6e81bc33bde50e55f95a510984471291269ce3b",
+    "working_state": "新版尚未发布",
+    "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41361282122",
+    "ci_summary": "已发布旧版：Python 3.10–3.13，87 主测试 + 17 退款测试通过；不代表新版通过。"
+  },
+  "tasks": [
+    {
+      "id": "ppt",
+      "title": "宣传材料 · 可编辑 PPT",
+      "status": "completed",
+      "detail": "原版 5 页 PPT 已生成，并完成 LibreOffice 渲染检查。",
+      "next": "随新版产物一起发布可核验文件。",
+      "evidence": []
+    },
+    {
+      "id": "video",
+      "title": "宣传视频渲染",
+      "status": "not_started",
+      "detail": "视频渲染器尚未实现；不能把 PPT 当作成片。",
+      "next": "实现视频渲染与播放验证。",
+      "evidence": []
+    },
+    {
+      "id": "rehearsal",
+      "title": "离线直播彩排",
+      "status": "completed",
+      "detail": "离线彩排产物已生成；并非真实开播。",
+      "next": "复核彩排内容与体验。",
+      "evidence": []
+    },
+    {
+      "id": "commerce",
+      "title": "买家 / 卖家 / 渠道虚拟体验",
+      "status": "completed",
+      "detail": "离线体验产物已生成，90 个机械交易场景通过；不是商业有效性证明。",
+      "next": "复核真实行为假设与使用体验。",
+      "evidence": []
+    },
+    {
+      "id": "behavior",
+      "title": "合成行为实验",
+      "status": "working",
+      "detail": "24 个实验单元，固定开发 / 留出划分；假设未经真实用户校准。",
+      "next": "完成独立复核、敏感性与对抗检查。",
+      "evidence": []
+    },
+    {
+      "id": "review",
+      "title": "独立质量复核",
+      "status": "working",
+      "detail": "复核进行中，尚无通过结论。",
+      "next": "处理复核发现并重跑。",
+      "evidence": []
+    },
+    {
+      "id": "release",
+      "title": "新版测试与发布",
+      "status": "working",
+      "detail": "本地104主测试正常及优化模式、17退款测试通过；新增外部关系测试待最后重跑。远端新版CI未运行。",
+      "next": "完成测试、提交及远端 CI 验证。",
+      "evidence": []
+    },
+    {
+      "id": "broadcast",
+      "title": "真实开播 / 推广",
+      "status": "waiting",
+      "detail": "推广暂停，未真实开播，未接触真实客户。",
+      "next": "等待质量验收和明确授权。",
+      "evidence": []
+    }
+  ],
+  "simulation": {
+    "label": "合成实验 · 不是实际经营数据",
+    "summary": "留出集净收益差值：36 组中负向 33、正向 2、持平 1。当前证据不支持普遍商业提升。",
+    "caveats": [
+      "预算、偏好、注意力、疲劳、退款、复购及全成本均为模型假设。",
+      "没有真实用户、真实订单或收入；结果尚未独立审定。"
+    ]
+  },
+  "blockers": [
+    "新版产物尚未发布，远端 CI 未完成。",
+    "独立复核尚未完成；行为假设未经真实数据校准。"
+  ]
+}
