@@ -1,0 +1,786 @@
+[
+  {
+    "scenario": "happy",
+    "simulated_only": true,
+    "order": {
+      "id": "demo",
+      "source": [
+        {
+          "sku": "CUP-01",
+          "title": "  Ceramic   cup  ",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas\t tote",
+          "price_cents": 2499
+        }
+      ],
+      "criteria": {
+        "budget": 40,
+        "max_revisions": 1,
+        "max_title_length": 80
+      },
+      "quote": {
+        "price": 20,
+        "cost_per_attempt": 4,
+        "service": "catalog-whitespace-v1"
+      },
+      "state": "accepted",
+      "attempts": 1,
+      "revisions": 0,
+      "result": [
+        {
+          "sku": "CUP-01",
+          "title": "Ceramic cup",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas tote",
+          "price_cents": 2499
+        }
+      ],
+      "issues": [],
+      "cost": 4
+    },
+    "seller": {
+      "revenue_credits": 20,
+      "cost_credits": 4,
+      "net_credits": 16
+    },
+    "balances": {
+      "buyer": 80,
+      "seller": 46,
+      "provider": 4,
+      "escrow:demo": 0
+    },
+    "initial_total": 130,
+    "final_total": 130,
+    "evidence": [],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "demo",
+        "state": "quoted",
+        "key": "happy-1",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "fund",
+        "order": "demo",
+        "state": "funded",
+        "key": "happy-2",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 3,
+        "action": "deliver",
+        "order": "demo",
+        "state": "delivered",
+        "key": "happy-3",
+        "issues": [],
+        "attempts": 1,
+        "cost_credits": 4
+      },
+      {
+        "sequence": 4,
+        "action": "review",
+        "order": "demo",
+        "state": "accepted",
+        "key": "happy-4",
+        "issues": [],
+        "attempts": 1,
+        "cost_credits": 4
+      }
+    ],
+    "journal": [
+      {
+        "sequence": 1,
+        "order": "demo",
+        "from": "buyer",
+        "to": "escrow:demo",
+        "credits": 20,
+        "reason": "fund"
+      },
+      {
+        "sequence": 2,
+        "order": "demo",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      },
+      {
+        "sequence": 3,
+        "order": "demo",
+        "from": "escrow:demo",
+        "to": "seller",
+        "credits": 20,
+        "reason": "accept"
+      }
+    ]
+  },
+  {
+    "scenario": "revision",
+    "simulated_only": true,
+    "order": {
+      "id": "demo",
+      "source": [
+        {
+          "sku": "CUP-01",
+          "title": "  Ceramic   cup  ",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas\t tote",
+          "price_cents": 2499
+        }
+      ],
+      "criteria": {
+        "budget": 40,
+        "max_revisions": 1,
+        "max_title_length": 80
+      },
+      "quote": {
+        "price": 20,
+        "cost_per_attempt": 4,
+        "service": "catalog-whitespace-v1"
+      },
+      "state": "accepted",
+      "attempts": 2,
+      "revisions": 1,
+      "result": [
+        {
+          "sku": "CUP-01",
+          "title": "Ceramic cup",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas tote",
+          "price_cents": 2499
+        }
+      ],
+      "issues": [],
+      "cost": 8
+    },
+    "seller": {
+      "revenue_credits": 20,
+      "cost_credits": 8,
+      "net_credits": 12
+    },
+    "balances": {
+      "buyer": 80,
+      "seller": 42,
+      "provider": 8,
+      "escrow:demo": 0
+    },
+    "initial_total": 130,
+    "final_total": 130,
+    "evidence": [
+      "CUP-01: product price changed"
+    ],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "demo",
+        "state": "quoted",
+        "key": "revision-1",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "fund",
+        "order": "demo",
+        "state": "funded",
+        "key": "revision-2",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 3,
+        "action": "deliver",
+        "order": "demo",
+        "state": "delivered",
+        "key": "revision-3",
+        "issues": [],
+        "attempts": 1,
+        "cost_credits": 4
+      },
+      {
+        "sequence": 4,
+        "action": "review",
+        "order": "demo",
+        "state": "revision_requested",
+        "key": "revision-4",
+        "issues": [
+          "CUP-01: product price changed"
+        ],
+        "attempts": 1,
+        "cost_credits": 4
+      },
+      {
+        "sequence": 5,
+        "action": "deliver",
+        "order": "demo",
+        "state": "delivered",
+        "key": "revision-5",
+        "issues": [],
+        "attempts": 2,
+        "cost_credits": 8
+      },
+      {
+        "sequence": 6,
+        "action": "review",
+        "order": "demo",
+        "state": "accepted",
+        "key": "revision-6",
+        "issues": [],
+        "attempts": 2,
+        "cost_credits": 8
+      }
+    ],
+    "journal": [
+      {
+        "sequence": 1,
+        "order": "demo",
+        "from": "buyer",
+        "to": "escrow:demo",
+        "credits": 20,
+        "reason": "fund"
+      },
+      {
+        "sequence": 2,
+        "order": "demo",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      },
+      {
+        "sequence": 3,
+        "order": "demo",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      },
+      {
+        "sequence": 4,
+        "order": "demo",
+        "from": "escrow:demo",
+        "to": "seller",
+        "credits": 20,
+        "reason": "accept"
+      }
+    ]
+  },
+  {
+    "scenario": "reject",
+    "simulated_only": true,
+    "order": {
+      "id": "demo",
+      "source": [
+        {
+          "sku": "CUP-01",
+          "title": "  Ceramic   cup  ",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas\t tote",
+          "price_cents": 2499
+        }
+      ],
+      "criteria": {
+        "budget": 40,
+        "max_revisions": 1,
+        "max_title_length": 80
+      },
+      "quote": {
+        "price": 20,
+        "cost_per_attempt": 4,
+        "service": "catalog-whitespace-v1"
+      },
+      "state": "rejected",
+      "attempts": 2,
+      "revisions": 1,
+      "result": [
+        {
+          "sku": "CUP-01",
+          "title": "Ceramic cup",
+          "price_cents": 1300
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas tote",
+          "price_cents": 2499
+        }
+      ],
+      "issues": [
+        "CUP-01: product price changed"
+      ],
+      "cost": 8
+    },
+    "seller": {
+      "revenue_credits": 0,
+      "cost_credits": 8,
+      "net_credits": -8
+    },
+    "balances": {
+      "buyer": 100,
+      "seller": 22,
+      "provider": 8,
+      "escrow:demo": 0
+    },
+    "initial_total": 130,
+    "final_total": 130,
+    "evidence": [
+      "CUP-01: product price changed",
+      "CUP-01: product price changed"
+    ],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "demo",
+        "state": "quoted",
+        "key": "reject-1",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "fund",
+        "order": "demo",
+        "state": "funded",
+        "key": "reject-2",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 3,
+        "action": "deliver",
+        "order": "demo",
+        "state": "delivered",
+        "key": "reject-3",
+        "issues": [],
+        "attempts": 1,
+        "cost_credits": 4
+      },
+      {
+        "sequence": 4,
+        "action": "review",
+        "order": "demo",
+        "state": "revision_requested",
+        "key": "reject-4",
+        "issues": [
+          "CUP-01: product price changed"
+        ],
+        "attempts": 1,
+        "cost_credits": 4
+      },
+      {
+        "sequence": 5,
+        "action": "deliver",
+        "order": "demo",
+        "state": "delivered",
+        "key": "reject-5",
+        "issues": [],
+        "attempts": 2,
+        "cost_credits": 8
+      },
+      {
+        "sequence": 6,
+        "action": "review",
+        "order": "demo",
+        "state": "rejected",
+        "key": "reject-6",
+        "issues": [
+          "CUP-01: product price changed"
+        ],
+        "attempts": 2,
+        "cost_credits": 8
+      }
+    ],
+    "journal": [
+      {
+        "sequence": 1,
+        "order": "demo",
+        "from": "buyer",
+        "to": "escrow:demo",
+        "credits": 20,
+        "reason": "fund"
+      },
+      {
+        "sequence": 2,
+        "order": "demo",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      },
+      {
+        "sequence": 3,
+        "order": "demo",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      },
+      {
+        "sequence": 4,
+        "order": "demo",
+        "from": "escrow:demo",
+        "to": "buyer",
+        "credits": 20,
+        "reason": "reject_refund"
+      }
+    ]
+  },
+  {
+    "scenario": "cancel",
+    "simulated_only": true,
+    "order": {
+      "id": "demo",
+      "source": [
+        {
+          "sku": "CUP-01",
+          "title": "  Ceramic   cup  ",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas\t tote",
+          "price_cents": 2499
+        }
+      ],
+      "criteria": {
+        "budget": 40,
+        "max_revisions": 1,
+        "max_title_length": 80
+      },
+      "quote": {
+        "price": 20,
+        "cost_per_attempt": 4,
+        "service": "catalog-whitespace-v1"
+      },
+      "state": "cancelled",
+      "attempts": 0,
+      "revisions": 0,
+      "result": null,
+      "issues": [],
+      "cost": 0
+    },
+    "seller": {
+      "revenue_credits": 0,
+      "cost_credits": 0,
+      "net_credits": 0
+    },
+    "balances": {
+      "buyer": 100,
+      "seller": 30,
+      "provider": 0,
+      "escrow:demo": 0
+    },
+    "initial_total": 130,
+    "final_total": 130,
+    "evidence": [],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "demo",
+        "state": "quoted",
+        "key": "cancel-1",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "fund",
+        "order": "demo",
+        "state": "funded",
+        "key": "cancel-2",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 3,
+        "action": "cancel",
+        "order": "demo",
+        "state": "cancelled",
+        "key": "cancel-3",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      }
+    ],
+    "journal": [
+      {
+        "sequence": 1,
+        "order": "demo",
+        "from": "buyer",
+        "to": "escrow:demo",
+        "credits": 20,
+        "reason": "fund"
+      },
+      {
+        "sequence": 2,
+        "order": "demo",
+        "from": "escrow:demo",
+        "to": "buyer",
+        "credits": 20,
+        "reason": "cancel_refund"
+      }
+    ]
+  },
+  {
+    "scenario": "budget",
+    "simulated_only": true,
+    "order": {
+      "id": "demo",
+      "source": [
+        {
+          "sku": "CUP-01",
+          "title": "  Ceramic   cup  ",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas\t tote",
+          "price_cents": 2499
+        }
+      ],
+      "criteria": {
+        "budget": 5,
+        "max_revisions": 1,
+        "max_title_length": 80
+      },
+      "quote": {
+        "price": 20,
+        "cost_per_attempt": 4,
+        "service": "catalog-whitespace-v1"
+      },
+      "state": "cancelled",
+      "attempts": 0,
+      "revisions": 0,
+      "result": null,
+      "issues": [],
+      "cost": 0
+    },
+    "seller": {
+      "revenue_credits": 0,
+      "cost_credits": 0,
+      "net_credits": 0
+    },
+    "balances": {
+      "buyer": 100,
+      "seller": 30,
+      "provider": 0,
+      "escrow:demo": 0
+    },
+    "initial_total": 130,
+    "final_total": 130,
+    "evidence": [
+      "quote exceeds buyer budget"
+    ],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "demo",
+        "state": "quoted",
+        "key": "budget-1",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "cancel",
+        "order": "demo",
+        "state": "cancelled",
+        "key": "budget-3",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      }
+    ],
+    "journal": []
+  },
+  {
+    "scenario": "crash",
+    "simulated_only": true,
+    "order": {
+      "id": "demo",
+      "source": [
+        {
+          "sku": "CUP-01",
+          "title": "  Ceramic   cup  ",
+          "price_cents": 1299
+        },
+        {
+          "sku": "BAG-02",
+          "title": "Canvas\t tote",
+          "price_cents": 2499
+        }
+      ],
+      "criteria": {
+        "budget": 40,
+        "max_revisions": 1,
+        "max_title_length": 80
+      },
+      "quote": {
+        "price": 20,
+        "cost_per_attempt": 4,
+        "service": "catalog-whitespace-v1"
+      },
+      "state": "rejected",
+      "attempts": 2,
+      "revisions": 1,
+      "result": null,
+      "issues": [
+        "seller failure: RuntimeError"
+      ],
+      "cost": 8
+    },
+    "seller": {
+      "revenue_credits": 0,
+      "cost_credits": 8,
+      "net_credits": -8
+    },
+    "balances": {
+      "buyer": 100,
+      "seller": 22,
+      "provider": 8,
+      "escrow:demo": 0
+    },
+    "initial_total": 130,
+    "final_total": 130,
+    "evidence": [
+      "seller failure: RuntimeError",
+      "seller failure: RuntimeError"
+    ],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "demo",
+        "state": "quoted",
+        "key": "crash-1",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "fund",
+        "order": "demo",
+        "state": "funded",
+        "key": "crash-2",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 3,
+        "action": "deliver",
+        "order": "demo",
+        "state": "delivered",
+        "key": "crash-3",
+        "issues": [
+          "seller failure: RuntimeError"
+        ],
+        "attempts": 1,
+        "cost_credits": 4
+      },
+      {
+        "sequence": 4,
+        "action": "review",
+        "order": "demo",
+        "state": "revision_requested",
+        "key": "crash-4",
+        "issues": [
+          "seller failure: RuntimeError"
+        ],
+        "attempts": 1,
+        "cost_credits": 4
+      },
+      {
+        "sequence": 5,
+        "action": "deliver",
+        "order": "demo",
+        "state": "delivered",
+        "key": "crash-5",
+        "issues": [
+          "seller failure: RuntimeError"
+        ],
+        "attempts": 2,
+        "cost_credits": 8
+      },
+      {
+        "sequence": 6,
+        "action": "review",
+        "order": "demo",
+        "state": "rejected",
+        "key": "crash-6",
+        "issues": [
+          "seller failure: RuntimeError"
+        ],
+        "attempts": 2,
+        "cost_credits": 8
+      }
+    ],
+    "journal": [
+      {
+        "sequence": 1,
+        "order": "demo",
+        "from": "buyer",
+        "to": "escrow:demo",
+        "credits": 20,
+        "reason": "fund"
+      },
+      {
+        "sequence": 2,
+        "order": "demo",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      },
+      {
+        "sequence": 3,
+        "order": "demo",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      },
+      {
+        "sequence": 4,
+        "order": "demo",
+        "from": "escrow:demo",
+        "to": "buyer",
+        "credits": 20,
+        "reason": "reject_refund"
+      }
+    ]
+  }
+]

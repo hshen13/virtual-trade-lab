@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "logical_intents": 1,
+    "provider_refunds": 2,
+    "refunded_minor_units": 4000
+  },
+  "durable": {
+    "after_lost_response": "unknown",
+    "after_restart_retry": "accepted",
+    "after_stale_read": "unknown",
+    "duplicate_event": "duplicate",
+    "eventual_status": "succeeded",
+    "late_accepted_event": "late",
+    "provider_refunds": 1,
+    "refunded_minor_units": 2000
+  },
+  "simulation_only": true
+}

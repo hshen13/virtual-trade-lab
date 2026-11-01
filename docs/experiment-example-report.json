@@ -1,0 +1,422 @@
+{
+  "campaign": {
+    "calibration_end": "2026-10-31T15:17:44.757823+00:00",
+    "campaign_id": "synthetic-demo",
+    "currency": "CNY",
+    "exposure_end": "2026-11-15T15:17:44.757823+00:00",
+    "funnel_stages": [
+      "exposure",
+      "interest",
+      "quote",
+      "order",
+      "paid",
+      "fulfilled",
+      "accepted"
+    ],
+    "holdout_subjects": [],
+    "interval": "Wilson 95%, independent-subject assumption",
+    "min_holdout": 30,
+    "observation_end": "2026-12-01T15:17:44.757823+00:00",
+    "plan_rationale": "",
+    "plan_review": "self-declared; scientific justification not independently reviewed",
+    "target": "accepted subjects / all exposed subjects",
+    "tolerance": null,
+    "unit": "stable anonymous customer/group; one opportunity per campaign"
+  },
+  "frozen_at": "2026-11-01T15:17:45.012270+00:00",
+  "groups": {
+    "observed": {
+      "calibration": {
+        "subject_count": 0,
+        "exposed_subjects": 0,
+        "accepted_subjects": 0,
+        "pending_exposed_subjects": 0,
+        "followup_closed_subjects": 0,
+        "observation_end": "2026-10-31T15:17:44.757823+00:00",
+        "terminal_subjects": 0,
+        "cancelled_subjects": 0,
+        "rejected_subjects": 0,
+        "refunded_subjects": 0,
+        "funnel": [
+          {
+            "stage": "exposure",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "unique exposed subjects",
+            "rate": null
+          },
+          {
+            "stage": "interest",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through exposure",
+            "rate": null
+          },
+          {
+            "stage": "quote",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through interest",
+            "rate": null
+          },
+          {
+            "stage": "order",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through quote",
+            "rate": null
+          },
+          {
+            "stage": "paid",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through order",
+            "rate": null
+          },
+          {
+            "stage": "fulfilled",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through paid",
+            "rate": null
+          },
+          {
+            "stage": "accepted",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through fulfilled",
+            "rate": null
+          }
+        ],
+        "quality_issues": [],
+        "acceptance_rate": null,
+        "wilson_95": null,
+        "cost_coverage": "unknown; absence of cost events is not zero actual cost",
+        "money_as_of": null,
+        "late_acceptance_subjects": 0,
+        "declared_money_minor": {
+          "receipts": 0,
+          "refunds": 0,
+          "costs": 0,
+          "net_receipts_after_refunds": 0,
+          "net_after_declared_costs": 0
+        }
+      },
+      "holdout": {
+        "subject_count": 0,
+        "exposed_subjects": 0,
+        "accepted_subjects": 0,
+        "pending_exposed_subjects": 0,
+        "followup_closed_subjects": 0,
+        "observation_end": "2026-12-01T15:17:44.757823+00:00",
+        "terminal_subjects": 0,
+        "cancelled_subjects": 0,
+        "rejected_subjects": 0,
+        "refunded_subjects": 0,
+        "funnel": [
+          {
+            "stage": "exposure",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "unique exposed subjects",
+            "rate": null
+          },
+          {
+            "stage": "interest",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through exposure",
+            "rate": null
+          },
+          {
+            "stage": "quote",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through interest",
+            "rate": null
+          },
+          {
+            "stage": "order",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through quote",
+            "rate": null
+          },
+          {
+            "stage": "paid",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through order",
+            "rate": null
+          },
+          {
+            "stage": "fulfilled",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through paid",
+            "rate": null
+          },
+          {
+            "stage": "accepted",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through fulfilled",
+            "rate": null
+          }
+        ],
+        "quality_issues": [],
+        "acceptance_rate": null,
+        "wilson_95": null,
+        "cost_coverage": "unknown; absence of cost events is not zero actual cost",
+        "money_as_of": null,
+        "late_acceptance_subjects": 0,
+        "declared_money_minor": {
+          "receipts": 0,
+          "refunds": 0,
+          "costs": 0,
+          "net_receipts_after_refunds": 0,
+          "net_after_declared_costs": 0
+        }
+      }
+    },
+    "simulated": {
+      "calibration": {
+        "subject_count": 2,
+        "exposed_subjects": 2,
+        "accepted_subjects": 1,
+        "pending_exposed_subjects": 0,
+        "followup_closed_subjects": 2,
+        "observation_end": "2026-10-31T15:17:44.757823+00:00",
+        "terminal_subjects": 2,
+        "cancelled_subjects": 0,
+        "rejected_subjects": 1,
+        "refunded_subjects": 0,
+        "funnel": [
+          {
+            "stage": "exposure",
+            "raw_subject_count": 2,
+            "eligible_subject_count": 2,
+            "denominator": 2,
+            "denominator_definition": "unique exposed subjects",
+            "rate": 1.0
+          },
+          {
+            "stage": "interest",
+            "raw_subject_count": 1,
+            "eligible_subject_count": 1,
+            "denominator": 2,
+            "denominator_definition": "subjects completing all stages through exposure",
+            "rate": 0.5
+          },
+          {
+            "stage": "quote",
+            "raw_subject_count": 1,
+            "eligible_subject_count": 1,
+            "denominator": 1,
+            "denominator_definition": "subjects completing all stages through interest",
+            "rate": 1.0
+          },
+          {
+            "stage": "order",
+            "raw_subject_count": 1,
+            "eligible_subject_count": 1,
+            "denominator": 1,
+            "denominator_definition": "subjects completing all stages through quote",
+            "rate": 1.0
+          },
+          {
+            "stage": "paid",
+            "raw_subject_count": 1,
+            "eligible_subject_count": 1,
+            "denominator": 1,
+            "denominator_definition": "subjects completing all stages through order",
+            "rate": 1.0
+          },
+          {
+            "stage": "fulfilled",
+            "raw_subject_count": 1,
+            "eligible_subject_count": 1,
+            "denominator": 1,
+            "denominator_definition": "subjects completing all stages through paid",
+            "rate": 1.0
+          },
+          {
+            "stage": "accepted",
+            "raw_subject_count": 1,
+            "eligible_subject_count": 1,
+            "denominator": 1,
+            "denominator_definition": "subjects completing all stages through fulfilled",
+            "rate": 1.0
+          }
+        ],
+        "quality_issues": [],
+        "acceptance_rate": 0.5,
+        "wilson_95": [
+          0.09453120573423074,
+          0.9054687942657693
+        ],
+        "cost_coverage": "unknown; absence of cost events is not zero actual cost",
+        "money_as_of": "2026-10-31T15:17:44.757823+00:00",
+        "late_acceptance_subjects": 0,
+        "declared_money_minor": {
+          "receipts": 100,
+          "refunds": 0,
+          "costs": 0,
+          "net_receipts_after_refunds": 100,
+          "net_after_declared_costs": 100
+        }
+      },
+      "holdout": {
+        "subject_count": 0,
+        "exposed_subjects": 0,
+        "accepted_subjects": 0,
+        "pending_exposed_subjects": 0,
+        "followup_closed_subjects": 0,
+        "observation_end": "2026-12-01T15:17:44.757823+00:00",
+        "terminal_subjects": 0,
+        "cancelled_subjects": 0,
+        "rejected_subjects": 0,
+        "refunded_subjects": 0,
+        "funnel": [
+          {
+            "stage": "exposure",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "unique exposed subjects",
+            "rate": null
+          },
+          {
+            "stage": "interest",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through exposure",
+            "rate": null
+          },
+          {
+            "stage": "quote",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through interest",
+            "rate": null
+          },
+          {
+            "stage": "order",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through quote",
+            "rate": null
+          },
+          {
+            "stage": "paid",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through order",
+            "rate": null
+          },
+          {
+            "stage": "fulfilled",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through paid",
+            "rate": null
+          },
+          {
+            "stage": "accepted",
+            "raw_subject_count": 0,
+            "eligible_subject_count": 0,
+            "denominator": 0,
+            "denominator_definition": "subjects completing all stages through fulfilled",
+            "rate": null
+          }
+        ],
+        "quality_issues": [],
+        "acceptance_rate": null,
+        "wilson_95": null,
+        "cost_coverage": "unknown; absence of cost events is not zero actual cost",
+        "money_as_of": null,
+        "late_acceptance_subjects": 0,
+        "declared_money_minor": {
+          "receipts": 0,
+          "refunds": 0,
+          "costs": 0,
+          "net_receipts_after_refunds": 0,
+          "net_after_declared_costs": 0
+        }
+      }
+    }
+  },
+  "predictions": [
+    {
+      "calibration_domain": "simulated",
+      "calibration_event_ids": [
+        "sim-0-0",
+        "sim-0-1",
+        "sim-0-2",
+        "sim-0-3",
+        "sim-0-4",
+        "sim-0-5",
+        "sim-0-6",
+        "sim-0-7",
+        "sim-1-0",
+        "sim-1-1",
+        "sim-1-2"
+      ],
+      "calibration_sha256": "963069a35822739d969aa6522e5b0d5a5ae473125133b5bf5ead8f04fa6c6341",
+      "calibration_subjects": 2,
+      "calibration_wilson_95": [
+        0.09453120573423074,
+        0.9054687942657693
+      ],
+      "claim": "empirical cohort fraction; not a trained general model",
+      "method": "simulation_calibration",
+      "probability": 0.5,
+      "rationale": "Synthetic workflow smoke only; not a learned real-market probability",
+      "version": 1
+    }
+  ],
+  "observation_snapshot": {
+    "version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "event_count": 0,
+    "event_ids": []
+  },
+  "evaluation": {
+    "status": "not_evaluated",
+    "reason": "No frozen prediction with observed holdout evidence",
+    "primary_version": 1
+  },
+  "completion_gates": {
+    "real_buyer_acceptance": "unverified",
+    "independently_verified_real_receipt": "unverified",
+    "complete_cost_accounting": "unresolved",
+    "legal_eligibility": "unresolved"
+  },
+  "overall_goal": "not_completed",
+  "authenticity": "All observed imports are user declarations, not independently verified facts",
+  "limits": [
+    "No data-source authenticity check; no legal certification",
+    "Wilson interval assumes independent subjects and a prespecified complete cohort",
+    "No observed/simulated pooling; no holdout-to-calibration reassignment",
+    "A new real cohort is required for each next iteration; new IDs do not make reused evidence independent",
+    "Declared net amounts omit unknown costs/taxes and are not verified income"
+  ]
+}

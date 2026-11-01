@@ -1,0 +1,117 @@
+Python 3.12.14
+test_changed_stored_event_body_fails_closed (test_experiments.ExperimentTests.test_changed_stored_event_body_fails_closed) ... ok
+test_cli_reports_errors_without_traceback (test_experiments.ExperimentTests.test_cli_reports_errors_without_traceback) ... ok
+test_complete_observed_claim_without_threshold_is_unassessed (test_experiments.ExperimentTests.test_complete_observed_claim_without_threshold_is_unassessed) ... ok
+test_csv_json_loading_and_header_validation (test_experiments.ExperimentTests.test_csv_json_loading_and_header_validation) ... ok
+test_domain_and_partition_contamination_blocked (test_experiments.ExperimentTests.test_domain_and_partition_contamination_blocked) ... ok
+test_duplicate_cost_identity_cannot_inflate_costs (test_experiments.ExperimentTests.test_duplicate_cost_identity_cannot_inflate_costs) ... ok
+test_duplicate_json_fields_rejected (test_experiments.ExperimentTests.test_duplicate_json_fields_rejected) ... ok
+test_empirical_prediction_snapshot_change_before_freeze (test_experiments.ExperimentTests.test_empirical_prediction_snapshot_change_before_freeze) ... ok
+test_financial_reference_reconciliation_and_batch_rollback (test_experiments.ExperimentTests.test_financial_reference_reconciliation_and_batch_rollback) ... ok
+test_holdout_requires_freeze_and_planned_observed_subject (test_experiments.ExperimentTests.test_holdout_requires_freeze_and_planned_observed_subject) ... ok
+test_idempotent_import_and_conflicting_batch_rollback (test_experiments.ExperimentTests.test_idempotent_import_and_conflicting_batch_rollback) ... ok
+test_invalid_missing_false_fields_and_unknown_values_atomic (test_experiments.ExperimentTests.test_invalid_missing_false_fields_and_unknown_values_atomic) ... ok
+test_late_refunds_and_costs_included_without_late_acceptance (test_experiments.ExperimentTests.test_late_refunds_and_costs_included_without_late_acceptance) ... ok
+test_missing_followup_and_early_close_remain_pending (test_experiments.ExperimentTests.test_missing_followup_and_early_close_remain_pending) ... ok
+test_missing_planned_subject_and_minimum_cohort (test_experiments.ExperimentTests.test_missing_planned_subject_and_minimum_cohort) ... ok
+test_missing_preceding_stages_and_out_of_order_funnel_flagged (test_experiments.ExperimentTests.test_missing_preceding_stages_and_out_of_order_funnel_flagged) ... ok
+test_no_conversion_with_closed_followup_counts_in_denominator (test_experiments.ExperimentTests.test_no_conversion_with_closed_followup_counts_in_denominator) ... ok
+test_no_data_is_not_evaluated_and_all_gates_unresolved (test_experiments.ExperimentTests.test_no_data_is_not_evaluated_and_all_gates_unresolved) ... ok
+test_observation_window_must_end (test_experiments.ExperimentTests.test_observation_window_must_end) ... ok
+test_observed_and_simulated_never_pooled_and_restart_equal (test_experiments.ExperimentTests.test_observed_and_simulated_never_pooled_and_restart_equal) ... ok
+test_payment_transaction_cannot_inflate_receipts_across_subjects (test_experiments.ExperimentTests.test_payment_transaction_cannot_inflate_receipts_across_subjects) ... ok
+test_plan_immutable_and_identical_replay_allowed (test_experiments.ExperimentTests.test_plan_immutable_and_identical_replay_allowed) ... ok
+test_prediction_parameter_validation_and_freeze_window (test_experiments.ExperimentTests.test_prediction_parameter_validation_and_freeze_window) ... ok
+test_retrospective_future_and_outside_enrollment_observed_rejected (test_experiments.ExperimentTests.test_retrospective_future_and_outside_enrollment_observed_rejected) ... ok
+test_terminal_conflict_and_cross_subject_refund_rejected (test_experiments.ExperimentTests.test_terminal_conflict_and_cross_subject_refund_rejected) ... ok
+test_threshold_interval_outcomes_still_do_not_complete_goal (test_experiments.ExperimentTests.test_threshold_interval_outcomes_still_do_not_complete_goal) ... ok
+test_independent_bad_artifacts (test_market.BuyerTests.test_independent_bad_artifacts) ... ok
+test_adapter_exception_is_charged_failure (test_market.MarketTests.test_adapter_exception_is_charged_failure) ... ok
+test_all_successful_commands_are_idempotent (test_market.MarketTests.test_all_successful_commands_are_idempotent) ... ok
+test_alternative_service_and_buyer (test_market.MarketTests.test_alternative_service_and_buyer) ... ok
+test_budget_and_insufficient_buyer (test_market.MarketTests.test_budget_and_insufficient_buyer) ... ok
+test_buyer_can_fail_normal_seller (test_market.MarketTests.test_buyer_can_fail_normal_seller) ... ok
+test_cancel_after_revision_keeps_cost (test_market.MarketTests.test_cancel_after_revision_keeps_cost) ... ok
+test_cancel_idempotent (test_market.MarketTests.test_cancel_idempotent) ... ok
+test_cli_json (test_market.MarketTests.test_cli_json) ... ok
+test_evaluator_error_rolls_back_review (test_market.MarketTests.test_evaluator_error_rolls_back_review) ... ok
+test_evaluator_issues_are_detached (test_market.MarketTests.test_evaluator_issues_are_detached) ... ok
+test_failed_key_can_be_retried (test_market.MarketTests.test_failed_key_can_be_retried) ... ok
+test_happy_path (test_market.MarketTests.test_happy_path) ... ok
+test_insufficient_seller_cost_is_atomic (test_market.MarketTests.test_insufficient_seller_cost_is_atomic) ... ok
+test_invalid_transitions_are_atomic (test_market.MarketTests.test_invalid_transitions_are_atomic) ... ok
+test_invariant_detects_conserved_but_unjournaled_mutation (test_market.MarketTests.test_invariant_detects_conserved_but_unjournaled_mutation) ... ok
+test_key_conflicts_do_not_mutate (test_market.MarketTests.test_key_conflicts_do_not_mutate) ... ok
+test_malformed_adapter_output_is_failure (test_market.MarketTests.test_malformed_adapter_output_is_failure) ... ok
+test_malformed_inputs (test_market.MarketTests.test_malformed_inputs) ... ok
+test_multiple_orders_have_isolated_escrow (test_market.MarketTests.test_multiple_orders_have_isolated_escrow) ... ok
+test_mutation_isolation (test_market.MarketTests.test_mutation_isolation) ... ok
+test_no_revisions_rejects_immediately (test_market.MarketTests.test_no_revisions_rejects_immediately) ... ok
+test_randomized_transition_sequences (test_market.MarketTests.test_randomized_transition_sequences) ... ok
+test_six_demo_outcomes_and_costs (test_market.MarketTests.test_six_demo_outcomes_and_costs) ... ok
+test_unknown_fields_and_commands (test_market.MarketTests.test_unknown_fields_and_commands) ... ok
+test_wrong_command_types (test_market.MarketTests.test_wrong_command_types) ... ok
+test_corruption_returns_503_without_reset (test_server.ServerTests.test_corruption_returns_503_without_reset) ... ok
+test_deeply_nested_json_rejected (test_server.ServerTests.test_deeply_nested_json_rejected) ... ok
+test_http_invalid_transition_is_atomic (test_server.ServerTests.test_http_invalid_transition_is_atomic) ... ok
+test_http_reset_retry (test_server.ServerTests.test_http_reset_retry) ... ok
+test_http_retry_and_stale_tab (test_server.ServerTests.test_http_retry_and_stale_tab) ... ok
+test_loopback_only_and_state_security_headers (test_server.ServerTests.test_loopback_only_and_state_security_headers) ... ok
+test_oversized_request_rejected (test_server.ServerTests.test_oversized_request_rejected) ... ok
+test_static_ui_assets_are_available (test_server.ServerTests.test_static_ui_assets_are_available) ... ok
+test_unknown_paths_and_directory_traversal_not_served (test_server.ServerTests.test_unknown_paths_and_directory_traversal_not_served) ... ok
+test_wrong_content_type_and_malformed_json (test_server.ServerTests.test_wrong_content_type_and_malformed_json) ... ok
+test_wrong_host_blocked_on_reads_and_writes (test_server.ServerTests.test_wrong_host_blocked_on_reads_and_writes) ... ok
+test_wrong_origin_or_token_is_rejected (test_server.ServerTests.test_wrong_origin_or_token_is_rejected) ... ok
+test_changed_payload_same_key_conflicts (test_storage.StorageTests.test_changed_payload_same_key_conflicts) ... ok
+test_checksum_mismatch_fails_closed (test_storage.StorageTests.test_checksum_mismatch_fails_closed) ... ok
+test_command_limit_rejects_new_work_but_allows_reset (test_storage.StorageTests.test_command_limit_rejects_new_work_but_allows_reset) ... ok
+test_existing_empty_and_non_sqlite_files_fail_closed (test_storage.StorageTests.test_existing_empty_and_non_sqlite_files_fail_closed) ... ok
+test_historical_retry_returns_current_state_without_new_effect (test_storage.StorageTests.test_historical_retry_returns_current_state_without_new_effect) ... ok
+test_invalid_requests_leave_state_unchanged (test_storage.StorageTests.test_invalid_requests_leave_state_unchanged) ... ok
+test_invalid_stored_json_fails_closed (test_storage.StorageTests.test_invalid_stored_json_fails_closed) ... ok
+test_missing_active_run_fails_closed (test_storage.StorageTests.test_missing_active_run_fails_closed) ... ok
+test_missing_final_command_fails_closed (test_storage.StorageTests.test_missing_final_command_fails_closed) ... ok
+test_missing_middle_command_fails_closed (test_storage.StorageTests.test_missing_middle_command_fails_closed) ... ok
+test_mutable_return_values_do_not_change_persisted_state (test_storage.StorageTests.test_mutable_return_values_do_not_change_persisted_state) ... ok
+test_old_reset_retry_after_another_reset_is_rejected (test_storage.StorageTests.test_old_reset_retry_after_another_reset_is_rejected) ... ok
+test_out_of_order_and_failed_commands_not_persisted (test_storage.StorageTests.test_out_of_order_and_failed_commands_not_persisted) ... ok
+test_physically_truncated_database_fails_closed (test_storage.StorageTests.test_physically_truncated_database_fails_closed) ... ok
+test_reset_archives_history_and_rejects_old_epoch (test_storage.StorageTests.test_reset_archives_history_and_rejects_old_epoch) ... ok
+test_reset_retry_ignores_updated_revision_precondition (test_storage.StorageTests.test_reset_retry_ignores_updated_revision_precondition) ... ok
+test_restart_replays_all_states_without_duplicate_transfers (test_storage.StorageTests.test_restart_replays_all_states_without_duplicate_transfers) ... ok
+test_simultaneous_distinct_commands_serialize (test_storage.StorageTests.test_simultaneous_distinct_commands_serialize) ... ok
+test_simultaneous_duplicate_commands_commit_once (test_storage.StorageTests.test_simultaneous_duplicate_commands_commit_once) ... ok
+test_stale_reset_is_rejected (test_storage.StorageTests.test_stale_reset_is_rejected) ... ok
+test_stale_store_action_is_rejected_atomically (test_storage.StorageTests.test_stale_store_action_is_rejected_atomically) ... ok
+test_unsupported_schema_fails_closed (test_storage.StorageTests.test_unsupported_schema_fails_closed) ... ok
+test_write_failure_rolls_back_generated_market_state (test_storage.StorageTests.test_write_failure_rolls_back_generated_market_state) ... ok
+
+----------------------------------------------------------------------
+Ran 87 tests in 6.798s
+
+OK
+----------------------------------------------------------------------
+Ran 87 tests in 6.773s
+
+OK
+test_accepted_over_balance_fails_later (test_refund_lab.RegressionTests.test_accepted_over_balance_fails_later) ... ok
+test_amount_validation (test_refund_lab.RegressionTests.test_amount_validation) ... ok
+test_baseline_is_positive_control (test_refund_lab.RegressionTests.test_baseline_is_positive_control) ... ok
+test_changed_operation_payload_rejected (test_refund_lab.RegressionTests.test_changed_operation_payload_rejected) ... ok
+test_crash_before_local_receipt (test_refund_lab.RegressionTests.test_crash_before_local_receipt) ... ok
+test_crash_before_provider_call (test_refund_lab.RegressionTests.test_crash_before_provider_call) ... ok
+test_distinct_equal_amount_operations_not_collapsed (test_refund_lab.RegressionTests.test_distinct_equal_amount_operations_not_collapsed) ... ok
+test_event_conflicts_rejected_without_state_change (test_refund_lab.RegressionTests.test_event_conflicts_rejected_without_state_change) ... ok
+test_event_order_permutations_and_redelivery (test_refund_lab.RegressionTests.test_event_order_permutations_and_redelivery) ... ok
+test_failed_outcome_durable_and_no_automatic_new_refund (test_refund_lab.RegressionTests.test_failed_outcome_durable_and_no_automatic_new_refund) ... ok
+test_lost_response_restart_same_key_different_attempts (test_refund_lab.RegressionTests.test_lost_response_restart_same_key_different_attempts) ... ok
+test_provider_rejects_same_key_changed_payload (test_refund_lab.RegressionTests.test_provider_rejects_same_key_changed_payload) ... ok
+test_stale_reads_do_not_imply_failure (test_refund_lab.RegressionTests.test_stale_reads_do_not_imply_failure) ... ok
+test_terminal_webhook_before_acceptance (test_refund_lab.RegressionTests.test_terminal_webhook_before_acceptance) ... ok
+test_unknown_stays_unknown_without_evidence (test_refund_lab.RegressionTests.test_unknown_stays_unknown_without_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.056s
+
+OK

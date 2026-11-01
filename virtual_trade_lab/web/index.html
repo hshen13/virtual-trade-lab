@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Virtual Trade Lab · 交易流程实验室</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">V<span>↗</span></span><span>Virtual Trade Lab<small>交易流程实验室</small></span></a>
+    <div class="top-actions"><span class="badge">LOCAL LAB</span><button id="refresh" class="button quiet" type="button">刷新状态</button><button id="reset" class="button quiet" type="button" disabled>新一轮实验</button></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><div class="eyebrow">A TRANSPARENT WORKFLOW EXPERIMENT</div><h1>让每一次交易，<br>都有可检查的结果。</h1><p>提出需求、执行交付、独立验收。观察成功，也看清返工、拒收与退款。</p></div>
+      <aside class="disclaimer"><span class="dot"></span><strong>纯模拟 · 无真实收入</strong><p>买卖双方是确定性规则角色，非 LLM。积分不可兑换，没有真实支付或真实客户。本实验只检验流程，不验证市场需求。</p></aside>
+    </section>
+    <div class="connection-row"><span id="connection" role="status">正在读取本地保存…</span><span id="version" class="mono"></span></div>
+    <section id="notice" class="notice" role="status" aria-live="polite" hidden></section>
+    <section id="pending-panel" class="pending-panel" hidden><div><strong>上一请求结果待确认</strong><p id="pending-description"></p><p>请重试同一请求，或先刷新查看；幂等键不变，不会重复划转积分。</p></div><button id="retry" class="button primary" type="button">重试同一请求</button></section>
+    <section class="balances" aria-label="模拟积分账户">
+      <article class="balance-card"><span>买家可用</span><strong id="buyer-balance">—</strong><small>模拟积分</small></article>
+      <article class="balance-card"><span>订单托管</span><strong id="escrow-balance">—</strong><small>验收后结算 / 拒收退款</small></article>
+      <article class="balance-card"><span>卖家可用</span><strong id="seller-balance">—</strong><small>收入减去履约成本</small></article>
+      <article class="balance-card conserved"><span>总积分守恒</span><strong id="total-balance">—</strong><small id="conservation">包含成本接收方</small></article>
+    </section>
+    <div class="workspace">
+      <section class="panel request-panel">
+        <div class="panel-heading"><span class="step-number">01</span><div><h2>定义买家需求</h2><p>新的订单，独立的验收条件</p></div></div>
+        <div class="service-chip"><span aria-hidden="true">▤</span><div><strong>商品目录空白清理</strong><small>保留 SKU、商品价格和描述内容，仅规范空白</small></div></div>
+        <form id="quote-form">
+          <label for="source">输入商品目录 <span class="label-note">JSON · 合成样本</span></label>
+          <textarea id="source" name="source" rows="10" spellcheck="false" required aria-describedby="source-help"></textarea>
+          <p id="source-help" class="help">请勿输入个人资料或真实客户数据。修改价格、丢失商品、标题超长都会被买家拒绝。</p>
+          <div class="form-grid"><div><label for="budget">预算上限</label><input id="budget" type="number" min="1" max="1000000" step="1" value="40" required></div><div><label for="revisions">允许返工次数</label><input id="revisions" type="number" min="0" max="20" step="1" value="1" required></div></div>
+          <label for="title-length">标题长度上限</label><input id="title-length" type="number" min="1" max="10000" step="1" value="80" required>
+          <button id="quote" class="button primary full-width" type="submit" disabled>创建需求并获取报价 <span aria-hidden="true">↗</span></button>
+          <p class="help compact">演示报价 = 10 + 5 × 行数；每次交付成本 = 2 + 行数。均为设定值，不是市场价格。</p>
+        </form>
+      </section>
+      <section class="panel transaction-panel">
+        <div class="panel-heading"><span class="step-number">02</span><div><h2>推进交易</h2><p>每一步都是显式操作，不自动验收</p></div></div>
+        <label for="order-select" class="sr-only">选择订单</label><select id="order-select" disabled><option value="">尚无订单</option></select>
+        <div id="empty-order" class="empty-state"><div class="empty-icon" aria-hidden="true">⇄</div><h3>从一个可验证的需求开始</h3><p>左侧创建订单后，在这里付款、交付和验收。可以故意注入缺陷，观察买家如何独立判断。</p></div>
+        <div id="order-detail" hidden>
+          <div class="order-title"><div><span class="eyebrow">CURRENT ORDER</span><h3 id="order-name"></h3></div><span id="order-state" class="state-pill"></span></div>
+          <ol id="progress" class="progress-track" aria-label="交易进度"></ol>
+          <div class="metrics"><div><span>服务报价</span><strong id="order-price"></strong></div><div><span>累计成本</span><strong id="order-cost"></strong></div><div><span>卖家净变动</span><strong id="order-net"></strong></div></div>
+          <p id="order-policy" class="help"></p><p id="next-step" class="next-step"></p>
+          <div class="action-area"><button id="fund" class="button primary" type="button">确认模拟付款</button><div id="delivery-controls" class="delivery-controls"><label for="mode">本次交付模式</label><select id="mode"><option value="normal">正常交付</option><option value="defective">注入缺陷：改动商品价格</option><option value="crash">注入失败：卖家运行异常</option></select><button id="deliver" class="button primary" type="button">执行卖家交付</button></div><button id="review" class="button primary" type="button">由买家独立验收</button><button id="cancel" class="button quiet danger" type="button">取消订单并退回本金</button></div>
+          <div id="issues" class="issues" hidden><strong>买家发现的问题</strong><ul id="issue-list"></ul></div>
+          <details id="delivery-details"><summary>检查交付与原始需求</summary><h4>当前交付</h4><pre id="delivery-output"></pre><h4>原始需求</h4><pre id="source-output"></pre></details>
+        </div>
+      </section>
+    </div>
+    <section class="panel audit-panel">
+      <div class="audit-heading"><div class="panel-heading"><span class="step-number">03</span><div><h2>检查证据，而不是相信结论</h2><p>当前实验的完整事件和积分流水；返工不会抹掉失败证据</p></div></div><span id="journal-count" class="badge muted">0 笔划转</span></div>
+      <div class="audit-grid"><div><h3>操作时间线 <span class="label-note">最新在前</span></h3><ol id="event-list" class="event-list"><li class="muted-text">暂无操作。</li></ol></div><div><h3>积分流水</h3><div class="table-wrap"><table><thead><tr><th>序号</th><th>流向</th><th>积分</th><th>原因</th></tr></thead><tbody id="ledger-body"><tr><td colspan="4" class="muted-text">暂无划转。</td></tr></tbody></table></div><p class="help">provider 为模拟成本接收方。成本不是凭空消失，也不是真实 API 账单。</p></div></div>
+    </section>
+    <footer><span>Virtual Trade Lab · 透明、可复现、允许失败</span><span>仅本地保存 · 无外部 API · 无真实支付</span></footer>
+  </main>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><form method="dialog"><div class="eyebrow">START A FRESH RUN</div><h2 id="reset-title">开启新一轮实验？</h2><p>当前实验会保留在本地存档，不删除历史。新一轮从买家 100、卖家 30 模拟积分开始。</p><p>这不是退款操作，也不涉及真实资金。其他标签页的旧操作将被拒绝。</p><div class="dialog-actions"><button id="reset-cancel" class="button quiet" value="cancel">暂不重置</button><button id="reset-confirm" class="button primary" type="button">确认开启新实验</button></div></form></dialog>
+</body>
+</html>

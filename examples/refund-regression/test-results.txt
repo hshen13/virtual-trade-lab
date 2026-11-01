@@ -1,0 +1,22 @@
+test_accepted_over_balance_fails_later (test_refund_lab.RegressionTests.test_accepted_over_balance_fails_later) ... ok
+test_amount_validation (test_refund_lab.RegressionTests.test_amount_validation) ... ok
+test_baseline_is_positive_control (test_refund_lab.RegressionTests.test_baseline_is_positive_control) ... ok
+test_changed_operation_payload_rejected (test_refund_lab.RegressionTests.test_changed_operation_payload_rejected) ... ok
+test_crash_before_local_receipt (test_refund_lab.RegressionTests.test_crash_before_local_receipt) ... ok
+test_crash_before_provider_call (test_refund_lab.RegressionTests.test_crash_before_provider_call) ... ok
+test_distinct_equal_amount_operations_not_collapsed (test_refund_lab.RegressionTests.test_distinct_equal_amount_operations_not_collapsed) ... ok
+test_event_conflicts_rejected_without_state_change (test_refund_lab.RegressionTests.test_event_conflicts_rejected_without_state_change) ... ok
+test_event_order_permutations_and_redelivery (test_refund_lab.RegressionTests.test_event_order_permutations_and_redelivery) ... ok
+test_failed_outcome_durable_and_no_automatic_new_refund (test_refund_lab.RegressionTests.test_failed_outcome_durable_and_no_automatic_new_refund) ... ok
+test_lost_response_restart_same_key_different_attempts (test_refund_lab.RegressionTests.test_lost_response_restart_same_key_different_attempts) ... ok
+test_missing_failure_webhook_recovers_by_authoritative_read_after_restart (test_refund_lab.RegressionTests.test_missing_failure_webhook_recovers_by_authoritative_read_after_restart) ... ok
+test_missing_success_webhook_recovers_by_authoritative_read_after_restart (test_refund_lab.RegressionTests.test_missing_success_webhook_recovers_by_authoritative_read_after_restart) ... ok
+test_provider_rejects_same_key_changed_payload (test_refund_lab.RegressionTests.test_provider_rejects_same_key_changed_payload) ... ok
+test_stale_reads_do_not_imply_failure (test_refund_lab.RegressionTests.test_stale_reads_do_not_imply_failure) ... ok
+test_terminal_webhook_before_acceptance (test_refund_lab.RegressionTests.test_terminal_webhook_before_acceptance) ... ok
+test_unknown_stays_unknown_without_evidence (test_refund_lab.RegressionTests.test_unknown_stays_unknown_without_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.045s
+
+OK

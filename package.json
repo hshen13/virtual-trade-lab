@@ -1,0 +1,5 @@
+{
+  "name": "virtual-trade-lab-local-preview",
+  "private": true,
+  "scripts": {"dev": "python -m virtual_trade_lab.server --port ${PORT:-3000}"}
+}
