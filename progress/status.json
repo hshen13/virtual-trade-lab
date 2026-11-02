@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "project": "Virtual Trade Lab",
-  "updated_at": "2026-11-02T05:49:45Z",
-  "summary": "三轴校准元数据协议完成本地检查；没有参与者导入/模型运行/人体校准，证据门槛0/9。等待本次发布CI。",
+  "updated_at": "2026-11-02T05:51:32Z",
+  "summary": "三轴元数据协议已公开且指定代码提交CI通过。只完成设计与防误报检查；校准证据仍0/9，无人体试验或模型结果。",
   "release": {
-    "published_commit": "fea343701dced459b8e10f2f19cf402e8cf88d53",
-    "working_state": "上一代码提交CI已通过；本次元数据协议新增119主测试本地通过，远端CI待发布后检查",
-    "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41385906329",
-    "ci_summary": "指定代码提交fea3437：Python3.10/3.11/3.12/3.13全部成功；107主测试+107优化模式+17退款，产品/行为演示通过。"
+    "published_commit": "0fbf1d181f654b6a386103a33095f69f957e33bf",
+    "working_state": "已发布且该代码提交CI通过；后续仅进度快照",
+    "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41396368904",
+    "ci_summary": "Python3.10/3.11/3.12/3.13均119主测试+119优化模式+17退款及演示通过；含12项协议gate测试，不是人体验证。"
   },
   "tasks": [
     {
@@ -62,16 +62,16 @@
       "id": "release",
       "title": "新版测试与发布",
       "status": "completed",
-      "detail": "非强制公开发布，全部62blob核验；指定代码提交四版本CI成功。",
+      "detail": "Python3.10/3.11/3.12/3.13均119主测试+119优化模式+17退款及演示通过；含12项协议gate测试，不是人体验证。",
       "next": "下一轮另行界定范围；保留本次证据。",
       "evidence": [
         {
-          "label": "代码发布",
-          "url": "https://github.com/hshen13/virtual-trade-lab/commit/fea343701dced459b8e10f2f19cf402e8cf88d53"
+          "label": "最新代码发布",
+          "url": "https://github.com/hshen13/virtual-trade-lab/commit/0fbf1d181f654b6a386103a33095f69f957e33bf"
         },
         {
           "label": "对应CI",
-          "url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41385906329"
+          "url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41396368904"
         }
       ]
     },
@@ -118,6 +118,14 @@
         {
           "label": "价格研究元数据",
           "url": "https://datacompass.lshtm.ac.uk/id/eprint/5121/"
+        },
+        {
+          "label": "协议及限制",
+          "url": "https://github.com/hshen13/virtual-trade-lab/blob/0fbf1d181f654b6a386103a33095f69f957e33bf/docs/CALIBRATION_PROTOCOL.md"
+        },
+        {
+          "label": "对应CI",
+          "url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41396368904"
         }
       ]
     }
