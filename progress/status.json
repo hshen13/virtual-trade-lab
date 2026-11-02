@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "project": "Virtual Trade Lab",
-  "updated_at": "2026-11-02T03:59:39Z",
-  "summary": "代码及离线复现报告已公开，指定发布提交CI通过；Bazaar官方scripted测试完成，不是论文LLM复现。",
+  "updated_at": "2026-11-02T05:49:45Z",
+  "summary": "三轴校准元数据协议完成本地检查；没有参与者导入/模型运行/人体校准，证据门槛0/9。等待本次发布CI。",
   "release": {
     "published_commit": "fea343701dced459b8e10f2f19cf402e8cf88d53",
-    "working_state": "已发布且该代码提交CI通过；后续仅进度快照更新",
+    "working_state": "上一代码提交CI已通过；本次元数据协议新增119主测试本地通过，远端CI待发布后检查",
     "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41385906329",
     "ci_summary": "指定代码提交fea3437：Python3.10/3.11/3.12/3.13全部成功；107主测试+107优化模式+17退款，产品/行为演示通过。"
   },
@@ -107,6 +107,19 @@
           "url": "https://github.com/hshen13/virtual-trade-lab/blob/fea343701dced459b8e10f2f19cf402e8cf88d53/examples/bazaar-reproduction/README.md"
         }
       ]
+    },
+    {
+      "id": "calibration-design",
+      "title": "真/虚拟用户、产品孪生及价格三轴校准协议",
+      "status": "completed",
+      "detail": "仅元数据契约+防误报检查：12针对性测试通过，研究元数据独立复核；0参与者行、0模型调用、0/9证据门槛。",
+      "next": "新留出、产品版本/体验重放、盲态标签、后端、容差依据等证据未具备；不能宣布已校准。",
+      "evidence": [
+        {
+          "label": "价格研究元数据",
+          "url": "https://datacompass.lshtm.ac.uk/id/eprint/5121/"
+        }
+      ]
     }
   ],
   "simulation": {
@@ -118,7 +131,7 @@
     ]
   },
   "blockers": [
-    "论文LLM复现无可用模型后端及付费预算授权。",
-    "该scripted测试两次完成交易0；同seed轨迹不一致，不能称完整业务或模型成绩复现。"
+    "三轴真实校准证据0/9，参与者/模型/新留出均未运行。",
+    "论文LLM复现仍无模型后端及付费预算授权。"
   ]
 }

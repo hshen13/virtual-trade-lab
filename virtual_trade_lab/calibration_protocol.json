@@ -1,0 +1,199 @@
+{
+  "schema": "three-axis-calibration-design/v1",
+  "scope": "metadata_only_no_participant_ingestion",
+  "sources": {
+    "dataset": "https://datacompass.lshtm.ac.uk/id/eprint/5121/",
+    "codebook": "https://datacompass.lshtm.ac.uk/id/eprint/5121/4/Phase1-2_data_codebook.html",
+    "paper": "https://journals.plos.org/water/article?id=10.1371/journal.pwat.0000583",
+    "open_csv_license": "CC-BY-4.0",
+    "raw_rows_downloaded": false,
+    "aggregates_already_seen": true
+  },
+  "study_designs": {
+    "phase1": {
+      "households": 60,
+      "products": [
+        "SATO Tap",
+        "Kalingalinga bucket",
+        "Happy Tap"
+      ],
+      "exposure": "two of three designs, two weeks each",
+      "cash_gift_zmw": 300,
+      "discount_percent": [
+        25,
+        50,
+        75
+      ],
+      "pool_with_phase2": false,
+      "role": "development_only_different_multi_product_design",
+      "allocation": "random_pair_and_order_discount_by_sealed_envelope"
+    },
+    "phase2": {
+      "households": 160,
+      "product": "Kalingalinga bucket",
+      "physical_prior_use_days": 14,
+      "list_price_zmw": 250,
+      "cash_gift_zmw": 50,
+      "discount_percent": [
+        20,
+        40,
+        60,
+        80
+      ],
+      "transaction_price_zmw": [
+        200,
+        150,
+        100,
+        50
+      ],
+      "effective_price_zmw": [
+        150,
+        100,
+        50,
+        0
+      ],
+      "role": "development_only_aggregates_already_seen",
+      "reported_actual_arm_households": [
+        40,
+        39,
+        41,
+        40
+      ],
+      "choice_window_minutes": [
+        5,
+        10
+      ],
+      "experience_order": "delivery_and_physical_use_then_gift_and_offer_then_choice"
+    }
+  },
+  "axes": {
+    "virtual_user": {
+      "hold_fixed": [
+        "real_product_version",
+        "experience_and_information",
+        "price_and_gift",
+        "choice_set_and_outside_option"
+      ],
+      "compare": [
+        "real_user_choice",
+        "virtual_user_choice"
+      ],
+      "blind": "labels_and_allocation_protocol_required_not_yet_implemented"
+    },
+    "virtual_product": {
+      "hold_fixed": [
+        "user_cohort_or_paired_household",
+        "price_and_gift",
+        "task_and_choice_set"
+      ],
+      "compare": [
+        "real_product_experience",
+        "versioned_virtual_twin_experience"
+      ],
+      "blind": "counterbalanced_labels_and_order_required_physical_vs_virtual_cannot_be_assumed_unnoticeable"
+    },
+    "price": {
+      "hold_fixed": [
+        "product_version",
+        "experience",
+        "participant_domain",
+        "gift_and_outside_option"
+      ],
+      "compare": [
+        "price_conditional_actual_purchase",
+        "price_conditional_virtual_choice"
+      ],
+      "multiple_products": "report_per_product_and_design_no_automatic_pooling"
+    }
+  },
+  "price_contract": {
+    "currency": "ZMW",
+    "unit": "major",
+    "distinct_fields": [
+      "list_price",
+      "transaction_price",
+      "cash_gift",
+      "net_contribution_effective_price"
+    ],
+    "effective_price_formula": "transaction_price - cash_gift",
+    "effective_price_is_full_price": false,
+    "zero_effective_price_is_free_choice": false,
+    "outside_option": "decline_purchase_and_retain_cash_gift",
+    "prohibit_extrapolation_as_observed_retail_purchase": true
+  },
+  "partition_contract": {
+    "split_unit": "household",
+    "related_events_stay_together": true,
+    "domains": [
+      "observed_claim",
+      "synthetic"
+    ],
+    "merge_real_and_synthetic": false,
+    "existing_study_role": "calibration_development_only",
+    "fresh_blind_holdout_available": false,
+    "phase1_phase2_pooling": false
+  },
+  "outcome_contract": {
+    "primary": "actual_purchase_decision_at_assigned_offer",
+    "outside": "no_purchase_keep_gift",
+    "stated_wtp": "separate_posthoc_purchase_dependent_measure_not_blind_target",
+    "receipt_verified_by_this_software": false,
+    "stated_wtp_constraints": "nonbuyers <= transaction_price; buyers >= transaction_price; posthoc conditional measure"
+  },
+  "unavailable_evidence": {
+    "product_version_bindings": null,
+    "physical_experience_replay": null,
+    "virtual_twin_assets": null,
+    "blind_ux_labels": null,
+    "household_split_manifest": null,
+    "observed_outcomes": null,
+    "synthetic_predictions": null,
+    "model_backend": null,
+    "model_version": null,
+    "metric_tolerance_rationale": null,
+    "sample_size_rationale": null,
+    "fresh_holdout_manifest": null,
+    "refund_cost_window": null,
+    "fit_results": null,
+    "independent_review": null
+  },
+  "gates": {
+    "product_versions_and_experience": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "participant_provenance_and_consent": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "blinded_allocation_and_labels": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "household_disjoint_split": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "preregistered_metrics_tolerance_and_sample_size": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "model_backend_and_version": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "fresh_unseen_holdout": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "cost_refund_observation_window": {
+      "status": "unavailable",
+      "evidence_ref": null
+    },
+    "independent_result_review": {
+      "status": "unavailable",
+      "evidence_ref": null
+    }
+  },
+  "calibration_status": "not_evaluated"
+}

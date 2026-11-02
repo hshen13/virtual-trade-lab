@@ -4,6 +4,10 @@
 
 这是一个零付费 API、Python 标准库即可运行的开源 MVP。当前参与者是**确定性规则程序 / mock 角色**，不是调用过大模型的自主 AI agent。没有真实付款，没有真实客户，没有真实社交账号，也没有自动宣传功能。
 
+## 三轴校准准备（仅设计）
+
+[同真实产品校准虚拟用户、真实/虚拟孪生校准产品、逐产品校准价格](docs/CALIBRATION_PROTOCOL.md)：元数据协议和防误报检查已实现；参与者数据未导入、模型未运行、9项证据门槛均未满足。`python -m virtual_trade_lab.calibration_protocol` 只检查设计，不能判定已校准。
+
 ## 外部基线复现
 
 已实际运行[BazaarBench官方离线20角色×50tick测试](examples/bazaar-reproduction/README.md)，两次通过、0LLM调用；**两次都无完成交易，且同seed轨迹不一致**，保留限制和失败证据。这是上游scripted基础设施复现，不是论文LLM结果或最强模型复现。
