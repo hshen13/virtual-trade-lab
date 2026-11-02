@@ -19,3 +19,5 @@ jobs:
       - run: python examples/refund-regression/demo.py
       - run: node --check virtual_trade_lab/web/app.js
       - run: python -m virtual_trade_lab --scenario all --json > /tmp/demo.json
+      - run: python -m virtual_trade_lab.products --output /tmp/product-bundle
+      - run: python -m virtual_trade_lab.realism --output /tmp/realism.json

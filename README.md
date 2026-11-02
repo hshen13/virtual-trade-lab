@@ -4,6 +4,28 @@
 
 这是一个零付费 API、Python 标准库即可运行的开源 MVP。当前参与者是**确定性规则程序 / mock 角色**，不是调用过大模型的自主 AI agent。没有真实付款，没有真实客户，没有真实社交账号，也没有自动宣传功能。
 
+## 外部基线复现
+
+已实际运行[BazaarBench官方离线20角色×50tick测试](examples/bazaar-reproduction/README.md)，两次通过、0LLM调用；**两次都无完成交易，且同seed轨迹不一致**，保留限制和失败证据。这是上游scripted基础设施复现，不是论文LLM结果或最强模型复现。
+
+## 项目进度
+
+进度面板源数据 [progress/status.json](progress/status.json) 是人工更新的真实工程进度快照，不是自动经营监控。面板每30秒读取最新快照并显示更新时间，不伪造实时收入或完成百分比。
+
+## v0.4：三个产品方向，仍未通过真实业务验收
+
+1. **宣传 PPT**：生成真实可编辑五页原创模板实例；视频渲染尚未实现。
+2. **直播**：生成离线彩排脚本、时间表、模拟中断恢复；没有开播或真实观众。
+3. **买卖货/渠道体验**：虚构角色的预算、交付、独立验收/返工/拒收/退款；没有真实货款、投放或库存。
+
+```sh
+python -m virtual_trade_lab.products --output /tmp/product-bundle
+```
+
+打开生成的 `promo.pptx` 和 `livestream-script.md`；`manifest.json` 区分真实文件、mock验收和未验证市场。示例[直接下载PPT](examples/product-run/promo.pptx)，[完整运行报告与交付](docs/PRODUCT_RUN.md)，[紧凑项目总纲](PROJECT_PLAYBOOK.md)，[真实业务验收协议](docs/BUSINESS_VALIDATION.md)。这里是本地 CLI 交付；下方 Web UI 仍是交易基础设施演示，尚未集成三方向编辑器。
+
+**当前先追求诚实的逼真模拟**：异质偏好/预算、外部选择、不购买、观看疲劳、退款/复购、全成本和共同条件下的基线对比；`python -m virtual_trade_lab.realism --output /tmp/realism.json` 跑固定敏感性格子。90个交易规则案例不等于行为真实性。现实付费/观看/优势/持续性/合法资格仍未评估。 不用虚拟转化率或伪造收入作弊。样例含明确「虚构示例」；[来源与许可边界](docs/PROVENANCE.md)。
+
 ## 思路与目的
 
 先把交易中容易被“成功演示”掩盖的问题暴露出来：

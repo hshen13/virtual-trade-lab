@@ -1,0 +1,3905 @@
+{
+  "cases": [
+    {
+      "actual_state": "accepted",
+      "budget_credits": 37,
+      "buyer_final_credits": 70,
+      "case": "accepted",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 26,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 37,
+      "buyer_final_credits": 70,
+      "case": "revision",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 22,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 37,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 29,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 37,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 37,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 33,
+      "buyer_final_credits": 70,
+      "case": "accepted",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 26,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 33,
+      "buyer_final_credits": 70,
+      "case": "revision",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 22,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 33,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 29,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 33,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 33,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 31,
+      "buyer_final_credits": 70,
+      "case": "accepted",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 26,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 31,
+      "buyer_final_credits": 70,
+      "case": "revision",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 22,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 31,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 29,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 31,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 31,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 34,
+      "buyer_final_credits": 70,
+      "case": "accepted",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 26,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 34,
+      "buyer_final_credits": 70,
+      "case": "revision",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 22,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 34,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 29,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 34,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 34,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 34,
+      "buyer_final_credits": 70,
+      "case": "accepted",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 26,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 34,
+      "buyer_final_credits": 70,
+      "case": "revision",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 22,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 34,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 29,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 34,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 34,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 8,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 30,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 4,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 30,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 30,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": -8,
+      "synthetic_only": true,
+      "vertical": "promo"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 27,
+      "buyer_final_credits": 80,
+      "case": "accepted",
+      "cost_credits": 3,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 17,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 27,
+      "buyer_final_credits": 80,
+      "case": "revision",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 14,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 27,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 27,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 27,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 23,
+      "buyer_final_credits": 80,
+      "case": "accepted",
+      "cost_credits": 3,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 17,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 23,
+      "buyer_final_credits": 80,
+      "case": "revision",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 14,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 23,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 23,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 23,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 21,
+      "buyer_final_credits": 80,
+      "case": "accepted",
+      "cost_credits": 3,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 17,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 21,
+      "buyer_final_credits": 80,
+      "case": "revision",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 14,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 21,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 21,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 21,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 24,
+      "buyer_final_credits": 80,
+      "case": "accepted",
+      "cost_credits": 3,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 17,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 24,
+      "buyer_final_credits": 80,
+      "case": "revision",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 14,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 24,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 24,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 24,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 24,
+      "buyer_final_credits": 80,
+      "case": "accepted",
+      "cost_credits": 3,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 17,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 24,
+      "buyer_final_credits": 80,
+      "case": "revision",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 14,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 24,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 24,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 24,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 6,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 20,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 3,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 20,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 20,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": -6,
+      "synthetic_only": true,
+      "vertical": "livestream"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 22,
+      "buyer_final_credits": 85,
+      "case": "accepted",
+      "cost_credits": 2,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 13,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 22,
+      "buyer_final_credits": 85,
+      "case": "revision",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 11,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 22,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 14,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 22,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 22,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 0,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 18,
+      "buyer_final_credits": 85,
+      "case": "accepted",
+      "cost_credits": 2,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 13,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 18,
+      "buyer_final_credits": 85,
+      "case": "revision",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 11,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 18,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 14,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 18,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 18,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 1,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 16,
+      "buyer_final_credits": 85,
+      "case": "accepted",
+      "cost_credits": 2,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 13,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 16,
+      "buyer_final_credits": 85,
+      "case": "revision",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 11,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 16,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 14,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 16,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 16,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 2,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 19,
+      "buyer_final_credits": 85,
+      "case": "accepted",
+      "cost_credits": 2,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 13,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 19,
+      "buyer_final_credits": 85,
+      "case": "revision",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 11,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 14,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 3,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 19,
+      "buyer_final_credits": 85,
+      "case": "accepted",
+      "cost_credits": 2,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 3,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 13,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "accepted",
+      "budget_credits": 19,
+      "buyer_final_credits": 85,
+      "case": "revision",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "accepted",
+      "failure_evidence": [
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "accept",
+          "sequence": 4,
+          "to": "seller"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 11,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "rejected",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "offered digest does not match actual file",
+        "offered digest does not match actual file"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 14,
+      "buyer_final_credits": 100,
+      "case": "budget_refused",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [
+        "quote exceeds buyer budget"
+      ],
+      "final_total_credits": 130,
+      "journal": [],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "cancelled",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "cancelled",
+      "cost_credits": 0,
+      "expectation_met": true,
+      "expected_state": "cancelled",
+      "failure_evidence": [],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "cancel_refund",
+          "sequence": 2,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": 0,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    },
+    {
+      "actual_state": "rejected",
+      "budget_credits": 19,
+      "buyer_final_credits": 100,
+      "case": "crash_refunded",
+      "cost_credits": 4,
+      "expectation_met": true,
+      "expected_state": "rejected",
+      "failure_evidence": [
+        "seller failure: RuntimeError",
+        "seller failure: RuntimeError"
+      ],
+      "final_total_credits": 130,
+      "journal": [
+        {
+          "credits": 15,
+          "from": "buyer",
+          "order": "demo",
+          "reason": "fund",
+          "sequence": 1,
+          "to": "escrow:demo"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 2,
+          "to": "provider"
+        },
+        {
+          "credits": 2,
+          "from": "seller",
+          "order": "demo",
+          "reason": "compute",
+          "sequence": 3,
+          "to": "provider"
+        },
+        {
+          "credits": 15,
+          "from": "escrow:demo",
+          "order": "demo",
+          "reason": "reject_refund",
+          "sequence": 4,
+          "to": "buyer"
+        }
+      ],
+      "price_credits": 15,
+      "real_market_validated": false,
+      "seed": 4,
+      "seller_net_credits": -4,
+      "synthetic_only": true,
+      "vertical": "commerce"
+    }
+  ],
+  "design": "3 product verticals x 6 prespecified cases x seeds; seeds vary budget margin only, not learned behavior",
+  "expectations_met": 90,
+  "real_buyers": 0,
+  "real_market_validated": false,
+  "real_revenue": null,
+  "schema": "product-campaign/v1",
+  "seed_values": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "synthetic_only": true,
+  "total_cases": 90,
+  "unexpected_failures": []
+}

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "project": "Virtual Trade Lab",
-  "updated_at": "2026-11-01T23:33:21Z",
-  "summary": "新版行为模型与离线产物已生成，独立复核及远端发布尚未完成。推广暂停。",
+  "updated_at": "2026-11-02T03:57:19Z",
+  "summary": "已获授权并实际完成Bazaar官方离线20×50测试两次；未完成交易，未复现论文LLM成绩。审查代码发布进行中。",
   "release": {
     "published_commit": "d6e81bc33bde50e55f95a510984471291269ce3b",
-    "working_state": "新版尚未发布",
+    "working_state": "已授权，准备发布已审查代码及离线复现报告",
     "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41361282122",
     "ci_summary": "已发布旧版：Python 3.10–3.13，87 主测试 + 17 退款测试通过；不代表新版通过。"
   },
@@ -45,25 +45,25 @@
     {
       "id": "behavior",
       "title": "合成行为实验",
-      "status": "working",
-      "detail": "24 个实验单元，固定开发 / 留出划分；假设未经真实用户校准。",
-      "next": "完成独立复核、敏感性与对抗检查。",
+      "status": "completed",
+      "detail": "独立复核发现旧质量承诺影响复购，已修复并重跑全部24格；原留出集已消耗。",
+      "next": "下一轮比较不同合理行为模型，不能复用已消耗种子冒充独立验证。",
       "evidence": []
     },
     {
       "id": "review",
       "title": "独立质量复核",
-      "status": "working",
-      "detail": "复核进行中，尚无通过结论。",
-      "next": "处理复核发现并重跑。",
+      "status": "completed",
+      "detail": "独立复核8项行为测试及重算输出一致；不是经验真实性或商业效果认证。",
+      "next": "保持局限公开，下一模型版本另行记录。",
       "evidence": []
     },
     {
       "id": "release",
       "title": "新版测试与发布",
       "status": "working",
-      "detail": "本地104主测试正常及优化模式、17退款测试通过；新增外部关系测试待最后重跑。远端新版CI未运行。",
-      "next": "完成测试、提交及远端 CI 验证。",
+      "detail": "本地107主测试正常及优化模式、17退款测试全部通过；新版远端CI尚未运行。",
+      "next": "非强制发布、远端树核验、对应提交CI。",
       "evidence": []
     },
     {
@@ -73,18 +73,39 @@
       "detail": "推广暂停，未真实开播，未接触真实客户。",
       "next": "等待质量验收和明确授权。",
       "evidence": []
+    },
+    {
+      "id": "dashboard",
+      "title": "网页进度面板",
+      "status": "completed",
+      "detail": "私有站点已部署，预览读取真实GitHub状态源通过；部署页面完整登录态QA仍未完成。",
+      "next": "用户登录后核对访问；工程里程碑变化时更新源。",
+      "evidence": []
+    },
+    {
+      "id": "bazaar-offline",
+      "title": "BazaarBench官方离线20×50复现",
+      "status": "completed",
+      "detail": "固定commit两次上游测试通过，0LLM/0网络尝试；两次完成交易0，同seed轨迹不同（SQLite随机选取）。不是论文LLM复现。",
+      "next": "如需论文实验，另行确定模型后端、版本和预算；不得将smoke当最强模型复现。",
+      "evidence": [
+        {
+          "label": "官方固定版本测试",
+          "url": "https://github.com/ziyan-wang98/BazaarBench/blob/f87e01e22ae664dd06925c06b358d7ebcafb95b5/tests/integration/test_smoke.py"
+        }
+      ]
     }
   ],
   "simulation": {
     "label": "合成实验 · 不是实际经营数据",
-    "summary": "留出集净收益差值：36 组中负向 33、正向 2、持平 1。当前证据不支持普遍商业提升。",
+    "summary": "探索性v2修复复购质量预期；原留出种子已消耗，36组净差负34/正2，范围−61至+48模拟积分，不能称独立验证或普遍提升。",
     "caveats": [
-      "预算、偏好、注意力、疲劳、退款、复购及全成本均为模型假设。",
-      "没有真实用户、真实订单或收入；结果尚未独立审定。"
+      "参数是假设；v2在查看v1后修订，原留出种子已消耗。",
+      "独立复核确认可复现，不证明经验真实性或产品普遍优势。"
     ]
   },
   "blockers": [
-    "新版产物尚未发布，远端 CI 未完成。",
-    "独立复核尚未完成；行为假设未经真实数据校准。"
+    "论文LLM复现无可用模型后端及付费预算授权。",
+    "已审查代码的远端CI尚待对应发布后验证。"
   ]
 }

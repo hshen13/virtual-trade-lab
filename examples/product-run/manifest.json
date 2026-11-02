@@ -1,0 +1,48 @@
+{
+  "broadcast_started": false,
+  "business_acceptance": {
+    "genuine_paid_demand": "unverified",
+    "legal_eligibility": "unverified",
+    "status": "not_evaluated",
+    "superiority_vs_defined_alternative": "unverified",
+    "sustainable_economics_and_repeat_use": "unverified",
+    "voluntary_real_viewing": "unverified"
+  },
+  "campaign_sha256": "ba9ec48b82ae439a0fb3c35cb4e143fdc2cbfb6e6c06d434dfb96f6368ce329d",
+  "files": [
+    {
+      "path": "promo.pptx",
+      "sha256": "08be3f475f20f1e569f94fa773b0088fffee45d5f36f3e4db9fecf56d19f9429"
+    },
+    {
+      "path": "livestream-script.md",
+      "sha256": "6bc094115d1c8e7c8a4d88bdd776734e1e44c1541938dfdaf800d0e8c311d1c8"
+    },
+    {
+      "path": "run-sheet.csv",
+      "sha256": "52c1709a25565190378a0c41e947b6a2b169d867a41e4fa6f3fd687ff7a9b84a"
+    },
+    {
+      "path": "livestream-events.json",
+      "sha256": "f32448cff8bf6f891e8ba5405bc55aa84293d7ee5f90bf05d87b0233f5929d7d"
+    },
+    {
+      "path": "channel-experience.json",
+      "sha256": "f89e117d980afe3b0bfb9919b32d715f29d79a9f623e3044587fc1fe59820048"
+    }
+  ],
+  "generated_artifact": true,
+  "license": "MIT project sample; not a legal clearance certificate",
+  "mock_buyer_validation": {
+    "case_count": 90,
+    "expectations_met": 90,
+    "status": "completed"
+  },
+  "product_is_fictional": true,
+  "product_name": "纸舟计划卡",
+  "promotion_posted": false,
+  "provenance": "Original project text/template; no third-party graphics, music, logos or embedded fonts",
+  "real_market_validated": false,
+  "schema": "original-product-bundle/v1",
+  "video_rendered": false
+}

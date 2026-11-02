@@ -1,0 +1,40 @@
+{
+  "audience_is_synthetic": true,
+  "broadcast_started": false,
+  "disclosure": "虚构示例",
+  "events": [
+    {
+      "at_seconds": 0,
+      "phase": "opening",
+      "synthetic": true
+    },
+    {
+      "at_seconds": 30,
+      "phase": "demonstration",
+      "synthetic": true
+    },
+    {
+      "at_seconds": 90,
+      "phase": "question",
+      "synthetic": true
+    },
+    {
+      "at_seconds": 120,
+      "phase": "interruption",
+      "synthetic": true
+    },
+    {
+      "at_seconds": 130,
+      "phase": "recovery",
+      "synthetic": true
+    },
+    {
+      "at_seconds": 160,
+      "phase": "stop",
+      "synthetic": true
+    }
+  ],
+  "product_name": "纸舟计划卡",
+  "real_viewers": 0,
+  "rehearsal_only": true
+}

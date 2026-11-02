@@ -1,0 +1,117 @@
+{
+  "scope": "Exact upstream scripted offline integration test, NOT paper LLM experiment",
+  "source_repo": "https://github.com/ziyan-wang98/BazaarBench",
+  "source_commit": "f87e01e22ae664dd06925c06b358d7ebcafb95b5",
+  "upstream_blobs_verified": 271,
+  "source_archive_sha256": "1511ecd13a9c8ebe46b35085fa7447be08eda61292adc6a828bf76f2f35f2eb4",
+  "test": "tests/integration/test_smoke.py::test_smoke_20x50",
+  "agents": 20,
+  "ticks": 50,
+  "persona_and_policy_seed_arguments": [
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519
+  ],
+  "encoder": "upstream HashEncoder fixture (not MiniLM)",
+  "python": "3.12.14",
+  "runs": [
+    {
+      "run": 1,
+      "upstream_test_passed": true,
+      "network_attempts": 0,
+      "counts": {
+        "agents": 20,
+        "events": 1486,
+        "listings": 32,
+        "threads": 15,
+        "messages": 27,
+        "offers": 16,
+        "meetups": 1,
+        "ratings": 0,
+        "llm_calls": 0
+      },
+      "event_statuses": {
+        "ok": 1486
+      },
+      "offer_statuses": {
+        "accepted": 3,
+        "countered": 1,
+        "pending": 12
+      },
+      "meetup_statuses": {
+        "scheduled": 1
+      },
+      "tick_min_max": [
+        0,
+        49
+      ],
+      "completion_action_count": 1,
+      "completion_true_count": 0,
+      "sold_listing_count": 0,
+      "db_sha256": "496518de7007db2e91263ca725902ea22ff37139a2cad52946a58ea951ae386c",
+      "canonical_events_without_wall_time_sha256": "4ad053741598ec5e22529eb00930fc05a24b2a74539308edbc668f02ad214c50"
+    },
+    {
+      "run": 2,
+      "upstream_test_passed": true,
+      "network_attempts": 0,
+      "counts": {
+        "agents": 20,
+        "events": 1480,
+        "listings": 32,
+        "threads": 13,
+        "messages": 22,
+        "offers": 15,
+        "meetups": 0,
+        "ratings": 0,
+        "llm_calls": 0
+      },
+      "event_statuses": {
+        "blocked": 1,
+        "ok": 1479
+      },
+      "offer_statuses": {
+        "accepted": 4,
+        "countered": 1,
+        "pending": 10
+      },
+      "meetup_statuses": {},
+      "tick_min_max": [
+        0,
+        49
+      ],
+      "completion_action_count": 0,
+      "completion_true_count": 0,
+      "sold_listing_count": 0,
+      "db_sha256": "3893d8e75057d7d1aa7c98af843888c83177e03d99212bd4814c3cb7c42b5053",
+      "canonical_events_without_wall_time_sha256": "5db746aac9fe0222c8df0a148adb252690163b9575d326d38e77f6d77c13095f"
+    }
+  ],
+  "same_canonical_event_trace": false,
+  "repeatability_limit": "RandomBenignPolicy uses SQLite ORDER BY RANDOM(), outside Python RNG seeds. No upstream patch applied.",
+  "expected_assertions": "zero handler errors; events>50; listings>=5; threads>=1; HTML renderer returns expected heading",
+  "not_reproduced": [
+    "paper LLM results",
+    "semantic memory quality",
+    "fresh model decisions",
+    "business demand",
+    "guaranteed completed trades"
+  ]
+}

@@ -1,0 +1,7 @@
+start_seconds,end_seconds,phase,synthetic
+0,30,opening,true
+30,90,demonstration,true
+90,120,question,true
+120,130,interruption,true
+130,160,recovery,true
+160,180,stop,true

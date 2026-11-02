@@ -1,0 +1,61 @@
+{
+  "actors": [
+    {
+      "id": "buyer-demo",
+      "role": "buyer",
+      "synthetic": true
+    },
+    {
+      "id": "seller-demo",
+      "role": "seller",
+      "synthetic": true
+    },
+    {
+      "id": "channel-demo",
+      "role": "channel",
+      "synthetic": true
+    }
+  ],
+  "claims": [
+    "纸质周计划",
+    "留白记录"
+  ],
+  "disclosure": "虚构示例",
+  "journey": [
+    {
+      "source": "original_rule_fixture",
+      "stage": "exposure",
+      "synthetic": true
+    },
+    {
+      "source": "original_rule_fixture",
+      "stage": "interest",
+      "synthetic": true
+    },
+    {
+      "source": "original_rule_fixture",
+      "stage": "quote",
+      "synthetic": true
+    },
+    {
+      "source": "original_rule_fixture",
+      "stage": "order",
+      "synthetic": true
+    },
+    {
+      "source": "original_rule_fixture",
+      "stage": "delivery",
+      "synthetic": true
+    },
+    {
+      "source": "original_rule_fixture",
+      "stage": "independent_review",
+      "synthetic": true
+    }
+  ],
+  "product_name": "纸舟计划卡",
+  "promotion_posted": false,
+  "real_inventory_known": false,
+  "real_payment": false,
+  "units": "simulated credits, not money"
+}

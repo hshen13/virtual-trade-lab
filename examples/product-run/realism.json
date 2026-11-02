@@ -1,0 +1,6388 @@
+{
+  "cells": [
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 0.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -30.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 23
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 4
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 15
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 22
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 0.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -30.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 23
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 4
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 15
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 22
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 0.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -30.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 22
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 3
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 14
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 21
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 0.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -30.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 22
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 3
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 14
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 21
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.0,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        3.0,
+        4.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 197.0,
+            "net": -35.0,
+            "opportunities": 360,
+            "paid": 162.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 14
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 4,
+                "repeat_purchases": 1,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 9,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 47
+          },
+          "candidate": {
+            "costs": 232.0,
+            "net": -32.0,
+            "opportunities": 360,
+            "paid": 200.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 3,
+                "repeat_purchases": 0,
+                "views": 19
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 4,
+                "repeat_purchases": 2,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 1,
+                "views": 20
+              }
+            ],
+            "purchases": 10,
+            "refunds": 0.0,
+            "repeat_purchases": 3,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 59
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": 3.0,
+            "paid": 38.0,
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 2,
+            "views": 12
+          }
+        },
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -126.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 12
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 16
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 12
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 40
+          },
+          "candidate": {
+            "costs": 202.0,
+            "net": -122.0,
+            "opportunities": 360,
+            "paid": 80.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 13
+              }
+            ],
+            "purchases": 4,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 48
+          },
+          "delta": {
+            "costs": 40.0,
+            "net": 4.0,
+            "paid": 44.0,
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "views": 8
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.0,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -41.0,
+        -28.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -126.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 14
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 47
+          },
+          "candidate": {
+            "costs": 187.0,
+            "net": -167.0,
+            "opportunities": 360,
+            "paid": 20.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 19
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 20
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 59
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -41.0,
+            "paid": -16.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 12
+          }
+        },
+        {
+          "baseline": {
+            "costs": 157.0,
+            "net": -139.0,
+            "opportunities": 360,
+            "paid": 18.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 12
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 16
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 12
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 40
+          },
+          "candidate": {
+            "costs": 187.0,
+            "net": -167.0,
+            "opportunities": 360,
+            "paid": 20.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 13
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 48
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -28.0,
+            "paid": 2.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 8
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.0,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -14.0,
+        -11.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 192.0,
+            "net": -48.0,
+            "opportunities": 360,
+            "paid": 144.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 14
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 3,
+                "repeat_purchases": 0,
+                "views": 17
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 0,
+                "views": 13
+              }
+            ],
+            "purchases": 8,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 44
+          },
+          "candidate": {
+            "costs": 222.0,
+            "net": -62.0,
+            "opportunities": 360,
+            "paid": 160.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 3,
+                "repeat_purchases": 0,
+                "views": 19
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 3,
+                "repeat_purchases": 1,
+                "views": 19
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 8,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 53
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -14.0,
+            "paid": 16.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "views": 9
+          }
+        },
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -126.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 12
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 14
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 34
+          },
+          "candidate": {
+            "costs": 197.0,
+            "net": -137.0,
+            "opportunities": 360,
+            "paid": 60.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 3,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 41
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": -11.0,
+            "paid": 24.0,
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.0,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -41.0,
+        -28.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -126.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 14
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 17
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 13
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 44
+          },
+          "candidate": {
+            "costs": 187.0,
+            "net": -167.0,
+            "opportunities": 360,
+            "paid": 20.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 19
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 19
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 53
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -41.0,
+            "paid": -16.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 9
+          }
+        },
+        {
+          "baseline": {
+            "costs": 157.0,
+            "net": -139.0,
+            "opportunities": 360,
+            "paid": 18.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 12
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 14
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 34
+          },
+          "candidate": {
+            "costs": 187.0,
+            "net": -167.0,
+            "opportunities": 360,
+            "paid": 20.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 41
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -28.0,
+            "paid": 2.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        49.0,
+        53.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 277.0,
+            "net": 155.0,
+            "opportunities": 360,
+            "paid": 450.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 9,
+                "repeat_purchases": 3,
+                "views": 28
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 8,
+                "repeat_purchases": 2,
+                "views": 25
+              }
+            ],
+            "purchases": 25,
+            "refunds": 18.0,
+            "repeat_purchases": 5,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 77
+          },
+          "candidate": {
+            "costs": 312.0,
+            "net": 208.0,
+            "opportunities": 360,
+            "paid": 520.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 7,
+                "repeat_purchases": 0,
+                "views": 28
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 11,
+                "repeat_purchases": 4,
+                "views": 35
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 8,
+                "repeat_purchases": 4,
+                "views": 26
+              }
+            ],
+            "purchases": 26,
+            "refunds": 0.0,
+            "repeat_purchases": 8,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 89
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": 53.0,
+            "paid": 70.0,
+            "purchases": 1,
+            "refunds": -18.0,
+            "repeat_purchases": 3,
+            "views": 12
+          }
+        },
+        {
+          "baseline": {
+            "costs": 252.0,
+            "net": 54.0,
+            "opportunities": 360,
+            "paid": 360.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 6,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 6,
+                "repeat_purchases": 3,
+                "views": 16
+              }
+            ],
+            "purchases": 20,
+            "refunds": 54.0,
+            "repeat_purchases": 3,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 60
+          },
+          "candidate": {
+            "costs": 277.0,
+            "net": 103.0,
+            "opportunities": 360,
+            "paid": 380.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 5,
+                "repeat_purchases": 0,
+                "views": 26
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 7,
+                "repeat_purchases": 1,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 7,
+                "repeat_purchases": 4,
+                "views": 24
+              }
+            ],
+            "purchases": 19,
+            "refunds": 0.0,
+            "repeat_purchases": 5,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 80
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": 49.0,
+            "paid": 20.0,
+            "purchases": -1,
+            "refunds": -54.0,
+            "repeat_purchases": 2,
+            "views": 20
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -11.0,
+        -8.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 192.0,
+            "net": -66.0,
+            "opportunities": 360,
+            "paid": 144.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 4,
+                "repeat_purchases": 1,
+                "views": 28
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 1,
+                "views": 25
+              }
+            ],
+            "purchases": 8,
+            "refunds": 18.0,
+            "repeat_purchases": 2,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 77
+          },
+          "candidate": {
+            "costs": 217.0,
+            "net": -77.0,
+            "opportunities": 360,
+            "paid": 140.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 28
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 3,
+                "repeat_purchases": 1,
+                "views": 35
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 1,
+                "views": 26
+              }
+            ],
+            "purchases": 7,
+            "refunds": 0.0,
+            "repeat_purchases": 2,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 89
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -11.0,
+            "paid": -4.0,
+            "purchases": -1,
+            "refunds": -18.0,
+            "repeat_purchases": 0,
+            "views": 12
+          }
+        },
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -144.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 16
+              }
+            ],
+            "purchases": 2,
+            "refunds": 18.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 60
+          },
+          "candidate": {
+            "costs": 192.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 40.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 26
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 24
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 80
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -8.0,
+            "paid": 4.0,
+            "purchases": 0,
+            "refunds": -18.0,
+            "repeat_purchases": 0,
+            "views": 20
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        32.0,
+        47.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 262.0,
+            "net": 116.0,
+            "opportunities": 360,
+            "paid": 396.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 8,
+                "repeat_purchases": 2,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 6,
+                "repeat_purchases": 0,
+                "views": 16
+              }
+            ],
+            "purchases": 22,
+            "refunds": 18.0,
+            "repeat_purchases": 2,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 64
+          },
+          "candidate": {
+            "costs": 297.0,
+            "net": 163.0,
+            "opportunities": 360,
+            "paid": 460.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 7,
+                "repeat_purchases": 0,
+                "views": 28
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 10,
+                "repeat_purchases": 3,
+                "views": 32
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 6,
+                "repeat_purchases": 2,
+                "views": 18
+              }
+            ],
+            "purchases": 23,
+            "refunds": 0.0,
+            "repeat_purchases": 5,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 78
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": 47.0,
+            "paid": 64.0,
+            "purchases": 1,
+            "refunds": -18.0,
+            "repeat_purchases": 3,
+            "views": 14
+          }
+        },
+        {
+          "baseline": {
+            "costs": 247.0,
+            "net": 41.0,
+            "opportunities": 360,
+            "paid": 342.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 6,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 5,
+                "repeat_purchases": 2,
+                "views": 15
+              }
+            ],
+            "purchases": 19,
+            "refunds": 54.0,
+            "repeat_purchases": 2,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 55
+          },
+          "candidate": {
+            "costs": 267.0,
+            "net": 73.0,
+            "opportunities": 360,
+            "paid": 340.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 5,
+                "repeat_purchases": 0,
+                "views": 26
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 6,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 6,
+                "repeat_purchases": 3,
+                "views": 17
+              }
+            ],
+            "purchases": 17,
+            "refunds": 0.0,
+            "repeat_purchases": 3,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 67
+          },
+          "delta": {
+            "costs": 20.0,
+            "net": 32.0,
+            "paid": -2.0,
+            "purchases": -2,
+            "refunds": -54.0,
+            "repeat_purchases": 1,
+            "views": 12
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -8.0,
+        0.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 182.0,
+            "net": -92.0,
+            "opportunities": 360,
+            "paid": 108.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 3,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 16
+              }
+            ],
+            "purchases": 6,
+            "refunds": 18.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 64
+          },
+          "candidate": {
+            "costs": 212.0,
+            "net": -92.0,
+            "opportunities": 360,
+            "paid": 120.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 28
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 31
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 1,
+                "views": 19
+              }
+            ],
+            "purchases": 6,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 78
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": 0.0,
+            "paid": 12.0,
+            "purchases": 0,
+            "refunds": -18.0,
+            "repeat_purchases": 1,
+            "views": 14
+          }
+        },
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -144.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 2,
+            "refunds": 18.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 55
+          },
+          "candidate": {
+            "costs": 192.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 40.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 26
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 17
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 67
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -8.0,
+            "paid": 4.0,
+            "purchases": 0,
+            "refunds": -18.0,
+            "repeat_purchases": 0,
+            "views": 12
+          }
+        }
+      ],
+      "seeds": [
+        11,
+        12
+      ],
+      "split": "development",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 0.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -43.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 24
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 30
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 25
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 157.0,
+            "net": -139.0,
+            "opportunities": 360,
+            "paid": 18.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 24
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 30
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -43.0,
+            "paid": -18.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 0.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -30.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 24
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 30
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 25
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 24
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 30
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 0.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -43.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 23
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 29
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 25
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 157.0,
+            "net": -139.0,
+            "opportunities": 360,
+            "paid": 18.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 23
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 29
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -43.0,
+            "paid": -18.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 0.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -30.0,
+        -30.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 23
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 29
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 5
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 19
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 6
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 25
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        },
+        {
+          "baseline": {
+            "costs": 152.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 23
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 7
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 4
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 29
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -30.0,
+            "paid": 0.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 6
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.0,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -61.0,
+        -10.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 177.0,
+            "net": -87.0,
+            "opportunities": 360,
+            "paid": 90.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 16
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 13
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 47
+          },
+          "candidate": {
+            "costs": 207.0,
+            "net": -107.0,
+            "opportunities": 360,
+            "paid": 100.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 55
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -20.0,
+            "paid": 10.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": -1,
+            "views": 8
+          }
+        },
+        {
+          "baseline": {
+            "costs": 187.0,
+            "net": -61.0,
+            "opportunities": 360,
+            "paid": 126.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 17
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 15
+              }
+            ],
+            "purchases": 7,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 50
+          },
+          "candidate": {
+            "costs": 202.0,
+            "net": -122.0,
+            "opportunities": 360,
+            "paid": 80.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 21
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 19
+              }
+            ],
+            "purchases": 4,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 62
+          },
+          "delta": {
+            "costs": 15.0,
+            "net": -61.0,
+            "paid": -46.0,
+            "purchases": -3,
+            "refunds": 0.0,
+            "repeat_purchases": -1,
+            "views": 12
+          }
+        },
+        {
+          "baseline": {
+            "costs": 202.0,
+            "net": -22.0,
+            "opportunities": 360,
+            "paid": 180.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 11
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 12
+              }
+            ],
+            "purchases": 10,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 53
+          },
+          "candidate": {
+            "costs": 232.0,
+            "net": -32.0,
+            "opportunities": 360,
+            "paid": 200.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 7,
+                "repeat_purchases": 0,
+                "views": 35
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 1,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 14
+              }
+            ],
+            "purchases": 10,
+            "refunds": 0.0,
+            "repeat_purchases": 2,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 69
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -10.0,
+            "paid": 20.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "views": 16
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.0,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -43.0,
+        -20.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -126.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 16
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 13
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 47
+          },
+          "candidate": {
+            "costs": 192.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 40.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 55
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -26.0,
+            "paid": 4.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 8
+          }
+        },
+        {
+          "baseline": {
+            "costs": 157.0,
+            "net": -139.0,
+            "opportunities": 360,
+            "paid": 18.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 17
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 50
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 21
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 19
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 62
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -43.0,
+            "paid": -18.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 12
+          }
+        },
+        {
+          "baseline": {
+            "costs": 177.0,
+            "net": -87.0,
+            "opportunities": 360,
+            "paid": 90.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 11
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 12
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 53
+          },
+          "candidate": {
+            "costs": 207.0,
+            "net": -107.0,
+            "opportunities": 360,
+            "paid": 100.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 35
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 14
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 69
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -20.0,
+            "paid": 10.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 16
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.0,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -48.0,
+        -7.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 172.0,
+            "net": -100.0,
+            "opportunities": 360,
+            "paid": 72.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 16
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 4,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 42
+          },
+          "candidate": {
+            "costs": 207.0,
+            "net": -107.0,
+            "opportunities": 360,
+            "paid": 100.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 10
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 50
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": -7.0,
+            "paid": 28.0,
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 8
+          }
+        },
+        {
+          "baseline": {
+            "costs": 182.0,
+            "net": -74.0,
+            "opportunities": 360,
+            "paid": 108.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 17
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 11
+              }
+            ],
+            "purchases": 6,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 46
+          },
+          "candidate": {
+            "costs": 202.0,
+            "net": -122.0,
+            "opportunities": 360,
+            "paid": 80.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 14
+              }
+            ],
+            "purchases": 4,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 56
+          },
+          "delta": {
+            "costs": 20.0,
+            "net": -48.0,
+            "paid": -28.0,
+            "purchases": -2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 10
+          }
+        },
+        {
+          "baseline": {
+            "costs": 197.0,
+            "net": -35.0,
+            "opportunities": 360,
+            "paid": 162.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 9,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 49
+          },
+          "candidate": {
+            "costs": 227.0,
+            "net": -47.0,
+            "opportunities": 360,
+            "paid": 180.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 7,
+                "repeat_purchases": 0,
+                "views": 35
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 1,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 9,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 62
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -12.0,
+            "paid": 18.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "views": 13
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.0,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -43.0,
+        -7.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 162.0,
+            "net": -126.0,
+            "opportunities": 360,
+            "paid": 36.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 16
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 8
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 42
+          },
+          "candidate": {
+            "costs": 192.0,
+            "net": -152.0,
+            "opportunities": 360,
+            "paid": 40.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              }
+            ],
+            "purchases": 2,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 50
+          },
+          "delta": {
+            "costs": 30.0,
+            "net": -26.0,
+            "paid": 4.0,
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 8
+          }
+        },
+        {
+          "baseline": {
+            "costs": 157.0,
+            "net": -139.0,
+            "opportunities": 360,
+            "paid": 18.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 17
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 11
+              }
+            ],
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 46
+          },
+          "candidate": {
+            "costs": 182.0,
+            "net": -182.0,
+            "opportunities": 360,
+            "paid": 0.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 14
+              }
+            ],
+            "purchases": 0,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 56
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -43.0,
+            "paid": -18.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 10
+          }
+        },
+        {
+          "baseline": {
+            "costs": 172.0,
+            "net": -100.0,
+            "opportunities": 360,
+            "paid": 72.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 10
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 4,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 49
+          },
+          "candidate": {
+            "costs": 207.0,
+            "net": -107.0,
+            "opportunities": 360,
+            "paid": 100.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 35
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 9
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 62
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": -7.0,
+            "paid": 28.0,
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "views": 13
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -55.0,
+        48.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 237.0,
+            "net": 33.0,
+            "opportunities": 360,
+            "paid": 306.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 7,
+                "repeat_purchases": 2,
+                "views": 20
+              }
+            ],
+            "purchases": 17,
+            "refunds": 36.0,
+            "repeat_purchases": 2,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 66
+          },
+          "candidate": {
+            "costs": 242.0,
+            "net": -22.0,
+            "opportunities": 360,
+            "paid": 240.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 5,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 5,
+                "repeat_purchases": 1,
+                "views": 23
+              }
+            ],
+            "purchases": 12,
+            "refunds": 20.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 83
+          },
+          "delta": {
+            "costs": 5.0,
+            "net": -55.0,
+            "paid": -66.0,
+            "purchases": -5,
+            "refunds": -16.0,
+            "repeat_purchases": -1,
+            "views": 17
+          }
+        },
+        {
+          "baseline": {
+            "costs": 262.0,
+            "net": 80.0,
+            "opportunities": 360,
+            "paid": 396.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 23
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 8,
+                "repeat_purchases": 1,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 6,
+                "repeat_purchases": 4,
+                "views": 24
+              }
+            ],
+            "purchases": 22,
+            "refunds": 54.0,
+            "repeat_purchases": 5,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 71
+          },
+          "candidate": {
+            "costs": 272.0,
+            "net": 68.0,
+            "opportunities": 360,
+            "paid": 360.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 7,
+                "repeat_purchases": 0,
+                "views": 31
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 6,
+                "repeat_purchases": 1,
+                "views": 31
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 5,
+                "repeat_purchases": 2,
+                "views": 33
+              }
+            ],
+            "purchases": 18,
+            "refunds": 20.0,
+            "repeat_purchases": 3,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 95
+          },
+          "delta": {
+            "costs": 10.0,
+            "net": -12.0,
+            "paid": -36.0,
+            "purchases": -4,
+            "refunds": -34.0,
+            "repeat_purchases": -2,
+            "views": 24
+          }
+        },
+        {
+          "baseline": {
+            "costs": 287.0,
+            "net": 145.0,
+            "opportunities": 360,
+            "paid": 486.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 14,
+                "repeat_purchases": 0,
+                "views": 39
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 4,
+                "repeat_purchases": 1,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 9,
+                "repeat_purchases": 5,
+                "views": 18
+              }
+            ],
+            "purchases": 27,
+            "refunds": 54.0,
+            "repeat_purchases": 6,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 79
+          },
+          "candidate": {
+            "costs": 307.0,
+            "net": 193.0,
+            "opportunities": 360,
+            "paid": 500.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 14,
+                "repeat_purchases": 0,
+                "views": 45
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 5,
+                "repeat_purchases": 1,
+                "views": 29
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 6,
+                "repeat_purchases": 5,
+                "views": 26
+              }
+            ],
+            "purchases": 25,
+            "refunds": 0.0,
+            "repeat_purchases": 6,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 100
+          },
+          "delta": {
+            "costs": 20.0,
+            "net": 48.0,
+            "paid": 14.0,
+            "purchases": -2,
+            "refunds": -54.0,
+            "repeat_purchases": 0,
+            "views": 21
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.5,
+        "fatigue": 0.5
+      },
+      "net_delta_range": [
+        -31.0,
+        -7.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 187.0,
+            "net": -61.0,
+            "opportunities": 360,
+            "paid": 126.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 1,
+                "views": 20
+              }
+            ],
+            "purchases": 7,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 66
+          },
+          "candidate": {
+            "costs": 212.0,
+            "net": -92.0,
+            "opportunities": 360,
+            "paid": 120.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 1,
+                "views": 23
+              }
+            ],
+            "purchases": 6,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 83
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -31.0,
+            "paid": -6.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 17
+          }
+        },
+        {
+          "baseline": {
+            "costs": 172.0,
+            "net": -100.0,
+            "opportunities": 360,
+            "paid": 72.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 23
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 24
+              }
+            ],
+            "purchases": 4,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 71
+          },
+          "candidate": {
+            "costs": 207.0,
+            "net": -107.0,
+            "opportunities": 360,
+            "paid": 100.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 31
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 31
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 33
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 95
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": -7.0,
+            "paid": 28.0,
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 24
+          }
+        },
+        {
+          "baseline": {
+            "costs": 217.0,
+            "net": 17.0,
+            "opportunities": 360,
+            "paid": 234.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 9,
+                "repeat_purchases": 0,
+                "views": 39
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 3,
+                "views": 18
+              }
+            ],
+            "purchases": 13,
+            "refunds": 0.0,
+            "repeat_purchases": 4,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 79
+          },
+          "candidate": {
+            "costs": 242.0,
+            "net": -2.0,
+            "opportunities": 360,
+            "paid": 240.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 45
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 29
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 3,
+                "views": 26
+              }
+            ],
+            "purchases": 12,
+            "refunds": 0.0,
+            "repeat_purchases": 4,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 100
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -19.0,
+            "paid": 6.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 21
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 0.5,
+        "demand": 1.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -57.0,
+        38.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 232.0,
+            "net": 20.0,
+            "opportunities": 360,
+            "paid": 288.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 6,
+                "repeat_purchases": 1,
+                "views": 14
+              }
+            ],
+            "purchases": 16,
+            "refunds": 36.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 58
+          },
+          "candidate": {
+            "costs": 237.0,
+            "net": -37.0,
+            "opportunities": 360,
+            "paid": 220.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 5,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 17
+              }
+            ],
+            "purchases": 11,
+            "refunds": 20.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 69
+          },
+          "delta": {
+            "costs": 5.0,
+            "net": -57.0,
+            "paid": -68.0,
+            "purchases": -5,
+            "refunds": -16.0,
+            "repeat_purchases": -1,
+            "views": 11
+          }
+        },
+        {
+          "baseline": {
+            "costs": 242.0,
+            "net": 28.0,
+            "opportunities": 360,
+            "paid": 324.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 23
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 7,
+                "repeat_purchases": 0,
+                "views": 21
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 1,
+                "views": 15
+              }
+            ],
+            "purchases": 18,
+            "refunds": 54.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 59
+          },
+          "candidate": {
+            "costs": 257.0,
+            "net": 23.0,
+            "opportunities": 360,
+            "paid": 300.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 7,
+                "repeat_purchases": 0,
+                "views": 31
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 5,
+                "repeat_purchases": 0,
+                "views": 26
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 3,
+                "repeat_purchases": 0,
+                "views": 18
+              }
+            ],
+            "purchases": 15,
+            "refunds": 20.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 75
+          },
+          "delta": {
+            "costs": 15.0,
+            "net": -5.0,
+            "paid": -24.0,
+            "purchases": -3,
+            "refunds": -34.0,
+            "repeat_purchases": -1,
+            "views": 16
+          }
+        },
+        {
+          "baseline": {
+            "costs": 262.0,
+            "net": 80.0,
+            "opportunities": 360,
+            "paid": 396.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 14,
+                "repeat_purchases": 0,
+                "views": 39
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 4,
+                "repeat_purchases": 1,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 4,
+                "repeat_purchases": 0,
+                "views": 11
+              }
+            ],
+            "purchases": 22,
+            "refunds": 54.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 68
+          },
+          "candidate": {
+            "costs": 282.0,
+            "net": 118.0,
+            "opportunities": 360,
+            "paid": 400.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 14,
+                "repeat_purchases": 0,
+                "views": 45
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 5,
+                "repeat_purchases": 1,
+                "views": 25
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 13
+              }
+            ],
+            "purchases": 20,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 83
+          },
+          "delta": {
+            "costs": 20.0,
+            "net": 38.0,
+            "paid": 4.0,
+            "purchases": -2,
+            "refunds": -54.0,
+            "repeat_purchases": 0,
+            "views": 15
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    },
+    {
+      "conditions": {
+        "competition": 1.5,
+        "demand": 1.5,
+        "fatigue": 1.5
+      },
+      "net_delta_range": [
+        -33.0,
+        -7.0
+      ],
+      "results": [
+        {
+          "baseline": {
+            "costs": 182.0,
+            "net": -74.0,
+            "opportunities": 360,
+            "paid": 108.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 24
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 20
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 14
+              }
+            ],
+            "purchases": 6,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 58
+          },
+          "candidate": {
+            "costs": 207.0,
+            "net": -107.0,
+            "opportunities": 360,
+            "paid": 100.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 30
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 22
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 17
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 69
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -33.0,
+            "paid": -8.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 11
+          }
+        },
+        {
+          "baseline": {
+            "costs": 172.0,
+            "net": -100.0,
+            "opportunities": 360,
+            "paid": 72.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 23
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 21
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 15
+              }
+            ],
+            "purchases": 4,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 59
+          },
+          "candidate": {
+            "costs": 207.0,
+            "net": -107.0,
+            "opportunities": 360,
+            "paid": 100.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 31
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 2,
+                "repeat_purchases": 0,
+                "views": 26
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 1,
+                "repeat_purchases": 0,
+                "views": 18
+              }
+            ],
+            "purchases": 5,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 75
+          },
+          "delta": {
+            "costs": 35.0,
+            "net": -7.0,
+            "paid": 28.0,
+            "purchases": 1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 16
+          }
+        },
+        {
+          "baseline": {
+            "costs": 202.0,
+            "net": -22.0,
+            "opportunities": 360,
+            "paid": 180.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 9,
+                "repeat_purchases": 0,
+                "views": 39
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 18
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 11
+              }
+            ],
+            "purchases": 10,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 68
+          },
+          "candidate": {
+            "costs": 227.0,
+            "net": -47.0,
+            "opportunities": 360,
+            "paid": 180.0,
+            "people": 120,
+            "periods": [
+              {
+                "opportunities": 120,
+                "period": 0,
+                "purchases": 8,
+                "repeat_purchases": 0,
+                "views": 45
+              },
+              {
+                "opportunities": 120,
+                "period": 1,
+                "purchases": 1,
+                "repeat_purchases": 1,
+                "views": 25
+              },
+              {
+                "opportunities": 120,
+                "period": 2,
+                "purchases": 0,
+                "repeat_purchases": 0,
+                "views": 13
+              }
+            ],
+            "purchases": 9,
+            "refunds": 0.0,
+            "repeat_purchases": 1,
+            "segment_counts": {
+              "balanced": 40,
+              "budget": 40,
+              "quality": 40
+            },
+            "views": 83
+          },
+          "delta": {
+            "costs": 25.0,
+            "net": -25.0,
+            "paid": 0.0,
+            "purchases": -1,
+            "refunds": 0.0,
+            "repeat_purchases": 0,
+            "views": 15
+          }
+        }
+      ],
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "split": "holdout",
+      "uncertainty": "finite synthetic seed range, NOT empirical confidence interval"
+    }
+  ],
+  "config": {
+    "assumptions": "Attributes, utility coefficients and seed design assumed, not fitted or artifact-quality measurements",
+    "baseline": {
+      "channel_cost": 0.2,
+      "clarity": 0.7,
+      "delivery_cost": 5,
+      "friction": 0.1,
+      "price": 18,
+      "production_cost": 80,
+      "promised_quality": 0.7,
+      "quality": 0.7,
+      "relevance": 0.7,
+      "repetition": 0.2
+    },
+    "candidate": {
+      "channel_cost": 0.2,
+      "clarity": 0.85,
+      "delivery_cost": 5,
+      "friction": 0.1,
+      "price": 20,
+      "production_cost": 110,
+      "promised_quality": 0.7,
+      "quality": 0.8,
+      "relevance": 0.7,
+      "repetition": 0.2
+    },
+    "competition": [
+      0.5,
+      1.5
+    ],
+    "control_seed": 201,
+    "controls": {
+      "costly_low_quality": {
+        "channel_cost": 0.2,
+        "clarity": 0.85,
+        "delivery_cost": 5,
+        "friction": 0.1,
+        "price": 5,
+        "production_cost": 1000,
+        "promised_quality": 0.7,
+        "quality": 0,
+        "relevance": 0.7,
+        "repetition": 0.2
+      },
+      "fatiguing": {
+        "channel_cost": 0.2,
+        "clarity": 0.85,
+        "delivery_cost": 5,
+        "friction": 0.1,
+        "price": 20,
+        "production_cost": 110,
+        "promised_quality": 0.7,
+        "quality": 0.8,
+        "relevance": 0.7,
+        "repetition": 1
+      },
+      "identical": {
+        "channel_cost": 0.2,
+        "clarity": 0.7,
+        "delivery_cost": 5,
+        "friction": 0.1,
+        "price": 18,
+        "production_cost": 80,
+        "promised_quality": 0.7,
+        "quality": 0.7,
+        "relevance": 0.7,
+        "repetition": 0.2
+      },
+      "irrelevant": {
+        "channel_cost": 0.2,
+        "clarity": 0.85,
+        "delivery_cost": 5,
+        "friction": 0.1,
+        "price": 20,
+        "production_cost": 110,
+        "promised_quality": 0.7,
+        "quality": 0.8,
+        "relevance": 0,
+        "repetition": 0.2
+      },
+      "overpriced": {
+        "channel_cost": 0.2,
+        "clarity": 0.85,
+        "delivery_cost": 5,
+        "friction": 0.1,
+        "price": 1000,
+        "production_cost": 110,
+        "promised_quality": 0.7,
+        "quality": 0.8,
+        "relevance": 0.7,
+        "repetition": 0.2
+      }
+    },
+    "demand": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "development_seeds": [
+      11,
+      12
+    ],
+    "fatigue": [
+      0.5,
+      1.5
+    ],
+    "frozen_rule": "Report every cell; no empirical superiority gate; prior inspected holdout consumed by model correction, rerun exploratory",
+    "holdout_seeds": [
+      101,
+      102,
+      103
+    ],
+    "model_source_sha256": "716d2bc75da8b976a112f197b7e0ab347d494b988f47355d87b3ad67299b2622",
+    "people_per_seed": 120,
+    "periods": 3,
+    "schema": "synthetic-realism/v2-exploratory"
+  },
+  "config_sha256": "87a6d385130ae0106a125eb582bd7f6b28b6d6e8448e865249aede8950caba30",
+  "controls": {
+    "costly_low_quality": {
+      "baseline": {
+        "costs": 167.0,
+        "net": -113.0,
+        "opportunities": 360,
+        "paid": 54.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 3,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 12
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        ],
+        "purchases": 3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 34
+      },
+      "candidate": {
+        "costs": 1192.0,
+        "net": -1192.0,
+        "opportunities": 360,
+        "paid": 120.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 14,
+            "repeat_purchases": 0,
+            "views": 22
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 5,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 5,
+            "repeat_purchases": 0,
+            "views": 12
+          }
+        ],
+        "purchases": 24,
+        "refunds": 120.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 49
+      },
+      "delta": {
+        "costs": 1025.0,
+        "net": -1079.0,
+        "paid": 66.0,
+        "purchases": 21,
+        "refunds": 120.0,
+        "repeat_purchases": 0,
+        "views": 15
+      }
+    },
+    "fatiguing": {
+      "baseline": {
+        "costs": 167.0,
+        "net": -113.0,
+        "opportunities": 360,
+        "paid": 54.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 3,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 12
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        ],
+        "purchases": 3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 34
+      },
+      "candidate": {
+        "costs": 182.0,
+        "net": -182.0,
+        "opportunities": 360,
+        "paid": 0.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 22
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 11
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 9
+          }
+        ],
+        "purchases": 0,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 42
+      },
+      "delta": {
+        "costs": 15.0,
+        "net": -69.0,
+        "paid": -54.0,
+        "purchases": -3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "views": 8
+      }
+    },
+    "identical": {
+      "baseline": {
+        "costs": 167.0,
+        "net": -113.0,
+        "opportunities": 360,
+        "paid": 54.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 3,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 12
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        ],
+        "purchases": 3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 34
+      },
+      "candidate": {
+        "costs": 167.0,
+        "net": -113.0,
+        "opportunities": 360,
+        "paid": 54.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 3,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 12
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        ],
+        "purchases": 3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 34
+      },
+      "delta": {
+        "costs": 0.0,
+        "net": 0.0,
+        "paid": 0.0,
+        "purchases": 0,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "views": 0
+      }
+    },
+    "irrelevant": {
+      "baseline": {
+        "costs": 167.0,
+        "net": -113.0,
+        "opportunities": 360,
+        "paid": 54.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 3,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 12
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        ],
+        "purchases": 3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 34
+      },
+      "candidate": {
+        "costs": 182.0,
+        "net": -182.0,
+        "opportunities": 360,
+        "paid": 0.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 0
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 0
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 0
+          }
+        ],
+        "purchases": 0,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 0
+      },
+      "delta": {
+        "costs": 15.0,
+        "net": -69.0,
+        "paid": -54.0,
+        "purchases": -3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "views": -34
+      }
+    },
+    "overpriced": {
+      "baseline": {
+        "costs": 167.0,
+        "net": -113.0,
+        "opportunities": 360,
+        "paid": 54.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 3,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 12
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 7
+          }
+        ],
+        "purchases": 3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 34
+      },
+      "candidate": {
+        "costs": 182.0,
+        "net": -182.0,
+        "opportunities": 360,
+        "paid": 0.0,
+        "people": 120,
+        "periods": [
+          {
+            "opportunities": 120,
+            "period": 0,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 22
+          },
+          {
+            "opportunities": 120,
+            "period": 1,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 15
+          },
+          {
+            "opportunities": 120,
+            "period": 2,
+            "purchases": 0,
+            "repeat_purchases": 0,
+            "views": 12
+          }
+        ],
+        "purchases": 0,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "segment_counts": {
+          "balanced": 40,
+          "budget": 40,
+          "quality": 40
+        },
+        "views": 49
+      },
+      "delta": {
+        "costs": 15.0,
+        "net": -69.0,
+        "paid": -54.0,
+        "purchases": -3,
+        "refunds": 0.0,
+        "repeat_purchases": 0,
+        "views": 15
+      }
+    }
+  },
+  "empirically_calibrated": false,
+  "limitations": [
+    "No observed preferences or elasticity",
+    "No real competitor measured",
+    "Three periods do not establish sustainability",
+    "Structural sensitivity is not market uncertainty",
+    "Both former development and holdout seeds are consumed; this corrected rerun is exploratory, not independent validation"
+  ],
+  "real_market_validated": false,
+  "robustness": "not_demonstrated",
+  "synthetic_only": true
+}

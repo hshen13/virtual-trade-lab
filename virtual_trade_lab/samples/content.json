@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "language": "zh-CN",
+  "license": "MIT",
+  "product_name": "纸舟计划卡",
+  "product_name_is_fictional": true,
+  "slide_count": 5,
+  "canvas_px": {
+    "width": 1280,
+    "height": 720
+  },
+  "font": {
+    "family": "Noto Sans CJK SC",
+    "license": "SIL Open Font License 1.1",
+    "bundled": false
+  },
+  "palette": {
+    "cream": "#F6F2E9",
+    "ink": "#183D3A",
+    "teal": "#21685F",
+    "muted": "#55716B",
+    "white": "#FFFFFF",
+    "border": "#B9CBC4"
+  },
+  "common": {
+    "margin_px": 72,
+    "fictional_notice": "虚构示例",
+    "fictional_notice_position_px": {
+      "left": 1064,
+      "top": 46,
+      "width": 144,
+      "height": 36
+    },
+    "product_footer": "纸舟计划卡",
+    "footer_y_px": 659,
+    "page_number_format": "NN / 05"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "section": "纸面记录产品概念",
+      "title": "纸舟计划卡",
+      "text": [
+        "纸质周计划 · 留白记录",
+        "一张纸，留给这一周的安排和想法。",
+        "概念样稿，尚未上架"
+      ]
+    },
+    {
+      "number": 2,
+      "section": "版式概念",
+      "title": "纸质周计划与留白记录",
+      "text": [
+        "同一张纸上，分别留出安排和随手记录的位置。",
+        "版式概念示意，未定义实物尺寸或材质规格。"
+      ],
+      "native_table": {
+        "rows": 4,
+        "columns": 2,
+        "position_px": {
+          "left": 72,
+          "top": 270,
+          "width": 1136,
+          "height": 330
+        },
+        "values": [
+          [
+            "纸质周计划",
+            "留白记录"
+          ],
+          [
+            "本周安排：",
+            "随手记："
+          ],
+          [
+            "重点事项：",
+            "自由记录："
+          ],
+          [
+            "周末回顾：",
+            "下周再想："
+          ]
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "section": "使用示例",
+      "title": "一周的记录过程",
+      "steps": [
+        [
+          "01",
+          "写下日期",
+          "按自己的习惯标记这一周。"
+        ],
+        [
+          "02",
+          "安排事情",
+          "把想做的事项写在周计划区域。"
+        ],
+        [
+          "03",
+          "留下想法",
+          "把临时想到的内容记在留白区域。"
+        ],
+        [
+          "04",
+          "回看记录",
+          "周末查看纸面内容，自行决定是否延续。"
+        ]
+      ]
+    },
+    {
+      "number": 4,
+      "section": "试写反馈",
+      "title": "试写一周后的反馈",
+      "text": [
+        "纸舟计划卡仍是一个概念。你的使用感受可以帮助下一版取舍。",
+        "哪一块空间经常不够写？",
+        "哪些栏目可以删掉？",
+        "你希望保留多少空白？",
+        "演示时可直接口头反馈，暂无真实购买或收集入口。"
+      ]
+    },
+    {
+      "number": 5,
+      "section": "原创与使用边界",
+      "title": "原创示例，开放使用",
+      "text": [
+        "“纸舟计划卡”为本演示虚构的产品名称。",
+        "本文件不代表真实商品上架、销量、库存、评价或功效。\n未使用第三方图片、音乐、标志或现成商业模板。",
+        "原创文案、版式、表格与项目源码按 MIT 许可证开放。",
+        "Noto Sans CJK SC 字体按 SIL Open Font License 1.1 使用。\n文件未打包字体软件，复现时请另行安装。"
+      ]
+    }
+  ],
+  "claims_policy": {
+    "real_inventory": false,
+    "sales": false,
+    "testimonials": false,
+    "efficacy": false,
+    "real_purchase_destination": false
+  },
+  "design_policy": {
+    "native_text": true,
+    "native_table": true,
+    "raster_images": false,
+    "decorative_drawings": false
+  }
+}

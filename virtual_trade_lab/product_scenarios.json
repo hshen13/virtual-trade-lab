@@ -1,0 +1,12 @@
+{
+  "schema": "product-verticals/v1",
+  "product_name": "纸舟计划卡",
+  "product_is_fictional": true,
+  "verticals": {
+    "promo": {"label": "宣传PPT", "price_credits": 30, "cost_per_attempt": 4, "files": ["promo.pptx"], "capability": "Original editable template instantiation; video rendering not implemented"},
+    "livestream": {"label": "直播彩排", "price_credits": 20, "cost_per_attempt": 3, "files": ["livestream-script.md", "run-sheet.csv", "livestream-events.json"], "capability": "Offline rehearsal only; no broadcast or audience generation"},
+    "commerce": {"label": "虚拟买卖与渠道体验", "price_credits": 15, "cost_per_attempt": 2, "files": ["channel-experience.json"], "capability": "Fictional buyer/seller/channel journey; no outreach, inventory or real payment"}
+  },
+  "acceptance": {"required_disclosure": "虚构示例", "supported_claims": ["纸质周计划", "留白记录"], "forbidden_claims": ["已售1000件", "保证收益", "真实观众10000人"]},
+  "authority": {"broadcast_started": false, "promotion_posted": false, "real_payment": false, "external_model_called": false}
+}

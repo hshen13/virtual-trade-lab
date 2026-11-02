@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "virtual-trade-lab"
-version = "0.3.0"
+version = "0.4.0"
 description = "Deterministic virtual buyer/seller transaction laboratory. No real payments."
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -17,4 +17,4 @@ virtual-trade-lab = "virtual_trade_lab.__main__:main"
 include = ["virtual_trade_lab*"]
 
 [tool.setuptools.package-data]
-virtual_trade_lab = ["web/*.html", "web/*.js", "web/*.css"]
+virtual_trade_lab = ["web/*.html", "web/*.js", "web/*.css", "product_scenarios.json", "samples/*.pptx", "samples/*.json", "samples/*.md", "samples/LICENSE"]
