@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "project": "Virtual Trade Lab",
-  "updated_at": "2026-11-02T03:57:19Z",
-  "summary": "已获授权并实际完成Bazaar官方离线20×50测试两次；未完成交易，未复现论文LLM成绩。审查代码发布进行中。",
+  "updated_at": "2026-11-02T03:59:39Z",
+  "summary": "代码及离线复现报告已公开，指定发布提交CI通过；Bazaar官方scripted测试完成，不是论文LLM复现。",
   "release": {
-    "published_commit": "d6e81bc33bde50e55f95a510984471291269ce3b",
-    "working_state": "已授权，准备发布已审查代码及离线复现报告",
-    "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41361282122",
-    "ci_summary": "已发布旧版：Python 3.10–3.13，87 主测试 + 17 退款测试通过；不代表新版通过。"
+    "published_commit": "fea343701dced459b8e10f2f19cf402e8cf88d53",
+    "working_state": "已发布且该代码提交CI通过；后续仅进度快照更新",
+    "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41385906329",
+    "ci_summary": "指定代码提交fea3437：Python3.10/3.11/3.12/3.13全部成功；107主测试+107优化模式+17退款，产品/行为演示通过。"
   },
   "tasks": [
     {
@@ -61,10 +61,19 @@
     {
       "id": "release",
       "title": "新版测试与发布",
-      "status": "working",
-      "detail": "本地107主测试正常及优化模式、17退款测试全部通过；新版远端CI尚未运行。",
-      "next": "非强制发布、远端树核验、对应提交CI。",
-      "evidence": []
+      "status": "completed",
+      "detail": "非强制公开发布，全部62blob核验；指定代码提交四版本CI成功。",
+      "next": "下一轮另行界定范围；保留本次证据。",
+      "evidence": [
+        {
+          "label": "代码发布",
+          "url": "https://github.com/hshen13/virtual-trade-lab/commit/fea343701dced459b8e10f2f19cf402e8cf88d53"
+        },
+        {
+          "label": "对应CI",
+          "url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41385906329"
+        }
+      ]
     },
     {
       "id": "broadcast",
@@ -92,6 +101,10 @@
         {
           "label": "官方固定版本测试",
           "url": "https://github.com/ziyan-wang98/BazaarBench/blob/f87e01e22ae664dd06925c06b358d7ebcafb95b5/tests/integration/test_smoke.py"
+        },
+        {
+          "label": "实测报告",
+          "url": "https://github.com/hshen13/virtual-trade-lab/blob/fea343701dced459b8e10f2f19cf402e8cf88d53/examples/bazaar-reproduction/README.md"
         }
       ]
     }
@@ -106,6 +119,6 @@
   },
   "blockers": [
     "论文LLM复现无可用模型后端及付费预算授权。",
-    "已审查代码的远端CI尚待对应发布后验证。"
+    "该scripted测试两次完成交易0；同seed轨迹不一致，不能称完整业务或模型成绩复现。"
   ]
 }
