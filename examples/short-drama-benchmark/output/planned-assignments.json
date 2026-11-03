@@ -1,0 +1,74 @@
+[
+  {
+    "slot": "planned-01",
+    "first": "clip-02",
+    "second": "clip-01",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-02",
+    "first": "clip-01",
+    "second": "clip-02",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-03",
+    "first": "clip-02",
+    "second": "clip-01",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-04",
+    "first": "clip-01",
+    "second": "clip-02",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-05",
+    "first": "clip-02",
+    "second": "clip-01",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-06",
+    "first": "clip-01",
+    "second": "clip-02",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-07",
+    "first": "clip-02",
+    "second": "clip-01",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-08",
+    "first": "clip-01",
+    "second": "clip-02",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-09",
+    "first": "clip-02",
+    "second": "clip-01",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-10",
+    "first": "clip-01",
+    "second": "clip-02",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-11",
+    "first": "clip-02",
+    "second": "clip-01",
+    "status": "not_recruited"
+  },
+  {
+    "slot": "planned-12",
+    "first": "clip-01",
+    "second": "clip-02",
+    "status": "not_recruited"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "evidence_type": "synthetic_rule_fixture",
+  "model_calls": 0,
+  "paid_api_calls": 0,
+  "human_participants": 0,
+  "generated_videos": 0,
+  "original_storyboards": 3,
+  "seconds_per_storyboard": {
+    "baseline": 60,
+    "revision": 60,
+    "negative_control": 60
+  },
+  "synthetic_sensitivity": [
+    {
+      "synthetic_rule": "pace",
+      "baseline": 3,
+      "revision": 6,
+      "negative_control": 2,
+      "revision_delta": 3
+    },
+    {
+      "synthetic_rule": "clarity",
+      "baseline": 3,
+      "revision": 5,
+      "negative_control": 1,
+      "revision_delta": 2
+    },
+    {
+      "synthetic_rule": "quiet",
+      "baseline": 3,
+      "revision": 1,
+      "negative_control": -3,
+      "revision_delta": -2
+    }
+  ],
+  "conclusion": "Preference changes with assumed rule weights. No empirical quality improvement or product superiority established.",
+  "human_preference": null,
+  "watch_retention": null,
+  "vbench_scores": null,
+  "real_product_comparison": "not_run",
+  "artifact_sha256": {
+    "clip-01.json": "0e84a3a88a52a71393f2dd2421448eab1335e09c511a0a2bb28183bdf8593749",
+    "clip-02.json": "8bc73c4270e788cf509402f3031b3b4ea945770bc0d0a6cde370aa1f3dc07607",
+    "clip-03.json": "afb3591e8dbf80e03b4ad762e4a83f7e1d61624587020240249e5906fd58da5a",
+    "human-ratings-empty.csv": "86b0fc4db500fa6a1d122bbd94c2bfe41703c380309a9b2b02e86776757cdb24",
+    "organizer-key.json": "cf39414fcc91388a46f8a6df54d1f4ea0f8aea3b595a17d8321561e1d6110e31",
+    "planned-assignments.json": "0c01af6e4a61f680c91bc5bd62c50fcdc6ecd434759f85ec31eab711b1dc7343",
+    "storyboards.html": "6cba0c044453dc8b1f68fea7d16085a09fa4bfd2176d06a66774597f52fac4e0"
+  }
+}

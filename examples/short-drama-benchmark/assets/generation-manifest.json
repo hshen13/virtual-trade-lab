@@ -1,0 +1,15 @@
+{
+  "artifact": "midnight-letter-keyframes.png",
+  "type": "single_contact_sheet_six_generated_keyframes",
+  "generation_tool": "native image_gen",
+  "native_image_generation_calls": 1,
+  "video_generation_calls": 0,
+  "paid_api_calls_directly_made_by_this_script": 0,
+  "billing_status": "not_inspected",
+  "human_audience_evaluations": 0,
+  "sha256": "703e52359561f2da6cbb14526251ab5c17261f54b36a6e62d23a620c9f4efb9b",
+  "width": 2172,
+  "height": 724,
+  "visual_inspection": "Inspected rendered image. Six cinematic panels are present; rain/night, red clock and costumes recur. Face/facial-hair consistency is imperfect: repairer appears clean-shaven in panel 2 but has a beard in panel 5. This is an actual generation defect, not a passed continuity benchmark. Clock time is not guaranteed precise. No motion/audio generated.",
+  "usage": "Original fictional visual concept. Not an evaluated video or verified human preference result."
+}
