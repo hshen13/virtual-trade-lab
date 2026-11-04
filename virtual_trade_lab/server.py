@@ -43,7 +43,10 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(200, self._state(self.server.store.state()))
             except StorageError as exc:
                 return self._send(503, {"error": str(exc)})
-        files = {"/replay": ("replay.html", "text/html; charset=utf-8"),
+        files = {"/returns": ("returns.html", "text/html; charset=utf-8"),
+                 "/returns.css": ("returns.css", "text/css; charset=utf-8"),
+                 "/returns-data.json": ("returns-data.json", "application/json; charset=utf-8"),
+                 "/replay": ("replay.html", "text/html; charset=utf-8"),
                  "/replay.js": ("replay.js", "text/javascript; charset=utf-8"),
                  "/replay.css": ("replay.css", "text/css; charset=utf-8"),
                  "/replay-data.json": ("replay-data.json", "application/json; charset=utf-8"),
