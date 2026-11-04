@@ -17,4 +17,4 @@ virtual-trade-lab = "virtual_trade_lab.__main__:main"
 include = ["virtual_trade_lab*"]
 
 [tool.setuptools.package-data]
-virtual_trade_lab = ["web/*.html", "web/*.js", "web/*.css", "product_scenarios.json", "calibration_protocol.json", "samples/*.pptx", "samples/*.json", "samples/*.md", "samples/LICENSE"]
+virtual_trade_lab = ["web/*.html", "web/*.js", "web/*.css", "web/*.json", "product_scenarios.json", "calibration_protocol.json", "samples/*.pptx", "samples/*.json", "samples/*.md", "samples/LICENSE"]

@@ -1,0 +1,8 @@
+{
+  "baseline_commit": "681394b7a17448d41642db6809ac91729a5fbc98",
+  "original_report_sha256": "ad4f05ca97adae0f9f98ecffcfbbd359f97e352bc75c8ce7e77f0d31574ab782",
+  "original_report_exact_reproduced": true,
+  "historical_runner_hash_verified_at_original_commit": true,
+  "old_artifacts_unchanged": true,
+  "note": "Prior result-integrity runner hash identifies its original commit, not current shared runner."
+}

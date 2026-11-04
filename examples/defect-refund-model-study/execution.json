@@ -1,0 +1,19 @@
+{
+  "schema": "defect-model-execution/v1",
+  "observed_date_utc": "2026-11-04",
+  "actual_calls": 6,
+  "roles": 2,
+  "inspection_choice_calls": 2,
+  "commitment_calls": 2,
+  "seller_delivery_calls": 1,
+  "buyer_review_calls": 1,
+  "later_seller_refund_approval_calls": 0,
+  "refund_authority": "preauthorized in actual seller commitment response",
+  "retries": 0,
+  "replacements": 0,
+  "missing_replies": 0,
+  "model_sku": "unverified inherited conversation model",
+  "reasoning": "xhigh",
+  "contexts": "fresh buyer/seller contexts, same actor context for continuations",
+  "real_payments": 0
+}

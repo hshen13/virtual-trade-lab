@@ -43,7 +43,11 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(200, self._state(self.server.store.state()))
             except StorageError as exc:
                 return self._send(503, {"error": str(exc)})
-        files = {"/": ("index.html", "text/html; charset=utf-8"),
+        files = {"/replay": ("replay.html", "text/html; charset=utf-8"),
+                 "/replay.js": ("replay.js", "text/javascript; charset=utf-8"),
+                 "/replay.css": ("replay.css", "text/css; charset=utf-8"),
+                 "/replay-data.json": ("replay-data.json", "application/json; charset=utf-8"),
+                 "/": ("index.html", "text/html; charset=utf-8"),
                  "/app.js": ("app.js", "text/javascript; charset=utf-8"),
                  "/style.css": ("style.css", "text/css; charset=utf-8")}
         if path not in files:
@@ -102,6 +106,7 @@ def main():
     except (StorageError, OSError) as exc:
         parser.exit(1, str(exc) + "\n")
     print(f"Virtual Trade Lab (local only): http://127.0.0.1:{server.server_port}", flush=True)
+    print(f"Read-only model refund replay: http://127.0.0.1:{server.server_port}/replay", flush=True)
     print("Pure simulation. Database: " + str(server.store.path), flush=True)
     try:
         server.serve_forever()

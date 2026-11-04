@@ -1,0 +1,37 @@
+{
+  "schema": "precommit-model-study/v1",
+  "frozen_at_utc": "2026-11-04T07:50:20.752177+00:00",
+  "initial_balances": {
+    "buyer": 90,
+    "seller": 40
+  },
+  "price": 32,
+  "delivery_cost": 4,
+  "stock_available": true,
+  "inspection_fixture": {
+    "id": "A",
+    "capacity_ml": 500,
+    "weight_g": 220,
+    "leaks": false,
+    "inspection_source": "predetermined synthetic fixture; not physical certification"
+  },
+  "delivery_fixture": {
+    "id": "A",
+    "capacity_ml": 500,
+    "weight_g": 220,
+    "leaks": false,
+    "inspection_source": "predetermined synthetic fixture; not physical certification"
+  },
+  "stop_rule": "Exactly two fresh independent inspection-choice calls. Only matching inspect/inspect or skip/skip with stock allows one commitment continuation per same role. Only actual mutual accept permits escrow, then one seller-delivery call; only actual deliver permits one buyer-review call. At most six calls; no retries or replacements. Preserve all decline/defer/exit/invalid/missing.",
+  "limits": "Original new scenario, not causal comparison with old runs: price, timing, inventory assurance and optional inspection changed. Inspection is assumed costless synthetic evidence, no calibrated confidence or physical truth. Unit acquisition cost14 is context, not an extra ledger transfer; no profit claim.",
+  "execution": "Two fresh isolated current conversation-model roles; xhigh reasoning; same context for each continuation. Exact model SKU/seed unknown. No API credentials, real payments, promotion or actual product use.",
+  "rule_tests_before_model_calls": 8,
+  "prompt_sha256": {
+    "buyer_commit_template.txt": "b292929d31a0888b57d5fe0de7bd2f9622242aa7756a89b3cfa948d6ea8ae503",
+    "buyer_inspection.txt": "997268c1ccc00d0aaca6cd822ec7b636b7f0b61a4145aa54316a05c84e582fc4",
+    "buyer_review_template.txt": "56f075017afb63c1590deee4ef1578604d18899267a4a04e1f06435b4d6d764f",
+    "seller_commit_template.txt": "ffcf81446caf81af13db9772973afc70e0a1eb1b44a9ec1f3887693fb5e17f66",
+    "seller_delivery_template.txt": "7c0e9c9823d1e1b547f85bc5c8670a7019c07298a4adb4e51a187a373034eb2b",
+    "seller_inspection.txt": "879b0dece26a2c152d71506969be4678300c8d42e27720f7dbcd21cd39075906"
+  }
+}

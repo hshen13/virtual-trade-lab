@@ -1,0 +1,23 @@
+{
+  "schema": "defect-model-evidence/v1",
+  "sha256": {
+    "protocol.json": "d4dda59ed286c8cb3f2d3f6cc2cdf3e7f15b9993689fc9b881e86384b40eea23",
+    "execution.json": "0fde8b509e8f85c6aad896a4a0d77980ed8fa888658a870ffc01babe8e77b8ce",
+    "prompts/buyer_commit_actual.txt": "8fb4f5d835999b944203042b1603852ab8eac0b8666f92b2930b2c6ee2c5bc24",
+    "prompts/buyer_commit_template.txt": "eb2e22be8920fb6f01c431b41d5458ab4d99653e2d3ab77f75cd93c8502e3be7",
+    "prompts/buyer_inspection.txt": "fd7ed9398597541b6e709e814e344373dfa64a6a00cef18eda5d53acdd66e305",
+    "prompts/buyer_review_actual.txt": "11645b52883eb7f62676051d10ff62bbcdbadc7d8cfb5b78e8c447344b19ce2f",
+    "prompts/buyer_review_template.txt": "83311df18ad3b6bc018c0cd2fb319c745d4b862cb7678b667a17d73fb4032160",
+    "prompts/seller_commit_actual.txt": "86d524b899c4dbb6369cf4bf6e4608efea03998a8f15d0e6a98b8a4ded30a10e",
+    "prompts/seller_commit_template.txt": "572e0de78b21fe86313b4875694e18be778bd5aa407cf1eddee3869a50da379c",
+    "prompts/seller_delivery_actual.txt": "f7443e5af5308f5fedc695db85c0224315e97984ae0ffca97860c2816f81f920",
+    "prompts/seller_delivery_template.txt": "b33b52dc8ce35bc10238beee5aa4a0be77e7d8c4989af5b7ab202297cb644e69",
+    "prompts/seller_inspection.txt": "0bac960d3a7ff98ebe760fc94caedc95a9aa8fce258fa434881e865aa3a4f3d4",
+    "responses/buyer_commit.txt": "0678946ebdb4beb6f465f1cb0667308915d2280b799c09b6e404ea07a8ca3892",
+    "responses/buyer_inspection.txt": "a61da09557c4496baf03e3ba4f4f0a11e9c267d72ecc454485d8826bc4f679d2",
+    "responses/buyer_review.txt": "48c9120107ca64e53a3507d10ebd771e88b9b8205f89fe12c49a4f5bafe4e950",
+    "responses/seller_commit.txt": "dace764e5fd70b6dc42748c1ef9a2758f9d7de952879c793f0e6aca23b49620f",
+    "responses/seller_delivery.txt": "a7cd38b23741bf94492324b0242a6cdfed65436d7b22b80d23aa5e32f349fdee",
+    "responses/seller_inspection.txt": "ee587a93d94d9cbfdb8d8420415c1bd6fbb937e292a6d069608889073ce13f1e"
+  }
+}

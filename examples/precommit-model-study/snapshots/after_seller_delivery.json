@@ -1,0 +1,298 @@
+{
+  "schema": "precommit-model-result/v1",
+  "protocol_sha256": "a3c439bc5d59f98bf121dacd6fc1fba57132bae81aa6867c205ee67c705db2b6",
+  "source": "unsealed recorded inputs; original deterministic execution",
+  "records": {
+    "buyer_inspection": {
+      "raw": "{\"decision\":\"inspect\",\"reason\":\"查看免费且不承担购买义务，可先了解本件是否符合容量、重量和防漏需求，再决定是否购买。\"}",
+      "sha256": "b5089ef0463f326b63c30dc93bb1cfefd409c5cbdd474f9705a4bd3ef2212aa4",
+      "status": "valid",
+      "parsed": {
+        "decision": "inspect",
+        "reason": "查看免费且不承担购买义务，可先了解本件是否符合容量、重量和防漏需求，再决定是否购买。"
+      }
+    },
+    "seller_inspection": {
+      "raw": "{\"decision\":\"inspect\",\"reason\":\"查看记录无需费用或出售承诺，可让双方了解本件情况后再决定。\"}",
+      "sha256": "02e58d2a163456824fb15f8c64adb9bd5ebf4e4510df5cca11b1505215d4d063",
+      "status": "valid",
+      "parsed": {
+        "decision": "inspect",
+        "reason": "查看记录无需费用或出售承诺，可让双方了解本件情况后再决定。"
+      }
+    },
+    "buyer_commit": {
+      "raw": "{\"decision\":\"accept\",\"reason\":\"合成记录符合容量、重量和防漏需求，32积分可负担且能在通勤前交接，同意仅在卖方也接受时模拟托管。\"}",
+      "sha256": "2a8936801459304a0c12f7b0b5541c88216aa513bb89faa87fb34496d60d5d8e",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept",
+        "reason": "合成记录符合容量、重量和防漏需求，32积分可负担且能在通勤前交接，同意仅在卖方也接受时模拟托管。"
+      }
+    },
+    "seller_commit": {
+      "raw": "{\"decision\":\"accept\",\"reason\":\"合成记录与标称一致，成交后净收益14积分；愿按约交接，并承担验收前拒收全退及已发生的4积分履约费。\"}",
+      "sha256": "0d717bcd7349b0d9c3da580bdb22059954b6fa32b50cbdb6965d18fc9bf05dde",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept",
+        "reason": "合成记录与标称一致，成交后净收益14积分；愿按约交接，并承担验收前拒收全退及已发生的4积分履约费。"
+      }
+    },
+    "seller_delivery": {
+      "raw": "{\"decision\":\"deliver\",\"reason\":\"按约如实交付A，并披露500ml、220g、不漏的记录为合成数据而非实物认证；由买方独立验收。\"}",
+      "sha256": "07e99c658cbf5a1361862a5dd3bbc16bfa20a9db879e2b55040779d4f37ca125",
+      "status": "valid",
+      "parsed": {
+        "decision": "deliver",
+        "reason": "按约如实交付A，并披露500ml、220g、不漏的记录为合成数据而非实物认证；由买方独立验收。"
+      }
+    },
+    "buyer_review": {
+      "status": "missing",
+      "parsed": null
+    }
+  },
+  "plan": {
+    "precommit": {
+      "status": "committed",
+      "available": true,
+      "choices": {
+        "buyer": "inspect",
+        "seller": "inspect"
+      },
+      "commitments": {
+        "buyer": "accept",
+        "seller": "accept"
+      },
+      "inspection_report": {
+        "id": "A",
+        "capacity_ml": 500,
+        "weight_g": 220,
+        "leaks": false,
+        "inspection_source": "predetermined synthetic fixture; not physical certification"
+      },
+      "withdrawn": null,
+      "events": [
+        {
+          "key": "buyer_inspection",
+          "actor": "buyer",
+          "action": "inspection_choice",
+          "value": "inspect"
+        },
+        {
+          "key": "seller_inspection",
+          "actor": "seller",
+          "action": "inspection_choice",
+          "value": "inspect"
+        },
+        {
+          "key": "buyer_commit",
+          "actor": "buyer",
+          "action": "commit",
+          "value": "accept"
+        },
+        {
+          "key": "seller_commit",
+          "actor": "seller",
+          "action": "commit",
+          "value": "accept"
+        }
+      ],
+      "ledger_operations": 0
+    },
+    "handoff": {
+      "status": "scheduled",
+      "accepted": true,
+      "slot": "today_18",
+      "inspection": 100,
+      "confirmations": [
+        "seller"
+      ],
+      "pending": [
+        {
+          "actor": "buyer",
+          "decision": "confirm_or_decline"
+        }
+      ],
+      "events": [
+        {
+          "key": "quote",
+          "actor": "buyer",
+          "action": "accept_quote",
+          "value": null
+        },
+        {
+          "key": "buyer_slot",
+          "actor": "buyer",
+          "action": "availability",
+          "value": [
+            "today_18"
+          ]
+        },
+        {
+          "key": "seller_slot",
+          "actor": "seller",
+          "action": "availability",
+          "value": [
+            "today_18"
+          ]
+        },
+        {
+          "key": "seller_confirm",
+          "actor": "seller",
+          "action": "confirm",
+          "value": true
+        },
+        {
+          "key": "inspect",
+          "actor": "buyer",
+          "action": "inspect",
+          "value": 100
+        }
+      ]
+    },
+    "commands": [
+      [
+        "quote",
+        {
+          "source": [
+            {
+              "id": "A",
+              "capacity_ml": 500,
+              "weight_g": 220,
+              "leaks": false
+            }
+          ],
+          "criteria": {
+            "budget": 90,
+            "max_revisions": 0
+          }
+        }
+      ],
+      [
+        "fund",
+        {}
+      ],
+      [
+        "deliver",
+        {}
+      ]
+    ],
+    "next_step": "awaiting_buyer_review",
+    "application_log": [
+      {
+        "stage": "buyer_commit",
+        "applied": true,
+        "decision": "accept"
+      },
+      {
+        "stage": "seller_commit",
+        "applied": true,
+        "decision": "accept"
+      }
+    ]
+  },
+  "state": {
+    "balances": {
+      "buyer": 58,
+      "seller": 36,
+      "provider": 4,
+      "escrow:A": 32
+    },
+    "initial_total": 130,
+    "orders": [
+      {
+        "id": "A",
+        "source": [
+          {
+            "id": "A",
+            "capacity_ml": 500,
+            "weight_g": 220,
+            "leaks": false
+          }
+        ],
+        "criteria": {
+          "budget": 90,
+          "max_revisions": 0,
+          "max_title_length": 80
+        },
+        "quote": {
+          "price": 32,
+          "cost_per_attempt": 4,
+          "service": "precommit-recorded-fixture-v1"
+        },
+        "state": "delivered",
+        "attempts": 1,
+        "revisions": 0,
+        "result": [
+          {
+            "id": "A",
+            "capacity_ml": 500,
+            "weight_g": 220,
+            "leaks": false,
+            "inspection_source": "predetermined synthetic fixture; not physical certification"
+          }
+        ],
+        "issues": [],
+        "cost": 4
+      }
+    ],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "A",
+        "state": "quoted",
+        "key": "A:quote",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "fund",
+        "order": "A",
+        "state": "funded",
+        "key": "A:fund",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 3,
+        "action": "deliver",
+        "order": "A",
+        "state": "delivered",
+        "key": "A:deliver",
+        "issues": [],
+        "attempts": 1,
+        "cost_credits": 4
+      }
+    ],
+    "journal": [
+      {
+        "sequence": 1,
+        "order": "A",
+        "from": "buyer",
+        "to": "escrow:A",
+        "credits": 32,
+        "reason": "fund"
+      },
+      {
+        "sequence": 2,
+        "order": "A",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      }
+    ]
+  },
+  "command_count": 3,
+  "recorded_response_count": 5,
+  "replay_identical": true,
+  "real_payments": 0,
+  "real_revenue": 0,
+  "limits": "One synthetic dyad, not humans or causal comparison. Fixture checks are assumptions, not real inspection. No new model calls during replay. Unit acquisition cost omitted from transfer boundary; do not infer profit."
+}

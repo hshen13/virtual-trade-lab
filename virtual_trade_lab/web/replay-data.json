@@ -1,0 +1,258 @@
+{
+  "schema": "model-refund-replay/v1",
+  "disclosure": "纯模拟 · 无真实支付",
+  "title": "一次模型驱动的购物与退款",
+  "study": "defect-refund-model-study",
+  "summary": {
+    "actual_model_responses": 6,
+    "refund_credits": 32,
+    "delivery_cost": 4,
+    "real_payments": 0
+  },
+  "product": {
+    "name": "虚构A杯",
+    "price": 32,
+    "capacity_ml": 500,
+    "listed_weight_g": 220,
+    "buyer_limit_g": 250,
+    "alternative": "免费旧饮料瓶",
+    "picture": "原创示意图，不是商品实拍"
+  },
+  "steps": [
+    {
+      "id": "offer",
+      "title": "先看商品与退货规则",
+      "caption": "32积分，500ml、标称220g。买家有90积分，也可免费使用旧饮料瓶。",
+      "balances": {
+        "buyer": 90,
+        "seller": 40,
+        "escrow": 0,
+        "cost": 0
+      },
+      "total": 130,
+      "journal": [],
+      "model_outputs": [],
+      "inspection": null,
+      "money_changed": false
+    },
+    {
+      "id": "inspect",
+      "title": "双方选择先验货",
+      "caption": "这是入库记录，不保证封箱内容。查看记录不等于承诺购买。",
+      "balances": {
+        "buyer": 90,
+        "seller": 40,
+        "escrow": 0,
+        "cost": 0
+      },
+      "total": 130,
+      "journal": [],
+      "model_outputs": [
+        {
+          "stage": "buyer_inspection",
+          "raw": "{\"decision\":\"inspect\",\"reason\":\"免费查看记录有助于核对容量、重量和防漏情况，但不保证出库内容；查看后再决定是否购买。\"}",
+          "decision": "inspect",
+          "reason": "免费查看记录有助于核对容量、重量和防漏情况，但不保证出库内容；查看后再决定是否购买。"
+        },
+        {
+          "stage": "seller_inspection",
+          "raw": "{\"decision\":\"inspect\",\"reason\":\"免费查看单件入库记录可补充已知信息，但不保证本次封箱出库内容符合标称，也不构成出售承诺。\"}",
+          "decision": "inspect",
+          "reason": "免费查看单件入库记录可补充已知信息，但不保证本次封箱出库内容符合标称，也不构成出售承诺。"
+        }
+      ],
+      "inspection": {
+        "id": "A",
+        "unit_id": "unit-A",
+        "capacity_ml": 500,
+        "weight_g": 220,
+        "leaks": false,
+        "source": "synthetic inbound record; not dispatch verification"
+      },
+      "money_changed": false
+    },
+    {
+      "id": "fund",
+      "title": "各自同意，才进入托管",
+      "caption": "买卖双方分别接受条件。32积分进入托管，尚未给卖家。",
+      "balances": {
+        "buyer": 58,
+        "seller": 40,
+        "escrow": 32,
+        "cost": 0
+      },
+      "total": 130,
+      "journal": [
+        {
+          "sequence": 1,
+          "order": "A",
+          "from": "buyer",
+          "to": "escrow:A",
+          "credits": 32,
+          "reason": "fund"
+        }
+      ],
+      "model_outputs": [
+        {
+          "stage": "buyer_commit",
+          "raw": "{\"decision\":\"accept\",\"reason\":\"记录符合要求，32积分可承受。虽有未知错装风险，仍可用旧瓶备用；到货核对后再决定是否验收。\"}",
+          "decision": "accept",
+          "reason": "记录符合要求，32积分可承受。虽有未知错装风险，仍可用旧瓶备用；到货核对后再决定是否验收。"
+        },
+        {
+          "stage": "seller_commit",
+          "raw": "{\"decision\":\"accept\",\"reason\":\"接受32积分出售。入库记录符合标称，但出库内容未经复核；买方验收前拒收即全额退32积分，无需我再次批准，4积分履约费由我承担。\"}",
+          "decision": "accept",
+          "reason": "接受32积分出售。入库记录符合标称，但出库内容未经复核；买方验收前拒收即全额退32积分，无需我再次批准，4积分履约费由我承担。"
+        }
+      ],
+      "inspection": null,
+      "money_changed": true
+    },
+    {
+      "id": "deliver",
+      "title": "卖方交付，承担4积分费用",
+      "caption": "卖方诚实说明封箱未复核。交付不代表买方已验收。",
+      "balances": {
+        "buyer": 58,
+        "seller": 36,
+        "escrow": 32,
+        "cost": 4
+      },
+      "total": 130,
+      "journal": [
+        {
+          "sequence": 1,
+          "order": "A",
+          "from": "buyer",
+          "to": "escrow:A",
+          "credits": 32,
+          "reason": "fund"
+        },
+        {
+          "sequence": 2,
+          "order": "A",
+          "from": "seller",
+          "to": "provider",
+          "credits": 4,
+          "reason": "compute"
+        }
+      ],
+      "model_outputs": [
+        {
+          "stage": "seller_delivery",
+          "raw": "{\"decision\":\"deliver\",\"reason\":\"按约交付并确认我方交接。封箱未开箱复核，入库记录不保证实际内容；买方验收前拒收的全额退款权照约执行。\"}",
+          "decision": "deliver",
+          "reason": "按约交付并确认我方交接。封箱未开箱复核，入库记录不保证实际内容；买方验收前拒收的全额退款权照约执行。"
+        }
+      ],
+      "inspection": null,
+      "money_changed": true
+    },
+    {
+      "id": "unpack",
+      "title": "开箱发现：320g，不是220g",
+      "caption": "预设模拟错装：unit-B，不是入库的unit-A；超过买方250g上限。此处是环境事实，不是模型猜测。",
+      "balances": {
+        "buyer": 58,
+        "seller": 36,
+        "escrow": 32,
+        "cost": 4
+      },
+      "total": 130,
+      "journal": [
+        {
+          "sequence": 1,
+          "order": "A",
+          "from": "buyer",
+          "to": "escrow:A",
+          "credits": 32,
+          "reason": "fund"
+        },
+        {
+          "sequence": 2,
+          "order": "A",
+          "from": "seller",
+          "to": "provider",
+          "credits": 4,
+          "reason": "compute"
+        }
+      ],
+      "model_outputs": [],
+      "inspection": {
+        "id": "A",
+        "unit_id": "unit-B",
+        "capacity_ml": 500,
+        "weight_g": 320,
+        "leaks": false,
+        "source": "predetermined synthetic wrong-pack fixture; not physical inspection"
+      },
+      "money_changed": false
+    },
+    {
+      "id": "refund",
+      "title": "买家拒收，32积分原路退回",
+      "caption": "买家实际选择refund。卖方已在承诺时同意自动全退，不需要伪造第二次批准。",
+      "balances": {
+        "buyer": 90,
+        "seller": 36,
+        "escrow": 0,
+        "cost": 4
+      },
+      "total": 130,
+      "journal": [
+        {
+          "sequence": 1,
+          "order": "A",
+          "from": "buyer",
+          "to": "escrow:A",
+          "credits": 32,
+          "reason": "fund"
+        },
+        {
+          "sequence": 2,
+          "order": "A",
+          "from": "seller",
+          "to": "provider",
+          "credits": 4,
+          "reason": "compute"
+        },
+        {
+          "sequence": 3,
+          "order": "A",
+          "from": "escrow:A",
+          "to": "buyer",
+          "credits": 32,
+          "reason": "reject_refund"
+        }
+      ],
+      "model_outputs": [
+        {
+          "stage": "buyer_review",
+          "raw": "{\"decision\":\"refund\",\"reason\":\"收到的320g商品超过我250g的重量上限，且单件标识不符。我选择拒收并退回32积分，改用免费旧瓶。\"}",
+          "decision": "refund",
+          "reason": "收到的320g商品超过我250g的重量上限，且单件标识不符。我选择拒收并退回32积分，改用免费旧瓶。"
+        }
+      ],
+      "inspection": null,
+      "money_changed": true
+    }
+  ],
+  "source": {
+    "protocol_sha256": "d4dda59ed286c8cb3f2d3f6cc2cdf3e7f15b9993689fc9b881e86384b40eea23",
+    "report_sha256": "4a52e355c41799faaeeef7bfdc3f87b3f6f0dab4ff845dcb7e43379956c7ebca",
+    "evidence_path": "examples/defect-refund-model-study",
+    "files": [
+      "protocol.json",
+      "manifest.json",
+      "report.json",
+      "responses/*.txt"
+    ]
+  },
+  "limits": [
+    "模型输出是真实保存的角色回应；商品、检查和错装是预设模拟输入。",
+    "六步按记录组织讲解，不是屏幕录像或测得的实际耗时。",
+    "按钮只切换视图，不重跑模型、不付款、不再次退款。",
+    "本次不是随机对照、真实客户验证或论文复现；不据此推断盈利。"
+  ]
+}

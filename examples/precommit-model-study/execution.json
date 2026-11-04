@@ -1,0 +1,17 @@
+{
+  "schema": "precommit-model-execution/v1",
+  "observed_date_utc": "2026-11-04",
+  "actual_calls": 6,
+  "roles": 2,
+  "inspection_choice_calls": 2,
+  "commitment_calls": 2,
+  "seller_delivery_calls": 1,
+  "buyer_review_calls": 1,
+  "retries": 0,
+  "replacements": 0,
+  "missing_replies": 0,
+  "model_sku": "unverified current conversation model",
+  "reasoning": "xhigh",
+  "isolation": "fresh buyer/seller contexts, same role context for continuations; neither sees other current-stage reply before answering",
+  "real_payments": 0
+}

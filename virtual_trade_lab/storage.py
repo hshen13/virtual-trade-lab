@@ -1,6 +1,6 @@
 """SQLite-backed command replay, atomic commits, and stale-tab protection.
 
-Persistence supports only the bundled deterministic catalog-v1 implementation.
+Default persistence supports the bundled deterministic catalog-v1 implementation.
 A different adapter/version needs an explicit migration, not silent replay.
 """
 from contextlib import contextmanager
@@ -40,6 +40,10 @@ class Store:
     SCHEMA = "catalog-v1/schema-1"
     MAX_COMMANDS = 1000
 
+    def _new_market(self):
+        """Versioned subclasses must use a distinct SCHEMA for deterministic adapters."""
+        return Market(CatalogSeller(), CatalogBuyer())
+
     def __init__(self, path):
         self.path = Path(path).resolve()
         self.path.parent.mkdir(parents=True, exist_ok=True)
@@ -57,7 +61,7 @@ class Store:
                     db.execute("CREATE TABLE runs (epoch TEXT PRIMARY KEY, parent TEXT, reset_key TEXT UNIQUE, revision INTEGER NOT NULL, digest TEXT NOT NULL)")
                     db.execute("CREATE TABLE commands (epoch TEXT NOT NULL REFERENCES runs(epoch), seq INTEGER NOT NULL, key TEXT NOT NULL, request TEXT NOT NULL, digest TEXT NOT NULL, PRIMARY KEY(epoch,seq), UNIQUE(epoch,key))")
                     epoch = str(uuid.uuid4())
-                    db.execute("INSERT INTO runs VALUES (?,NULL,NULL,0,?)", (epoch, digest(Market(CatalogSeller(), CatalogBuyer()))))
+                    db.execute("INSERT INTO runs VALUES (?,NULL,NULL,0,?)", (epoch, digest(self._new_market())))
                     db.execute("INSERT INTO meta VALUES (1,?,?)", (self.SCHEMA, epoch))
                 self._load(db)
         except (sqlite3.Error, ValueError, TypeError, KeyError, RuntimeError) as exc:
@@ -98,7 +102,7 @@ class Store:
             head = db.execute("SELECT revision,digest FROM runs WHERE epoch=?", (epoch,)).fetchone()
             if not head:
                 raise StorageError("Missing active run.")
-            market = Market(CatalogSeller(), CatalogBuyer())
+            market = self._new_market()
             rows = db.execute("SELECT seq,key,request,digest FROM commands WHERE epoch=? ORDER BY seq", (epoch,)).fetchall()
             if len(rows) > self.MAX_COMMANDS:
                 raise StorageError("Run exceeds supported replay limit.")
@@ -176,6 +180,6 @@ class Store:
             if epoch != request["epoch"] or revision != request["expected_revision"]:
                 raise Conflict("Run changed. Refresh before starting a new run.")
             new_epoch = str(uuid.uuid4())
-            db.execute("INSERT INTO runs VALUES (?,?,?,0,?)", (new_epoch, epoch, request["key"], digest(Market(CatalogSeller(), CatalogBuyer()))))
+            db.execute("INSERT INTO runs VALUES (?,?,?,0,?)", (new_epoch, epoch, request["key"], digest(self._new_market())))
             db.execute("UPDATE meta SET active=? WHERE id=1", (new_epoch,))
-            return self._state(new_epoch, 0, Market(CatalogSeller(), CatalogBuyer()))
+            return self._state(new_epoch, 0, self._new_market())

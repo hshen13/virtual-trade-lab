@@ -24,3 +24,6 @@ jobs:
       - run: python -m virtual_trade_lab.calibration_protocol
       - run: python -m unittest discover -s examples/short-drama-benchmark -p 'test_*.py' -v
       - run: python -O -m unittest discover -s examples/short-drama-benchmark -p 'test_*.py' -q
+      - run: node --check virtual_trade_lab/web/replay.js
+      - run: node tests/replay_interaction_test.js
+      - run: python -m virtual_trade_lab.replay_data --study examples/defect-refund-model-study --output /tmp/replay-data.json && cmp /tmp/replay-data.json virtual_trade_lab/web/replay-data.json

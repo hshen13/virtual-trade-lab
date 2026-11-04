@@ -1,0 +1,11 @@
+{
+  "sha256": {
+    "examples/precommit-model-study/report.json": "ad4f05ca97adae0f9f98ecffcfbbd359f97e352bc75c8ce7e77f0d31574ab782",
+    "examples/precommit-model-study/snapshots/after_mutual_commit.json": "61788b5d5f7d97796fb9b5562977b81f3690fb74795e807249eb4136fc39e7ea",
+    "examples/precommit-model-study/snapshots/after_seller_delivery.json": "f37923e2ca4c50b752e38ee3ae34a9ac41deb3301bbdb1e69abc752b058d5150",
+    "virtual_trade_lab/precommit_inspection.py": "6b694fffab39898d1f28e314aaf6bb08b5f2aba21af1c0dccf853dddfe1d85eb",
+    "virtual_trade_lab/precommit_study.py": "3b22018699b57356c607bda30ad74d8eff80d94a31df4b7023727cba355ae137",
+    "tests/test_precommit_inspection.py": "678ce3187fc29ce51263a6dee751a9b9fdd15fe5394bbd4102041ac9288ab53d",
+    "tests/test_precommit_study.py": "ffe1507a3f872427eb06d838572bbbc302b56338bb40d6df8d0667418d39e3ce"
+  }
+}

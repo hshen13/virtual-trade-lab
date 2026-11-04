@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "examples/defect-refund-model-study/report.json": "4a52e355c41799faaeeef7bfdc3f87b3f6f0dab4ff845dcb7e43379956c7ebca",
+    "examples/defect-refund-model-study/snapshots/after_mutual_commit.json": "ad14786e4eb08e69218969833709a1c23222916c70f45033e2b5981863a88027",
+    "examples/defect-refund-model-study/snapshots/after_seller_delivery.json": "e3f30cd961b122c27f8148ec85ee28a702e88451afcdcd09460ed9b2b62300fb",
+    "examples/defect-refund-model-study/baseline-compatibility.json": "b80034062580c55b8bdcd10b5c65d97efeb55411e612dc4eb50af5a9110b091a",
+    "virtual_trade_lab/precommit_study.py": "9a779b6ebd5f57f3b4fdf71a10ecd5b835f77e0422dcbd47e64af542db7388d8",
+    "tests/test_defect_refund_study.py": "7cd080c3116bce5d20ebbe9915eaa8ace0690a680c6847ea68f241590b0c8699"
+  }
+}

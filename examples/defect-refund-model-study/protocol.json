@@ -1,0 +1,48 @@
+{
+  "schema": "defect-refund-model-study/v1",
+  "frozen_at_utc": "2026-11-04T08:00:42.252137+00:00",
+  "initial_balances": {
+    "buyer": 90,
+    "seller": 40
+  },
+  "price": 32,
+  "delivery_cost": 4,
+  "stock_available": true,
+  "inspection_fixture": {
+    "id": "A",
+    "unit_id": "unit-A",
+    "capacity_ml": 500,
+    "weight_g": 220,
+    "leaks": false,
+    "source": "synthetic inbound record; not dispatch verification"
+  },
+  "seller_dispatch_information": {
+    "label": "A",
+    "package": "sealed",
+    "content_rechecked": false,
+    "available_inbound_record": "unit-A 500ml 220g leakproof",
+    "actual_contents": "not visible to seller"
+  },
+  "delivery_fixture": {
+    "id": "A",
+    "unit_id": "unit-B",
+    "capacity_ml": 500,
+    "weight_g": 320,
+    "leaks": false,
+    "source": "predetermined synthetic wrong-pack fixture; not physical inspection"
+  },
+  "allow_buyer_disclosed_mismatch_acceptance": true,
+  "information_boundary": "Wrong-pack outcome fixed before calls and hidden from seller until buyer review; seller receives only honest sealed-label and old inbound evidence, not a false assertion of matching contents. Buyer informed of unquantified wrong-pack risk before commitment.",
+  "stop_rule": "At most six actual calls: two fresh inspection roles; matching choices plus stock permit two independent commitment continuations; only mutual accept permits escrow then seller delivery choice; only actual deliver permits buyer review. No retries, replacements or selective exclusion; preserve decline/defer/exit/invalid/missing.",
+  "refund_policy": "Buyer refund is preauthorized by seller commitment, full escrow credit atomically, seller delivery cost4 retained. No second seller model approval fabricated; no extra return fee, physical custody/return logistics not modeled.",
+  "limits": "Single independent synthetic scenario. Not causal comparison, humans, paper reproduction, empirical risk or real income. Wrong-pack is predetermined environment data, not forced model response. Buyer may knowingly accept mismatch; report failed specs and explicit waiver separately. Unit purchase cost14 omitted from ledger boundary.",
+  "execution": "Current conversation-model family, two fresh contexts, xhigh reasoning, same roles for continuations. Exact model SKU and seed unverified. No paid external API, credentials or promotion.",
+  "prompt_sha256": {
+    "buyer_commit_template.txt": "eb2e22be8920fb6f01c431b41d5458ab4d99653e2d3ab77f75cd93c8502e3be7",
+    "buyer_inspection.txt": "fd7ed9398597541b6e709e814e344373dfa64a6a00cef18eda5d53acdd66e305",
+    "buyer_review_template.txt": "83311df18ad3b6bc018c0cd2fb319c745d4b862cb7678b667a17d73fb4032160",
+    "seller_commit_template.txt": "572e0de78b21fe86313b4875694e18be778bd5aa407cf1eddee3869a50da379c",
+    "seller_delivery_template.txt": "b33b52dc8ce35bc10238beee5aa4a0be77e7d8c4989af5b7ab202297cb644e69",
+    "seller_inspection.txt": "0bac960d3a7ff98ebe760fc94caedc95a9aa8fce258fa434881e865aa3a4f3d4"
+  }
+}
