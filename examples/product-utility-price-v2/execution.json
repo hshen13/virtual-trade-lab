@@ -1,0 +1,20 @@
+{
+  "buyer_attempts": 6,
+  "buyer_responses": 5,
+  "seller_attempts": 3,
+  "seller_responses": 3,
+  "review_attempts": 3,
+  "review_responses": 3,
+  "total_attempts": 12,
+  "total_actual_responses": 11,
+  "infrastructure_failure_count": 1,
+  "retries": 0,
+  "replacement_calls": 0,
+  "contexts": "Six fresh buyer contexts; three fresh seller contexts; each buyer review continued its own original context.",
+  "prompt_delivery": "Each role permitted to read exactly its assigned frozen prompt file, no other files/network/writes; reviewer prompt derived only from frozen template plus that branch actual prior outputs.",
+  "exact_model_sku": "unverified",
+  "sampling_seed": "unverified",
+  "assignment_seed_not_model_seed": 202611041703,
+  "ledger": "Existing Market, independent initial90/40 per scenario; deterministic fictional delivery; snapshots persisted before review calls; final replay includes actual accepted reviews.",
+  "limits": "No real spend, receipt, product test, customer or margin result."
+}

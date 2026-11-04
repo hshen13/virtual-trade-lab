@@ -1,0 +1,216 @@
+{
+  "schema": "utility-price-v2/v1",
+  "frozen_at_utc": "2026-11-04T17:05:16.248492+00:00",
+  "assignment_seed": 202611041703,
+  "cases": {
+    "adequate-16": {
+      "profile": "adequate",
+      "v2_price": 16,
+      "order": [
+        "v2",
+        "old",
+        "original"
+      ],
+      "options": {
+        "old": {
+          "id": "old",
+          "price": 0,
+          "capacity_ml": 500,
+          "weight_g": 35,
+          "attributes": "继续使用现有旧饮料瓶。无保冷设计；当前漏水/温度需求见你的画像。没有新增支出。"
+        },
+        "original": {
+          "id": "original",
+          "price": 32,
+          "capacity_ml": 500,
+          "weight_g": 220,
+          "attributes": "原轻装杯A，普通单层，可拆盖/密封圈、手洗，设计防漏但没有保冷功能；68mm直径/210mm高/45mm杯口。"
+        },
+        "v2": {
+          "id": "v2",
+          "capacity_ml": 500,
+          "weight_g": 240,
+          "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+          "price": 16
+        }
+      }
+    },
+    "adequate-24": {
+      "profile": "adequate",
+      "v2_price": 24,
+      "order": [
+        "original",
+        "v2",
+        "old"
+      ],
+      "options": {
+        "old": {
+          "id": "old",
+          "price": 0,
+          "capacity_ml": 500,
+          "weight_g": 35,
+          "attributes": "继续使用现有旧饮料瓶。无保冷设计；当前漏水/温度需求见你的画像。没有新增支出。"
+        },
+        "original": {
+          "id": "original",
+          "price": 32,
+          "capacity_ml": 500,
+          "weight_g": 220,
+          "attributes": "原轻装杯A，普通单层，可拆盖/密封圈、手洗，设计防漏但没有保冷功能；68mm直径/210mm高/45mm杯口。"
+        },
+        "v2": {
+          "id": "v2",
+          "capacity_ml": 500,
+          "weight_g": 240,
+          "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+          "price": 24
+        }
+      }
+    },
+    "adequate-32": {
+      "profile": "adequate",
+      "v2_price": 32,
+      "order": [
+        "old",
+        "original",
+        "v2"
+      ],
+      "options": {
+        "old": {
+          "id": "old",
+          "price": 0,
+          "capacity_ml": 500,
+          "weight_g": 35,
+          "attributes": "继续使用现有旧饮料瓶。无保冷设计；当前漏水/温度需求见你的画像。没有新增支出。"
+        },
+        "original": {
+          "id": "original",
+          "price": 32,
+          "capacity_ml": 500,
+          "weight_g": 220,
+          "attributes": "原轻装杯A，普通单层，可拆盖/密封圈、手洗，设计防漏但没有保冷功能；68mm直径/210mm高/45mm杯口。"
+        },
+        "v2": {
+          "id": "v2",
+          "capacity_ml": 500,
+          "weight_g": 240,
+          "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+          "price": 32
+        }
+      }
+    },
+    "pain-16": {
+      "profile": "pain",
+      "v2_price": 16,
+      "order": [
+        "original",
+        "v2",
+        "old"
+      ],
+      "options": {
+        "old": {
+          "id": "old",
+          "price": 0,
+          "capacity_ml": 500,
+          "weight_g": 35,
+          "attributes": "继续使用现有旧饮料瓶。无保冷设计；当前漏水/温度需求见你的画像。没有新增支出。"
+        },
+        "original": {
+          "id": "original",
+          "price": 32,
+          "capacity_ml": 500,
+          "weight_g": 220,
+          "attributes": "原轻装杯A，普通单层，可拆盖/密封圈、手洗，设计防漏但没有保冷功能；68mm直径/210mm高/45mm杯口。"
+        },
+        "v2": {
+          "id": "v2",
+          "capacity_ml": 500,
+          "weight_g": 240,
+          "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+          "price": 16
+        }
+      }
+    },
+    "pain-24": {
+      "profile": "pain",
+      "v2_price": 24,
+      "order": [
+        "old",
+        "original",
+        "v2"
+      ],
+      "options": {
+        "old": {
+          "id": "old",
+          "price": 0,
+          "capacity_ml": 500,
+          "weight_g": 35,
+          "attributes": "继续使用现有旧饮料瓶。无保冷设计；当前漏水/温度需求见你的画像。没有新增支出。"
+        },
+        "original": {
+          "id": "original",
+          "price": 32,
+          "capacity_ml": 500,
+          "weight_g": 220,
+          "attributes": "原轻装杯A，普通单层，可拆盖/密封圈、手洗，设计防漏但没有保冷功能；68mm直径/210mm高/45mm杯口。"
+        },
+        "v2": {
+          "id": "v2",
+          "capacity_ml": 500,
+          "weight_g": 240,
+          "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+          "price": 24
+        }
+      }
+    },
+    "pain-32": {
+      "profile": "pain",
+      "v2_price": 32,
+      "order": [
+        "v2",
+        "old",
+        "original"
+      ],
+      "options": {
+        "old": {
+          "id": "old",
+          "price": 0,
+          "capacity_ml": 500,
+          "weight_g": 35,
+          "attributes": "继续使用现有旧饮料瓶。无保冷设计；当前漏水/温度需求见你的画像。没有新增支出。"
+        },
+        "original": {
+          "id": "original",
+          "price": 32,
+          "capacity_ml": 500,
+          "weight_g": 220,
+          "attributes": "原轻装杯A，普通单层，可拆盖/密封圈、手洗，设计防漏但没有保冷功能；68mm直径/210mm高/45mm杯口。"
+        },
+        "v2": {
+          "id": "v2",
+          "capacity_ml": 500,
+          "weight_g": 240,
+          "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+          "price": 32
+        }
+      }
+    }
+  },
+  "initial_credits": {
+    "buyer": 90,
+    "seller": 40
+  },
+  "delivery_fee": 4,
+  "stop_rule": "Six isolated buyer contexts once each. Only actual original/v2 choice permits one fresh seller, only seller accept_dispatch permits scripted delivery and one same-buyer review. Maximum18 calls; preserve all failures/declines/defer. No retries or replacements.",
+  "limits": "Two fixed personas x three prices, n1 per cell. Fixed seeded Latin order balance across all cells, not factorial order separation. Independent contexts are same family, not independent human sample. No causal elasticity/conversion, cost validation, human calibration or real product performance.",
+  "sha256": {
+    "prompts/adequate-16.txt": "15bd660a81546cf6a5f030aa940aa81157ef87c037adda006eb0efcbf55d8ee5",
+    "prompts/adequate-24.txt": "07847b90bd36bdfd295010e50281b9654c5ade0a0fb23390c4a99dfcda775dfc",
+    "prompts/adequate-32.txt": "2fb8b5ec783310e12a796d34bc6045a4dd5b5d4c0e83be05c7f683a5f9c82bcf",
+    "prompts/pain-16.txt": "2c41ffb6f9e571224627206b13b96f7441d0946cfcbafd993ec772fbad9c317b",
+    "prompts/pain-24.txt": "9a9cfa7eaea02029e6f76cf8bad7693c9f74b5a019dd640685aa33f85c625f7c",
+    "prompts/pain-32.txt": "8e9ffaf501782c2cb88f11225311be8f159b633b97cb52a8386baa5d5845e200",
+    "prompts/review_template.txt": "256569dee2a2ddd8ee72705b1a74783ffc262bc19f1d88e70275f1282fc01155",
+    "prompts/seller_template.txt": "cf812640004a8615d0e66e049b846694ebb72d216104efb07bf4410e068bee95"
+  }
+}

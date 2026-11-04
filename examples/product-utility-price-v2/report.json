@@ -1,0 +1,636 @@
+{
+  "schema": "utility-price-results/v1",
+  "protocol_sha256": "92ed982380ffc4d071102dab923947da69be8f939f09dba84acedaa5ccf15405",
+  "cases": [
+    {
+      "case": "adequate-16",
+      "profile": "adequate",
+      "v2_price": 16,
+      "presentation_order": [
+        "v2",
+        "old",
+        "original"
+      ],
+      "buyer": {
+        "choice": "old",
+        "reason": "旧瓶已有500ml容量，仅35g，目前不漏水，常温水也满足需求，放包侧袋方便，明天通勤无需更换。V2虽只需16积分且在预算内，但保冷功能对我没有必要，240g的重量明显增加携带负担；original需32积分，也没有带来当前需要的功能改善。因此继续免费使用旧瓶，拒绝为不需要的升级支出。"
+      },
+      "seller": null,
+      "review": null,
+      "failure": null,
+      "market": {
+        "balances": {
+          "buyer": 90,
+          "seller": 40,
+          "provider": 0
+        },
+        "initial_total": 130,
+        "orders": [],
+        "events": [],
+        "journal": []
+      }
+    },
+    {
+      "case": "adequate-24",
+      "profile": "adequate",
+      "v2_price": 24,
+      "presentation_order": [
+        "original",
+        "v2",
+        "old"
+      ],
+      "buyer": {
+        "choice": "old",
+        "reason": "旧瓶已有500ml容量，仅重35g，目前不漏水，放包侧袋方便，常温水也已满足明天通勤需求，继续使用无需支出。V2虽只需24积分，比32积分的original更便宜且在预算内，但保冷、盖锁和携带环没有解决我当前的实际问题，240g重量及更高的杯身也不构成升级吸引力。original同样需要花费且比旧瓶重，因此拒绝购买，继续使用旧瓶。"
+      },
+      "seller": null,
+      "review": null,
+      "failure": null,
+      "market": {
+        "balances": {
+          "buyer": 90,
+          "seller": 40,
+          "provider": 0
+        },
+        "initial_total": 130,
+        "orders": [],
+        "events": [],
+        "journal": []
+      }
+    },
+    {
+      "case": "adequate-32",
+      "profile": "adequate",
+      "v2_price": 32,
+      "presentation_order": [
+        "old",
+        "original",
+        "v2"
+      ],
+      "buyer": null,
+      "seller": null,
+      "review": null,
+      "failure": {
+        "status": "infrastructure_error",
+        "message": "Agent errored: Selected model is at capacity. Please try a different model.",
+        "handling": "No retry or replacement per frozen protocol; not a customer rejection."
+      },
+      "market": {
+        "balances": {
+          "buyer": 90,
+          "seller": 40,
+          "provider": 0
+        },
+        "initial_total": 130,
+        "orders": [],
+        "events": [],
+        "journal": []
+      }
+    },
+    {
+      "case": "pain-16",
+      "profile": "pain",
+      "v2_price": 16,
+      "presentation_order": [
+        "original",
+        "v2",
+        "old"
+      ],
+      "buyer": {
+        "choice": "v2",
+        "reason": "16积分低于90积分预算，也比32积分的original便宜；500ml容量满足需要，240g仍在250g以内。按给定虚构设定，正确锁盖后的防漏和保冷功能能直接改善旧瓶漏湿纸张、凉水很快变温的问题，值得为明天通勤支付16积分。它比旧瓶重205g且高230mm，这是携带上的代价；免费旧瓶加塑料袋仍是可接受的替代方案，因此不是必须购买。若模拟交付的容量、重量、尺寸、盖锁或密封记录不符合描述，我会拒收并要求全额退款。"
+      },
+      "seller": {
+        "decision": "accept_dispatch",
+        "reason": "现有1件库存，合成出库记录与买家选择的V2设计字段匹配，我愿意承担此次虚构交易的交付风险。接受并发出，承担4模拟积分交付费，并预授权买家拒收时全额退回16模拟积分商品价，交付费不退。性能依据仅为虚构设定，并非现实实测；采购、生产及售后总成本未知，因此不声称盈利。"
+      },
+      "review": {
+        "decision": "accept",
+        "reason": "预设合成到货记录与约定一致：16积分、500ml、240g及尺寸、盖锁和防漏设定均匹配，容量满足需要，重量未超过250g偏好。按本虚构世界的设定，防漏和保冷功能能改善我的通勤需求，值得接受已知的增重和高度，因此接受此次模拟交付。这仅是依据合成记录验收，不代表真实使用体验，也不证明现实材质、清洗效果或寿命。"
+      },
+      "failure": null,
+      "market": {
+        "balances": {
+          "buyer": 74,
+          "seller": 52,
+          "provider": 4,
+          "escrow:comparison-order": 0
+        },
+        "initial_total": 130,
+        "orders": [
+          {
+            "id": "comparison-order",
+            "source": [
+              {
+                "id": "A"
+              }
+            ],
+            "criteria": {
+              "budget": 90,
+              "max_revisions": 0,
+              "max_title_length": 80
+            },
+            "quote": {
+              "price": 16,
+              "cost_per_attempt": 4,
+              "service": "information-contrast-bottle/v1"
+            },
+            "state": "accepted",
+            "attempts": 1,
+            "revisions": 0,
+            "result": [
+              {
+                "id": "v2",
+                "capacity_ml": 500,
+                "weight_g": 240,
+                "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+                "price": 16
+              }
+            ],
+            "issues": [],
+            "cost": 4
+          }
+        ],
+        "events": [
+          {
+            "sequence": 1,
+            "action": "quote",
+            "order": "comparison-order",
+            "state": "quoted",
+            "key": "quote",
+            "issues": [],
+            "attempts": 0,
+            "cost_credits": 0
+          },
+          {
+            "sequence": 2,
+            "action": "fund",
+            "order": "comparison-order",
+            "state": "funded",
+            "key": "fund",
+            "issues": [],
+            "attempts": 0,
+            "cost_credits": 0
+          },
+          {
+            "sequence": 3,
+            "action": "deliver",
+            "order": "comparison-order",
+            "state": "delivered",
+            "key": "deliver",
+            "issues": [],
+            "attempts": 1,
+            "cost_credits": 4
+          },
+          {
+            "sequence": 4,
+            "action": "review",
+            "order": "comparison-order",
+            "state": "accepted",
+            "key": "review",
+            "issues": [],
+            "attempts": 1,
+            "cost_credits": 4
+          }
+        ],
+        "journal": [
+          {
+            "sequence": 1,
+            "order": "comparison-order",
+            "from": "buyer",
+            "to": "escrow:comparison-order",
+            "credits": 16,
+            "reason": "fund"
+          },
+          {
+            "sequence": 2,
+            "order": "comparison-order",
+            "from": "seller",
+            "to": "provider",
+            "credits": 4,
+            "reason": "compute"
+          },
+          {
+            "sequence": 3,
+            "order": "comparison-order",
+            "from": "escrow:comparison-order",
+            "to": "seller",
+            "credits": 16,
+            "reason": "accept"
+          }
+        ]
+      }
+    },
+    {
+      "case": "pain-24",
+      "profile": "pain",
+      "v2_price": 24,
+      "presentation_order": [
+        "old",
+        "original",
+        "v2"
+      ],
+      "buyer": {
+        "choice": "v2",
+        "reason": "V2售价24模拟积分，在90积分预算内，比32积分的original更便宜；500ml容量符合需要，240g也未超过250g的重量偏好。给定的锁盖防漏和保冷功能能同时解决旧瓶漏水弄湿纸张、凉水很快变温的问题，因此值得购买。它比旧瓶更重、更高，旧瓶免费加塑料袋仍是可接受的替代方案，但我愿为这两项功能付出24积分。若模拟到货的容量、重量、尺寸或盖锁与密封记录不符，我保留全额拒收退款的选择；保冷表现仅依据题设，不视为现实实测。"
+      },
+      "seller": {
+        "decision": "accept_dispatch",
+        "reason": "库存1件，合成出库记录与约定设计字段匹配，买家也明确接受保冷表现仅为虚构设定、并非现实实测。我愿承担4模拟积分交付费，并预授权买家拒收时全额退回24模拟积分商品价，交付费不退；初始40模拟积分足以承担这一已知风险。采购、生产和售后总成本未知，因此不据此声称盈利。"
+      },
+      "review": {
+        "decision": "accept",
+        "reason": "合成到货记录中的24积分价格、500ml容量、240g重量、尺寸以及盖锁与密封设定均与约定一致，符合我的容量、重量和预算要求。按本虚构世界的设定，防漏和保冷功能能满足我的通勤需要，我仍愿意接受更高、更重的取舍，因此接受此次模拟交付。这不是实际使用评价，也不代表现实保冷、材质、清洗效果或寿命得到验证。"
+      },
+      "failure": null,
+      "market": {
+        "balances": {
+          "buyer": 66,
+          "seller": 60,
+          "provider": 4,
+          "escrow:comparison-order": 0
+        },
+        "initial_total": 130,
+        "orders": [
+          {
+            "id": "comparison-order",
+            "source": [
+              {
+                "id": "A"
+              }
+            ],
+            "criteria": {
+              "budget": 90,
+              "max_revisions": 0,
+              "max_title_length": 80
+            },
+            "quote": {
+              "price": 24,
+              "cost_per_attempt": 4,
+              "service": "information-contrast-bottle/v1"
+            },
+            "state": "accepted",
+            "attempts": 1,
+            "revisions": 0,
+            "result": [
+              {
+                "id": "v2",
+                "capacity_ml": 500,
+                "weight_g": 240,
+                "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+                "price": 24
+              }
+            ],
+            "issues": [],
+            "cost": 4
+          }
+        ],
+        "events": [
+          {
+            "sequence": 1,
+            "action": "quote",
+            "order": "comparison-order",
+            "state": "quoted",
+            "key": "quote",
+            "issues": [],
+            "attempts": 0,
+            "cost_credits": 0
+          },
+          {
+            "sequence": 2,
+            "action": "fund",
+            "order": "comparison-order",
+            "state": "funded",
+            "key": "fund",
+            "issues": [],
+            "attempts": 0,
+            "cost_credits": 0
+          },
+          {
+            "sequence": 3,
+            "action": "deliver",
+            "order": "comparison-order",
+            "state": "delivered",
+            "key": "deliver",
+            "issues": [],
+            "attempts": 1,
+            "cost_credits": 4
+          },
+          {
+            "sequence": 4,
+            "action": "review",
+            "order": "comparison-order",
+            "state": "accepted",
+            "key": "review",
+            "issues": [],
+            "attempts": 1,
+            "cost_credits": 4
+          }
+        ],
+        "journal": [
+          {
+            "sequence": 1,
+            "order": "comparison-order",
+            "from": "buyer",
+            "to": "escrow:comparison-order",
+            "credits": 24,
+            "reason": "fund"
+          },
+          {
+            "sequence": 2,
+            "order": "comparison-order",
+            "from": "seller",
+            "to": "provider",
+            "credits": 4,
+            "reason": "compute"
+          },
+          {
+            "sequence": 3,
+            "order": "comparison-order",
+            "from": "escrow:comparison-order",
+            "to": "seller",
+            "credits": 24,
+            "reason": "accept"
+          }
+        ]
+      }
+    },
+    {
+      "case": "pain-32",
+      "profile": "pain",
+      "v2_price": 32,
+      "presentation_order": [
+        "v2",
+        "old",
+        "original"
+      ],
+      "buyer": {
+        "choice": "v2",
+        "reason": "32模拟积分在90预算内，500ml容量和240g重量符合需求；与original同价，却增加保冷和正确锁盖后正常通勤不漏水的设定，能同时改善旧瓶漏水和凉水很快变温的问题，值得承担额外重量与高度。旧瓶免费且更轻，加塑料袋并接受常温水也是可行退路，但我愿意为这两项改善支付32积分。若模拟交付核对发现容量、重量、尺寸、盖锁或密封记录不符，我会拒收并要求全额退款；保冷记录仅作为预设合成观察，不视为真实试验。"
+      },
+      "seller": {
+        "decision": "accept_dispatch",
+        "reason": "买家已明确接受32模拟积分的价格、重量与尺寸取舍，并认可性能记录仅为虚构设定和合成观察。现有1件库存的合成出库记录与约定字段匹配，初始40模拟积分足以承担4积分交付费。我愿意承担此次交付及拒收风险，预授权买家拒收时全额退回32积分商品价，交付费不退。采购、生产及售后总成本未知，不据此声称盈利，也不声称存在现实性能实测。"
+      },
+      "review": {
+        "decision": "accept",
+        "reason": "预设合成到货记录中的32积分价格、500ml容量、240g重量、尺寸及盖锁与密封设定均符合购买约定，没有触发此前提出的拒收条件。重量仍在250g偏好范围内，防漏与保冷设定对应我的通勤需求，因此接受此次模拟交付。这仅是依据合成记录验收，不代表实际使用评价或对现实材质、清洗效果、寿命及保冷性能的验证。"
+      },
+      "failure": null,
+      "market": {
+        "balances": {
+          "buyer": 58,
+          "seller": 68,
+          "provider": 4,
+          "escrow:comparison-order": 0
+        },
+        "initial_total": 130,
+        "orders": [
+          {
+            "id": "comparison-order",
+            "source": [
+              {
+                "id": "A"
+              }
+            ],
+            "criteria": {
+              "budget": 90,
+              "max_revisions": 0,
+              "max_title_length": 80
+            },
+            "quote": {
+              "price": 32,
+              "cost_per_attempt": 4,
+              "service": "information-contrast-bottle/v1"
+            },
+            "state": "accepted",
+            "attempts": 1,
+            "revisions": 0,
+            "result": [
+              {
+                "id": "v2",
+                "capacity_ml": 500,
+                "weight_g": 240,
+                "attributes": "V2通勤保冷杯，假定隔热结构、盖锁及携带环；在本虚构世界的设定里，正确锁盖后正常通勤不漏水；25°C环境、初始4°C水、装满闭盖6小时后不高于10°C。直径68mm/高230mm/杯口45mm，可拆盖与密封圈手洗。更高更重，需要判断是否值得。",
+                "price": 32
+              }
+            ],
+            "issues": [],
+            "cost": 4
+          }
+        ],
+        "events": [
+          {
+            "sequence": 1,
+            "action": "quote",
+            "order": "comparison-order",
+            "state": "quoted",
+            "key": "quote",
+            "issues": [],
+            "attempts": 0,
+            "cost_credits": 0
+          },
+          {
+            "sequence": 2,
+            "action": "fund",
+            "order": "comparison-order",
+            "state": "funded",
+            "key": "fund",
+            "issues": [],
+            "attempts": 0,
+            "cost_credits": 0
+          },
+          {
+            "sequence": 3,
+            "action": "deliver",
+            "order": "comparison-order",
+            "state": "delivered",
+            "key": "deliver",
+            "issues": [],
+            "attempts": 1,
+            "cost_credits": 4
+          },
+          {
+            "sequence": 4,
+            "action": "review",
+            "order": "comparison-order",
+            "state": "accepted",
+            "key": "review",
+            "issues": [],
+            "attempts": 1,
+            "cost_credits": 4
+          }
+        ],
+        "journal": [
+          {
+            "sequence": 1,
+            "order": "comparison-order",
+            "from": "buyer",
+            "to": "escrow:comparison-order",
+            "credits": 32,
+            "reason": "fund"
+          },
+          {
+            "sequence": 2,
+            "order": "comparison-order",
+            "from": "seller",
+            "to": "provider",
+            "credits": 4,
+            "reason": "compute"
+          },
+          {
+            "sequence": 3,
+            "order": "comparison-order",
+            "from": "escrow:comparison-order",
+            "to": "seller",
+            "credits": 32,
+            "reason": "accept"
+          }
+        ]
+      }
+    }
+  ],
+  "records": {
+    "adequate-16": {
+      "raw": "{\"choice\":\"old\",\"reason\":\"旧瓶已有500ml容量，仅35g，目前不漏水，常温水也满足需求，放包侧袋方便，明天通勤无需更换。V2虽只需16积分且在预算内，但保冷功能对我没有必要，240g的重量明显增加携带负担；original需32积分，也没有带来当前需要的功能改善。因此继续免费使用旧瓶，拒绝为不需要的升级支出。\"}",
+      "sha256": "e95c5eff2a8165f917e91f1e59647ddcbac1067d740dd4b50b02b19e50265225",
+      "status": "valid",
+      "parsed": {
+        "choice": "old",
+        "reason": "旧瓶已有500ml容量，仅35g，目前不漏水，常温水也满足需求，放包侧袋方便，明天通勤无需更换。V2虽只需16积分且在预算内，但保冷功能对我没有必要，240g的重量明显增加携带负担；original需32积分，也没有带来当前需要的功能改善。因此继续免费使用旧瓶，拒绝为不需要的升级支出。"
+      }
+    },
+    "adequate-16-seller": {
+      "status": "missing",
+      "parsed": null
+    },
+    "adequate-16-review": {
+      "status": "missing",
+      "parsed": null
+    },
+    "adequate-24": {
+      "raw": "{\"choice\":\"old\",\"reason\":\"旧瓶已有500ml容量，仅重35g，目前不漏水，放包侧袋方便，常温水也已满足明天通勤需求，继续使用无需支出。V2虽只需24积分，比32积分的original更便宜且在预算内，但保冷、盖锁和携带环没有解决我当前的实际问题，240g重量及更高的杯身也不构成升级吸引力。original同样需要花费且比旧瓶重，因此拒绝购买，继续使用旧瓶。\"}",
+      "sha256": "26deba88a579043fafde9852ab692c7925dcdbaf41da3f262e0c0afa99866d05",
+      "status": "valid",
+      "parsed": {
+        "choice": "old",
+        "reason": "旧瓶已有500ml容量，仅重35g，目前不漏水，放包侧袋方便，常温水也已满足明天通勤需求，继续使用无需支出。V2虽只需24积分，比32积分的original更便宜且在预算内，但保冷、盖锁和携带环没有解决我当前的实际问题，240g重量及更高的杯身也不构成升级吸引力。original同样需要花费且比旧瓶重，因此拒绝购买，继续使用旧瓶。"
+      }
+    },
+    "adequate-24-seller": {
+      "status": "missing",
+      "parsed": null
+    },
+    "adequate-24-review": {
+      "status": "missing",
+      "parsed": null
+    },
+    "adequate-32": {
+      "status": "missing",
+      "parsed": null
+    },
+    "adequate-32-seller": {
+      "status": "missing",
+      "parsed": null
+    },
+    "adequate-32-review": {
+      "status": "missing",
+      "parsed": null
+    },
+    "pain-16": {
+      "raw": "{\"choice\":\"v2\",\"reason\":\"16积分低于90积分预算，也比32积分的original便宜；500ml容量满足需要，240g仍在250g以内。按给定虚构设定，正确锁盖后的防漏和保冷功能能直接改善旧瓶漏湿纸张、凉水很快变温的问题，值得为明天通勤支付16积分。它比旧瓶重205g且高230mm，这是携带上的代价；免费旧瓶加塑料袋仍是可接受的替代方案，因此不是必须购买。若模拟交付的容量、重量、尺寸、盖锁或密封记录不符合描述，我会拒收并要求全额退款。\"}",
+      "sha256": "834452c57197ca05bfeddf524ce18121fae836232d4ce919c91b7094e68da0eb",
+      "status": "valid",
+      "parsed": {
+        "choice": "v2",
+        "reason": "16积分低于90积分预算，也比32积分的original便宜；500ml容量满足需要，240g仍在250g以内。按给定虚构设定，正确锁盖后的防漏和保冷功能能直接改善旧瓶漏湿纸张、凉水很快变温的问题，值得为明天通勤支付16积分。它比旧瓶重205g且高230mm，这是携带上的代价；免费旧瓶加塑料袋仍是可接受的替代方案，因此不是必须购买。若模拟交付的容量、重量、尺寸、盖锁或密封记录不符合描述，我会拒收并要求全额退款。"
+      }
+    },
+    "pain-16-seller": {
+      "raw": "{\"decision\":\"accept_dispatch\",\"reason\":\"现有1件库存，合成出库记录与买家选择的V2设计字段匹配，我愿意承担此次虚构交易的交付风险。接受并发出，承担4模拟积分交付费，并预授权买家拒收时全额退回16模拟积分商品价，交付费不退。性能依据仅为虚构设定，并非现实实测；采购、生产及售后总成本未知，因此不声称盈利。\"}",
+      "sha256": "1550e95031584880fb7c2c0bf7552cecc443bf8fdc79efbecea16b311951874f",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept_dispatch",
+        "reason": "现有1件库存，合成出库记录与买家选择的V2设计字段匹配，我愿意承担此次虚构交易的交付风险。接受并发出，承担4模拟积分交付费，并预授权买家拒收时全额退回16模拟积分商品价，交付费不退。性能依据仅为虚构设定，并非现实实测；采购、生产及售后总成本未知，因此不声称盈利。"
+      }
+    },
+    "pain-16-review": {
+      "raw": "{\"decision\":\"accept\",\"reason\":\"预设合成到货记录与约定一致：16积分、500ml、240g及尺寸、盖锁和防漏设定均匹配，容量满足需要，重量未超过250g偏好。按本虚构世界的设定，防漏和保冷功能能改善我的通勤需求，值得接受已知的增重和高度，因此接受此次模拟交付。这仅是依据合成记录验收，不代表真实使用体验，也不证明现实材质、清洗效果或寿命。\"}",
+      "sha256": "edddba82bdaac602787a4f17facbef0ec8f01a24f10f60ae5b8b1df57045469b",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept",
+        "reason": "预设合成到货记录与约定一致：16积分、500ml、240g及尺寸、盖锁和防漏设定均匹配，容量满足需要，重量未超过250g偏好。按本虚构世界的设定，防漏和保冷功能能改善我的通勤需求，值得接受已知的增重和高度，因此接受此次模拟交付。这仅是依据合成记录验收，不代表真实使用体验，也不证明现实材质、清洗效果或寿命。"
+      }
+    },
+    "pain-24": {
+      "raw": "{\"choice\":\"v2\",\"reason\":\"V2售价24模拟积分，在90积分预算内，比32积分的original更便宜；500ml容量符合需要，240g也未超过250g的重量偏好。给定的锁盖防漏和保冷功能能同时解决旧瓶漏水弄湿纸张、凉水很快变温的问题，因此值得购买。它比旧瓶更重、更高，旧瓶免费加塑料袋仍是可接受的替代方案，但我愿为这两项功能付出24积分。若模拟到货的容量、重量、尺寸或盖锁与密封记录不符，我保留全额拒收退款的选择；保冷表现仅依据题设，不视为现实实测。\"}",
+      "sha256": "421bec75694f54e2216af6c07d19a3c005032aacf97e20edddec4a0ab4aa8857",
+      "status": "valid",
+      "parsed": {
+        "choice": "v2",
+        "reason": "V2售价24模拟积分，在90积分预算内，比32积分的original更便宜；500ml容量符合需要，240g也未超过250g的重量偏好。给定的锁盖防漏和保冷功能能同时解决旧瓶漏水弄湿纸张、凉水很快变温的问题，因此值得购买。它比旧瓶更重、更高，旧瓶免费加塑料袋仍是可接受的替代方案，但我愿为这两项功能付出24积分。若模拟到货的容量、重量、尺寸或盖锁与密封记录不符，我保留全额拒收退款的选择；保冷表现仅依据题设，不视为现实实测。"
+      }
+    },
+    "pain-24-seller": {
+      "raw": "{\"decision\":\"accept_dispatch\",\"reason\":\"库存1件，合成出库记录与约定设计字段匹配，买家也明确接受保冷表现仅为虚构设定、并非现实实测。我愿承担4模拟积分交付费，并预授权买家拒收时全额退回24模拟积分商品价，交付费不退；初始40模拟积分足以承担这一已知风险。采购、生产和售后总成本未知，因此不据此声称盈利。\"}",
+      "sha256": "af5801388e92b6f2c463b596831dfa1a6887758350f57cb959de131934ff8aae",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept_dispatch",
+        "reason": "库存1件，合成出库记录与约定设计字段匹配，买家也明确接受保冷表现仅为虚构设定、并非现实实测。我愿承担4模拟积分交付费，并预授权买家拒收时全额退回24模拟积分商品价，交付费不退；初始40模拟积分足以承担这一已知风险。采购、生产和售后总成本未知，因此不据此声称盈利。"
+      }
+    },
+    "pain-24-review": {
+      "raw": "{\"decision\":\"accept\",\"reason\":\"合成到货记录中的24积分价格、500ml容量、240g重量、尺寸以及盖锁与密封设定均与约定一致，符合我的容量、重量和预算要求。按本虚构世界的设定，防漏和保冷功能能满足我的通勤需要，我仍愿意接受更高、更重的取舍，因此接受此次模拟交付。这不是实际使用评价，也不代表现实保冷、材质、清洗效果或寿命得到验证。\"}",
+      "sha256": "9a2a3a7d587e7032706e194617b8cdbacb1f7b584279853b90dd28f79ba1bcee",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept",
+        "reason": "合成到货记录中的24积分价格、500ml容量、240g重量、尺寸以及盖锁与密封设定均与约定一致，符合我的容量、重量和预算要求。按本虚构世界的设定，防漏和保冷功能能满足我的通勤需要，我仍愿意接受更高、更重的取舍，因此接受此次模拟交付。这不是实际使用评价，也不代表现实保冷、材质、清洗效果或寿命得到验证。"
+      }
+    },
+    "pain-32": {
+      "raw": "{\"choice\":\"v2\",\"reason\":\"32模拟积分在90预算内，500ml容量和240g重量符合需求；与original同价，却增加保冷和正确锁盖后正常通勤不漏水的设定，能同时改善旧瓶漏水和凉水很快变温的问题，值得承担额外重量与高度。旧瓶免费且更轻，加塑料袋并接受常温水也是可行退路，但我愿意为这两项改善支付32积分。若模拟交付核对发现容量、重量、尺寸、盖锁或密封记录不符，我会拒收并要求全额退款；保冷记录仅作为预设合成观察，不视为真实试验。\"}",
+      "sha256": "9baa32778a6c3fe9c434262a73b036f5e7433e5164d6f4da27b0e131b635a016",
+      "status": "valid",
+      "parsed": {
+        "choice": "v2",
+        "reason": "32模拟积分在90预算内，500ml容量和240g重量符合需求；与original同价，却增加保冷和正确锁盖后正常通勤不漏水的设定，能同时改善旧瓶漏水和凉水很快变温的问题，值得承担额外重量与高度。旧瓶免费且更轻，加塑料袋并接受常温水也是可行退路，但我愿意为这两项改善支付32积分。若模拟交付核对发现容量、重量、尺寸、盖锁或密封记录不符，我会拒收并要求全额退款；保冷记录仅作为预设合成观察，不视为真实试验。"
+      }
+    },
+    "pain-32-seller": {
+      "raw": "{\"decision\":\"accept_dispatch\",\"reason\":\"买家已明确接受32模拟积分的价格、重量与尺寸取舍，并认可性能记录仅为虚构设定和合成观察。现有1件库存的合成出库记录与约定字段匹配，初始40模拟积分足以承担4积分交付费。我愿意承担此次交付及拒收风险，预授权买家拒收时全额退回32积分商品价，交付费不退。采购、生产及售后总成本未知，不据此声称盈利，也不声称存在现实性能实测。\"}",
+      "sha256": "0f1ba9fd69936e47c3589f761a970521c7e181a04b599dbe60216b6642db2cb9",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept_dispatch",
+        "reason": "买家已明确接受32模拟积分的价格、重量与尺寸取舍，并认可性能记录仅为虚构设定和合成观察。现有1件库存的合成出库记录与约定字段匹配，初始40模拟积分足以承担4积分交付费。我愿意承担此次交付及拒收风险，预授权买家拒收时全额退回32积分商品价，交付费不退。采购、生产及售后总成本未知，不据此声称盈利，也不声称存在现实性能实测。"
+      }
+    },
+    "pain-32-review": {
+      "raw": "{\"decision\":\"accept\",\"reason\":\"预设合成到货记录中的32积分价格、500ml容量、240g重量、尺寸及盖锁与密封设定均符合购买约定，没有触发此前提出的拒收条件。重量仍在250g偏好范围内，防漏与保冷设定对应我的通勤需求，因此接受此次模拟交付。这仅是依据合成记录验收，不代表实际使用评价或对现实材质、清洗效果、寿命及保冷性能的验证。\"}",
+      "sha256": "6f3aed46d255964dbeb75c1b8a295e6f91ab06a38f8cb126504b5f083ca098e3",
+      "status": "valid",
+      "parsed": {
+        "decision": "accept",
+        "reason": "预设合成到货记录中的32积分价格、500ml容量、240g重量、尺寸及盖锁与密封设定均符合购买约定，没有触发此前提出的拒收条件。重量仍在250g偏好范围内，防漏与保冷设定对应我的通勤需求，因此接受此次模拟交付。这仅是依据合成记录验收，不代表实际使用评价或对现实材质、清洗效果、寿命及保冷性能的验证。"
+      }
+    }
+  },
+  "infrastructure_failures": {
+    "adequate-32": {
+      "status": "infrastructure_error",
+      "message": "Agent errored: Selected model is at capacity. Please try a different model.",
+      "handling": "No retry or replacement per frozen protocol; not a customer rejection."
+    }
+  },
+  "actual_responses": 11,
+  "real_customers": 0,
+  "real_payments": 0,
+  "price_elasticity": null,
+  "empirical_conversion": null,
+  "cost_or_profit_validated": false,
+  "limits": "Two fixed personas x three prices, n1 per cell. Fixed seeded Latin order balance across all cells, not factorial order separation. Independent contexts are same family, not independent human sample. No causal elasticity/conversion, cost validation, human calibration or real product performance."
+}

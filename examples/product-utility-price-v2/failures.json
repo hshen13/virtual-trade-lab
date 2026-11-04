@@ -1,0 +1,7 @@
+{
+  "adequate-32": {
+    "status": "infrastructure_error",
+    "message": "Agent errored: Selected model is at capacity. Please try a different model.",
+    "handling": "No retry or replacement per frozen protocol; not a customer rejection."
+  }
+}
