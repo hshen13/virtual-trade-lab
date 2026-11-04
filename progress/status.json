@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "project": "Virtual Trade Lab",
-  "updated_at": "2026-11-02T05:51:32Z",
-  "summary": "三轴元数据协议已公开且指定代码提交CI通过。只完成设计与防误报检查；校准证据仍0/9，无人体试验或模型结果。",
+  "updated_at": "2026-11-04T16:42:41Z",
+  "summary": "已核实发布模型购物退款只读回放及收件后退款实验，指定代码提交CI通过。退货实验只有申请、审核、交回3项模型决定；购买初态与物流是预设。浏览器视觉验收未完成，持续运行状态未核验；本文件是工程快照，不是实时监控。",
   "release": {
-    "published_commit": "0fbf1d181f654b6a386103a33095f69f957e33bf",
-    "working_state": "已发布且该代码提交CI通过；后续仅进度快照",
-    "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41396368904",
-    "ci_summary": "Python3.10/3.11/3.12/3.13均119主测试+119优化模式+17退款及演示通过；含12项协议gate测试，不是人体验证。"
+    "published_commit": "f3a7ce3bc6e10ad892b81e73e4fe9acf51453662",
+    "working_state": "已发布源码及封存模拟证据；指定代码提交CI通过。本次仅更新状态快照，不表示服务或实验正在持续运行。",
+    "ci_url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41820024832",
+    "ci_summary": "指定代码提交在Python 3.10/3.11/3.12/3.13的四项CI均成功，含普通/优化模式、退款回归、短剧既有测试、回放交互及数据重建；不是浏览器视觉或真人验证。"
   },
   "tasks": [
     {
@@ -62,16 +62,16 @@
       "id": "release",
       "title": "新版测试与发布",
       "status": "completed",
-      "detail": "Python3.10/3.11/3.12/3.13均119主测试+119优化模式+17退款及演示通过；含12项协议gate测试，不是人体验证。",
-      "next": "下一轮另行界定范围；保留本次证据。",
+      "detail": "指定代码提交在Python 3.10/3.11/3.12/3.13的四项CI均成功，含普通/优化模式、退款回归、短剧既有测试、回放交互及数据重建；不是浏览器视觉或真人验证。",
+      "next": "继续按新实验范围验证并发布，保留失败与证据边界。",
       "evidence": [
         {
-          "label": "最新代码发布",
-          "url": "https://github.com/hshen13/virtual-trade-lab/commit/0fbf1d181f654b6a386103a33095f69f957e33bf"
+          "label": "已核实代码发布",
+          "url": "https://github.com/hshen13/virtual-trade-lab/commit/f3a7ce3bc6e10ad892b81e73e4fe9acf51453662"
         },
         {
           "label": "对应CI",
-          "url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41396368904"
+          "url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41820024832"
         }
       ]
     },
@@ -128,6 +128,36 @@
           "url": "https://github.com/hshen13/virtual-trade-lab/actions/runs/41396368904"
         }
       ]
+    },
+    {
+      "id": "model-refund-replay",
+      "title": "模型购物退款 · 本地只读回放",
+      "status": "waiting",
+      "detail": "源码与6份保存的模型回应回放已发布，HTTP、数据、DOM替身交互检查通过。商品与错装为预设模拟数据；回放不调用模型、不再次执行交易。浏览器视觉验收未完成，当前服务运行状态未知。",
+      "next": "在可用且获准的浏览器环境验收桌面/手机布局；不将DOM替身通过写成视觉验收完成。",
+      "evidence": [
+        {
+          "label": "回放说明与限制",
+          "url": "https://github.com/hshen13/virtual-trade-lab/blob/f3a7ce3bc6e10ad892b81e73e4fe9acf51453662/docs/REPLAY_UI.md"
+        }
+      ]
+    },
+    {
+      "id": "return-custody-model-study",
+      "title": "退货闭环 · 收件后模拟退款",
+      "status": "completed",
+      "detail": "本轮封存实验与代码已发布：模型仅决定申请、审核和交回，共3份回应。购买与首次交付为固定初态，承运/收件为脚本输入；批准后保持托管，匹配收件后退32积分，卖方承担费用8，总额130守恒。非真人、非真实寄件或支付。",
+      "next": "保持模型决定与脚本环境分离；新情境另行冻结，不把本轮完成等同持续自主运行或现实有效性。",
+      "evidence": [
+        {
+          "label": "实验说明",
+          "url": "https://github.com/hshen13/virtual-trade-lab/blob/f3a7ce3bc6e10ad892b81e73e4fe9acf51453662/examples/return-custody-model-study/README.md"
+        },
+        {
+          "label": "封存报告",
+          "url": "https://github.com/hshen13/virtual-trade-lab/blob/f3a7ce3bc6e10ad892b81e73e4fe9acf51453662/examples/return-custody-model-study/report.json"
+        }
+      ]
     }
   ],
   "simulation": {
@@ -140,6 +170,8 @@
   },
   "blockers": [
     "三轴真实校准证据0/9，参与者/模型/新留出均未运行。",
-    "论文LLM复现仍无模型后端及付费预算授权。"
+    "论文LLM复现仍无模型后端及付费预算授权。",
+    "购物退款回放与退货概览尚未完成浏览器视觉验收；源码和逻辑测试通过不等于画面验收。",
+    "当前服务、任务或实验是否持续运行未核验；状态更新时间不是运行心跳。"
   ]
 }
