@@ -1,0 +1,23 @@
+{
+  "schema": "synthetic-single-offer-result/v1",
+  "offer_sha256": "e52c6ede5d4855c624f7d9d7642354ff60e11a6ed0363e1469f2eec7810dbbfc",
+  "case_id": "synthetic-demo-01",
+  "choice": "decline",
+  "status": "declined",
+  "currency": "ZMW",
+  "unit": "major",
+  "full_transaction_price": "75.00",
+  "cash_gift": "20.00",
+  "price_minus_gift": "55.00",
+  "own_funds_needed_if_buy": "55.00",
+  "budget_affordable": true,
+  "recorded_simulated_payment": "0.00",
+  "total_cash_after": "80.00",
+  "gift_retained_on_decline": "20.00",
+  "real_payment": false,
+  "receipt_verified": false,
+  "calibration_status": "not_evaluated",
+  "observed_outcomes_used": false,
+  "realism_utility_used": false,
+  "independent_holdout": false
+}

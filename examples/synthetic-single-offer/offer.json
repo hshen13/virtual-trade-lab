@@ -1,0 +1,17 @@
+{
+  "schema": "synthetic-single-offer/v1",
+  "domain": "synthetic",
+  "case_id": "synthetic-demo-01",
+  "product_id": "synthetic-example-object",
+  "currency": "ZMW",
+  "unit": "major",
+  "price_basis": "full_transaction_price",
+  "list_price": "120.00",
+  "transaction_price": "75.00",
+  "cash_gift": "20.00",
+  "own_spendable_before_gift": "60.00",
+  "budget_source": "explicit_synthetic_assumption",
+  "gift_timing": "before_offer",
+  "decline_retains_gift": true,
+  "experience": {"status": "not_available", "days": null}
+}
