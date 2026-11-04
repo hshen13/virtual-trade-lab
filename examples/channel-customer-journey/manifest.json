@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "advertisement.txt": "edf4f94e7e2587fdfe177930c32e6243048aad734758fb14544f183d27155dba",
+    "execution.json": "28fa5bca1e9f5b9e0d5cfa2281f950c2ce44bec5d12de709753223036d092ae3",
+    "product-page.txt": "eabff0356fc98fbff24ca1b37d02ebedcbbcf046acd6b35c2638d9f896b77eec",
+    "prompts/buyer_entry.txt": "6367670b4ff700ab2c50a54734b85dd935d3ed88ebb48b974fb9446a3daec209",
+    "prompts/buyer_product_actual.txt": "31765e22373d0454dc1d205c9fde8b9b1d7e25b286c4c99e457543ab5842d595",
+    "prompts/buyer_product_template.txt": "fb8bfd521aed427edb239d6e5e84bac202dfeb040413cc39b3569450ae6c0e19",
+    "prompts/buyer_review_template.txt": "6d651ba40f1b920d6d9f88bd57492aed5f0dfa36db474746231ad4214d5e9b5f",
+    "prompts/seller_offer_template.txt": "1370596b6e3ee3336a8a3746f9eaa18c63d0fa188e8522a7ae2de3433e467b43",
+    "protocol.json": "6498838ddce766839dfaaa2c6c3646af926674a100d8617da17114a3a5652157",
+    "responses/buyer_entry.txt": "049bf5d1a023d00b9fa40cdd53ea1f48ac39fe095f9183e92ecd9d2ee9ea3039",
+    "responses/buyer_product.txt": "6d504c7a7e811cd59ef9d6a09c54ff613ce86a0b4aeca3de2fcd5b334236b47c"
+  }
+}

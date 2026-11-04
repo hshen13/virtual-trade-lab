@@ -65,7 +65,7 @@ class ReturnReplayTests(unittest.TestCase):
                 r=c.getresponse();v=(r.status,r.read());c.close();return v
             try:
                 for _ in range(2):
-                    for path in ('/returns','/returns.css','/returns-data.json'):
+                    for path in ('/returns','/returns.css','/returns-data.json','/journey','/journey.css','/information'):
                         self.assertEqual(request(path)[0],200)
                 self.assertEqual(request('/returns','POST')[0],404)
                 self.assertEqual(request('/returns',host='bad.example')[0],403)

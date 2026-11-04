@@ -1,0 +1,11 @@
+{
+  "actual_calls": 2,
+  "buyer_contexts": "two fresh isolated current conversation-model contexts, xhigh reasoning",
+  "exact_model_sku": "unverified",
+  "seed": "unverified",
+  "retries": 0,
+  "seller_calls": 0,
+  "review_calls": 0,
+  "stop": "all four variant decisions leave; no trade permitted",
+  "paired_not_blind": true
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "channel-journey-result/v1",
+  "protocol_sha256": "6498838ddce766839dfaaa2c6c3646af926674a100d8617da17114a3a5652157",
+  "records": {
+    "buyer_entry": {
+      "raw": "{\"decision\":\"open_product\",\"reason\":\"已知轻装杯A标称500ml、220g、32模拟积分，符合我的容量、重量偏好和预算，值得点开了解。还不知道尺寸、密封设计、清洗方式、退货规则，以及明天通勤前能否拿到，也没有实际使用体验。点开不代表购买，旧饮料瓶仍可继续用。\"}",
+      "sha256": "049bf5d1a023d00b9fa40cdd53ea1f48ac39fe095f9183e92ecd9d2ee9ea3039",
+      "status": "valid",
+      "parsed": {
+        "decision": "open_product",
+        "reason": "已知轻装杯A标称500ml、220g、32模拟积分，符合我的容量、重量偏好和预算，值得点开了解。还不知道尺寸、密封设计、清洗方式、退货规则，以及明天通勤前能否拿到，也没有实际使用体验。点开不代表购买，旧饮料瓶仍可继续用。"
+      }
+    },
+    "buyer_product": {
+      "raw": "{\"decision\":\"defer\",\"reason\":\"容量、标称重量和价格符合我的要求，全额退款条款也清楚，但尺寸、清洗方式仍未知，封装后未复核还有错装风险。我目前没有足够依据判断它比旧瓶更方便，明天先用旧瓶，不扣积分，等信息更充分再决定。\"}",
+      "sha256": "6d504c7a7e811cd59ef9d6a09c54ff613ce86a0b4aeca3de2fcd5b334236b47c",
+      "status": "valid",
+      "parsed": {
+        "decision": "defer",
+        "reason": "容量、标称重量和价格符合我的要求，全额退款条款也清楚，但尺寸、清洗方式仍未知，封装后未复核还有错装风险。我目前没有足够依据判断它比旧瓶更方便，明天先用旧瓶，不扣积分，等信息更充分再决定。"
+      }
+    },
+    "seller_offer": {
+      "status": "missing",
+      "parsed": null
+    },
+    "buyer_review": {
+      "status": "missing",
+      "parsed": null
+    }
+  },
+  "reached_stages": [
+    "buyer_entry",
+    "buyer_product"
+  ],
+  "model_calls_recorded": 2,
+  "market": {
+    "balances": {
+      "buyer": 90,
+      "seller": 40,
+      "provider": 0
+    },
+    "initial_total": 130,
+    "orders": [],
+    "events": [],
+    "journal": []
+  },
+  "checkpoints": [],
+  "real_customers": 0,
+  "real_payments": 0,
+  "video_views_measured": null,
+  "stopped_at": "buyer_product",
+  "limits": "One conversation-model role journey; textual storyboard not video viewing. No conversion estimate, human calibration, ad attribution or superiority claim. Ledger and delivery are deterministic; physical return custody not simulated."
+}

@@ -43,7 +43,10 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(200, self._state(self.server.store.state()))
             except StorageError as exc:
                 return self._send(503, {"error": str(exc)})
-        files = {"/returns": ("returns.html", "text/html; charset=utf-8"),
+        files = {"/information": ("information.html", "text/html; charset=utf-8"),
+                 "/journey": ("journey.html", "text/html; charset=utf-8"),
+                 "/journey.css": ("journey.css", "text/css; charset=utf-8"),
+                 "/returns": ("returns.html", "text/html; charset=utf-8"),
                  "/returns.css": ("returns.css", "text/css; charset=utf-8"),
                  "/returns-data.json": ("returns-data.json", "application/json; charset=utf-8"),
                  "/replay": ("replay.html", "text/html; charset=utf-8"),

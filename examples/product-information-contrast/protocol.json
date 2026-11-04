@@ -1,0 +1,44 @@
+{
+  "schema": "product-information-contrast/v1",
+  "frozen_at_utc": "2026-11-04T16:57:19.721248+00:00",
+  "roles": {
+    "R1": [
+      "X17",
+      "Y62"
+    ],
+    "R2": [
+      "Y62",
+      "X17"
+    ]
+  },
+  "variants": {
+    "X17": "unchanged previous product page",
+    "Y62": "original plus explicit fictional dimensions/cleaning/inspection/refund specifications"
+  },
+  "price": 32,
+  "delivery_cost": 4,
+  "initial_credits": {
+    "buyer": 90,
+    "seller": 40
+  },
+  "delivery": {
+    "id": "A",
+    "unit_id": "unit-A",
+    "capacity_ml": 500,
+    "weight_g": 220,
+    "leaks": false,
+    "diameter_mm": 68,
+    "height_mm": 210,
+    "opening_mm": 45
+  },
+  "stop_rule": "Two fresh buyer contexts once each; keep both variant responses. For each buy branch one fresh seller context; only accept_dispatch creates ledger and one same-buyer review continuation per branch. No retries/replacements. Maximum10 actual calls, mutually exclusive branch balances.",
+  "limits": "Development paired comparison n2 contexts, not blinded or independent arm samples. Balanced presentation is not proof of no order effect. Hypothetical specs, no empirical product performance. No human calibration or causal conversion claim.",
+  "sha256": {
+    "card-X17.txt": "eabff0356fc98fbff24ca1b37d02ebedcbbcf046acd6b35c2638d9f896b77eec",
+    "card-Y62.txt": "84a2a2759c500a0b0c64bfa59d3baac3374224e973a5a049a71586d4ab587d0d",
+    "prompts/R1.txt": "99b9db43e13cf1f5b36ea196606056f4c5fc5148624321e1667e78733db19572",
+    "prompts/R2.txt": "78ea7ff339f6dfd26e4ac5aa3dc87f26aebc57e4b4bff9710acd2169786cfe44",
+    "prompts/review_template.txt": "a58498d47eda637b56828bb3edbf9bb5bf492ee79d7c81f1c2fa8dc601ccf3f9",
+    "prompts/seller_template.txt": "e9a9f35626e518984a4a330adfbc4e6ac342fd53dcd097268e82d97c931e6d51"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schema": "information-contrast-result/v1",
+  "protocol_sha256": "1ba410ebe210d0059525fe0bc4d297f67341a16780b1253b42a43f36ab673d3d",
+  "records": {
+    "R1": {
+      "raw": "{\"X17\":{\"decision\":\"leave\",\"reason\":\"500ml、标称220g和32积分符合我的容量、重量偏好与预算，但封装后未复核且错装风险未量化。已有免费旧饮料瓶，我没有看到足够理由为明早通勤额外花32积分；可退款也不能消除到货不符带来的麻烦。\"},\"Y62\":{\"decision\":\"leave\",\"reason\":\"容量、重量和价格符合要求，新增尺寸、清洗方案及逐项核对记录让我更容易判断和验货。不过，这些信息没有形成我愿意花32积分替换已有免费旧饮料瓶的理由，且清洁效果和材质安全尚未测试。我选择暂时沿用已有瓶子，不购买。\"}}",
+      "sha256": "a249f96278d14af96e508ac91cc5dc76f0f5c49c31f01c1e48c52902b5f4d2b3",
+      "status": "valid",
+      "parsed": {
+        "X17": {
+          "decision": "leave",
+          "reason": "500ml、标称220g和32积分符合我的容量、重量偏好与预算，但封装后未复核且错装风险未量化。已有免费旧饮料瓶，我没有看到足够理由为明早通勤额外花32积分；可退款也不能消除到货不符带来的麻烦。"
+        },
+        "Y62": {
+          "decision": "leave",
+          "reason": "容量、重量和价格符合要求，新增尺寸、清洗方案及逐项核对记录让我更容易判断和验货。不过，这些信息没有形成我愿意花32积分替换已有免费旧饮料瓶的理由，且清洁效果和材质安全尚未测试。我选择暂时沿用已有瓶子，不购买。"
+        }
+      }
+    },
+    "R1-X17-seller": {
+      "status": "missing",
+      "parsed": null
+    },
+    "R1-X17-review": {
+      "status": "missing",
+      "parsed": null
+    },
+    "R1-Y62-seller": {
+      "status": "missing",
+      "parsed": null
+    },
+    "R1-Y62-review": {
+      "status": "missing",
+      "parsed": null
+    },
+    "R2": {
+      "raw": "{\n  \"X17\": {\n    \"decision\": \"leave\",\n    \"reason\": \"500ml和标称220g符合需求，但我已有免费旧饮料瓶，没有明确理由为这次通勤花32积分。未量化的错装风险还需要到货核对，我选择继续用旧瓶。\"\n  },\n  \"Y62\": {\n    \"decision\": \"leave\",\n    \"reason\": \"容量和标称重量符合需求，卡片提供了可逐项比对的检查记录、清洗方案和拒收退款条款，但设计值及未测试的性能仍有限制。这些信息没有说明购买对我明天通勤的必要性，我选择保留积分、继续用免费旧瓶。\"\n  }\n}",
+      "sha256": "70f00f488ee2397b8200e9744ffd34d4b9c30aa63fd9eb91f793f7c49e12d20f",
+      "status": "valid",
+      "parsed": {
+        "X17": {
+          "decision": "leave",
+          "reason": "500ml和标称220g符合需求，但我已有免费旧饮料瓶，没有明确理由为这次通勤花32积分。未量化的错装风险还需要到货核对，我选择继续用旧瓶。"
+        },
+        "Y62": {
+          "decision": "leave",
+          "reason": "容量和标称重量符合需求，卡片提供了可逐项比对的检查记录、清洗方案和拒收退款条款，但设计值及未测试的性能仍有限制。这些信息没有说明购买对我明天通勤的必要性，我选择保留积分、继续用免费旧瓶。"
+        }
+      }
+    },
+    "R2-X17-seller": {
+      "status": "missing",
+      "parsed": null
+    },
+    "R2-X17-review": {
+      "status": "missing",
+      "parsed": null
+    },
+    "R2-Y62-seller": {
+      "status": "missing",
+      "parsed": null
+    },
+    "R2-Y62-review": {
+      "status": "missing",
+      "parsed": null
+    }
+  },
+  "branches": [
+    {
+      "role": "R1",
+      "variant": "X17",
+      "position": 1,
+      "buyer": {
+        "decision": "leave",
+        "reason": "500ml、标称220g和32积分符合我的容量、重量偏好与预算，但封装后未复核且错装风险未量化。已有免费旧饮料瓶，我没有看到足够理由为明早通勤额外花32积分；可退款也不能消除到货不符带来的麻烦。"
+      },
+      "seller": null,
+      "review": null,
+      "market": {
+        "balances": {
+          "buyer": 90,
+          "seller": 40,
+          "provider": 0
+        },
+        "initial_total": 130,
+        "orders": [],
+        "events": [],
+        "journal": []
+      }
+    },
+    {
+      "role": "R1",
+      "variant": "Y62",
+      "position": 2,
+      "buyer": {
+        "decision": "leave",
+        "reason": "容量、重量和价格符合要求，新增尺寸、清洗方案及逐项核对记录让我更容易判断和验货。不过，这些信息没有形成我愿意花32积分替换已有免费旧饮料瓶的理由，且清洁效果和材质安全尚未测试。我选择暂时沿用已有瓶子，不购买。"
+      },
+      "seller": null,
+      "review": null,
+      "market": {
+        "balances": {
+          "buyer": 90,
+          "seller": 40,
+          "provider": 0
+        },
+        "initial_total": 130,
+        "orders": [],
+        "events": [],
+        "journal": []
+      }
+    },
+    {
+      "role": "R2",
+      "variant": "Y62",
+      "position": 1,
+      "buyer": {
+        "decision": "leave",
+        "reason": "容量和标称重量符合需求，卡片提供了可逐项比对的检查记录、清洗方案和拒收退款条款，但设计值及未测试的性能仍有限制。这些信息没有说明购买对我明天通勤的必要性，我选择保留积分、继续用免费旧瓶。"
+      },
+      "seller": null,
+      "review": null,
+      "market": {
+        "balances": {
+          "buyer": 90,
+          "seller": 40,
+          "provider": 0
+        },
+        "initial_total": 130,
+        "orders": [],
+        "events": [],
+        "journal": []
+      }
+    },
+    {
+      "role": "R2",
+      "variant": "X17",
+      "position": 2,
+      "buyer": {
+        "decision": "leave",
+        "reason": "500ml和标称220g符合需求，但我已有免费旧饮料瓶，没有明确理由为这次通勤花32积分。未量化的错装风险还需要到货核对，我选择继续用旧瓶。"
+      },
+      "seller": null,
+      "review": null,
+      "market": {
+        "balances": {
+          "buyer": 90,
+          "seller": 40,
+          "provider": 0
+        },
+        "initial_total": 130,
+        "orders": [],
+        "events": [],
+        "journal": []
+      }
+    }
+  ],
+  "actual_calls": 2,
+  "independent_buyer_contexts": 2,
+  "real_customers": 0,
+  "real_payments": 0,
+  "empirical_conversion_rate": null,
+  "limits": "Development paired comparison n2 contexts, not blinded or independent arm samples. Balanced presentation is not proof of no order effect. Hypothetical specs, no empirical product performance. No human calibration or causal conversion claim."
+}

@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "card-X17.txt": "eabff0356fc98fbff24ca1b37d02ebedcbbcf046acd6b35c2638d9f896b77eec",
+    "card-Y62.txt": "84a2a2759c500a0b0c64bfa59d3baac3374224e973a5a049a71586d4ab587d0d",
+    "execution.json": "d1b851209d44491ec1e4d3d70f3a56e9fa631908595f52fc22b5a20ef3d2da06",
+    "prompts/R1.txt": "99b9db43e13cf1f5b36ea196606056f4c5fc5148624321e1667e78733db19572",
+    "prompts/R2.txt": "78ea7ff339f6dfd26e4ac5aa3dc87f26aebc57e4b4bff9710acd2169786cfe44",
+    "prompts/review_template.txt": "a58498d47eda637b56828bb3edbf9bb5bf492ee79d7c81f1c2fa8dc601ccf3f9",
+    "prompts/seller_template.txt": "e9a9f35626e518984a4a330adfbc4e6ac342fd53dcd097268e82d97c931e6d51",
+    "protocol.json": "1ba410ebe210d0059525fe0bc4d297f67341a16780b1253b42a43f36ab673d3d",
+    "responses/R1.txt": "a249f96278d14af96e508ac91cc5dc76f0f5c49c31f01c1e48c52902b5f4d2b3",
+    "responses/R2.txt": "70f00f488ee2397b8200e9744ffd34d4b9c30aa63fd9eb91f793f7c49e12d20f"
+  }
+}

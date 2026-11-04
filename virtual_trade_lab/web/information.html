@@ -1,0 +1,154 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>虚构商品信息对照</title><link rel="stylesheet" href="/journey.css"><small>纯模拟 · 无真实支付</small><h1>补齐商品信息，顾客就会买吗？</h1><p>新一轮虚构商品信息对照，两个独立模型上下文，各自看两个版本，展示顺序相反。不是盲测或真实转化实验。</p><details><summary>展开版本 X17</summary><pre>【虚构商品页】轻装杯 A：500ml，标称220g，32模拟积分。入库合成记录 unit-A，500ml/220g/不漏水；封装后未重新核对，存在未量化错装风险。免费替代：继续用已有旧饮料瓶。
+模拟明早前交付，不是真实配送承诺。买家可自由不买。卖家先同意条款才扣托管；卖家承担模拟交付成本4。到货后买家可接受、暂缓或申请全额退回32；卖家同意订单即预授权拒收退款，交付成本不退。该简化协议不模拟实体寄回，不能冒称已完成退货运输。没有真实支付、注册或公开评价。</pre></details><details><summary>展开版本 Y62</summary><pre>【虚构商品页】轻装杯 A：500ml，标称220g，32模拟积分。入库合成记录 unit-A，500ml/220g/不漏水；封装后未重新核对，存在未量化错装风险。免费替代：继续用已有旧饮料瓶。
+模拟明早前交付，不是真实配送承诺。买家可自由不买。卖家先同意条款才扣托管；卖家承担模拟交付成本4。到货后买家可接受、暂缓或申请全额退回32；卖家同意订单即预授权拒收退款，交付成本不退。该简化协议不模拟实体寄回，不能冒称已完成退货运输。没有真实支付、注册或公开评价。
+【本轮新增的虚构设计规格，尚非现实产品性能】
+尺寸：直径68mm、高210mm、杯口内径45mm；这些是假定设计值，不是实物测量。合成出库检查记录含单件unit-A、重量220g、上述三项尺寸与标签A，分别核对再封装；可在模拟验货中逐项比对。没有声称由此消除所有错装风险。
+清洗：设计为可拆杯盖及密封圈，杯体和部件用温水、中性洗剂手洗，冲净后晾干再装回。这里只定义操作方案，清洁效果、耐热性、材质安全、洗碗机适用性均未测试，不作承诺。
+错装售后：到货单件编号、重量、尺寸或漏水记录任一不符时，买家可拒收并申请32积分全额退回；卖家在接受订单时预授权，原4积分交付费由卖家承担。若买家知情愿意保留也可接受；暂缓则保持托管。沿用简化虚拟拒收，不代表现实退货运输已实现。</pre></details><section><h2>R1 · X17 · 顺序1</h2><p>{&quot;decision&quot;: &quot;leave&quot;, &quot;reason&quot;: &quot;500ml、标称220g和32积分符合我的容量、重量偏好与预算，但封装后未复核且错装风险未量化。已有免费旧饮料瓶，我没有看到足够理由为明早通勤额外花32积分；可退款也不能消除到货不符带来的麻烦。&quot;}</p><p>积分转账 0 笔</p><details><summary>卖家、验收与完整账本</summary><pre>{
+  &quot;role&quot;: &quot;R1&quot;,
+  &quot;variant&quot;: &quot;X17&quot;,
+  &quot;position&quot;: 1,
+  &quot;buyer&quot;: {
+    &quot;decision&quot;: &quot;leave&quot;,
+    &quot;reason&quot;: &quot;500ml、标称220g和32积分符合我的容量、重量偏好与预算，但封装后未复核且错装风险未量化。已有免费旧饮料瓶，我没有看到足够理由为明早通勤额外花32积分；可退款也不能消除到货不符带来的麻烦。&quot;
+  },
+  &quot;seller&quot;: null,
+  &quot;review&quot;: null,
+  &quot;market&quot;: {
+    &quot;balances&quot;: {
+      &quot;buyer&quot;: 90,
+      &quot;seller&quot;: 40,
+      &quot;provider&quot;: 0
+    },
+    &quot;initial_total&quot;: 130,
+    &quot;orders&quot;: [],
+    &quot;events&quot;: [],
+    &quot;journal&quot;: []
+  }
+}</pre></details></section><section><h2>R1 · Y62 · 顺序2</h2><p>{&quot;decision&quot;: &quot;leave&quot;, &quot;reason&quot;: &quot;容量、重量和价格符合要求，新增尺寸、清洗方案及逐项核对记录让我更容易判断和验货。不过，这些信息没有形成我愿意花32积分替换已有免费旧饮料瓶的理由，且清洁效果和材质安全尚未测试。我选择暂时沿用已有瓶子，不购买。&quot;}</p><p>积分转账 0 笔</p><details><summary>卖家、验收与完整账本</summary><pre>{
+  &quot;role&quot;: &quot;R1&quot;,
+  &quot;variant&quot;: &quot;Y62&quot;,
+  &quot;position&quot;: 2,
+  &quot;buyer&quot;: {
+    &quot;decision&quot;: &quot;leave&quot;,
+    &quot;reason&quot;: &quot;容量、重量和价格符合要求，新增尺寸、清洗方案及逐项核对记录让我更容易判断和验货。不过，这些信息没有形成我愿意花32积分替换已有免费旧饮料瓶的理由，且清洁效果和材质安全尚未测试。我选择暂时沿用已有瓶子，不购买。&quot;
+  },
+  &quot;seller&quot;: null,
+  &quot;review&quot;: null,
+  &quot;market&quot;: {
+    &quot;balances&quot;: {
+      &quot;buyer&quot;: 90,
+      &quot;seller&quot;: 40,
+      &quot;provider&quot;: 0
+    },
+    &quot;initial_total&quot;: 130,
+    &quot;orders&quot;: [],
+    &quot;events&quot;: [],
+    &quot;journal&quot;: []
+  }
+}</pre></details></section><section><h2>R2 · Y62 · 顺序1</h2><p>{&quot;decision&quot;: &quot;leave&quot;, &quot;reason&quot;: &quot;容量和标称重量符合需求，卡片提供了可逐项比对的检查记录、清洗方案和拒收退款条款，但设计值及未测试的性能仍有限制。这些信息没有说明购买对我明天通勤的必要性，我选择保留积分、继续用免费旧瓶。&quot;}</p><p>积分转账 0 笔</p><details><summary>卖家、验收与完整账本</summary><pre>{
+  &quot;role&quot;: &quot;R2&quot;,
+  &quot;variant&quot;: &quot;Y62&quot;,
+  &quot;position&quot;: 1,
+  &quot;buyer&quot;: {
+    &quot;decision&quot;: &quot;leave&quot;,
+    &quot;reason&quot;: &quot;容量和标称重量符合需求，卡片提供了可逐项比对的检查记录、清洗方案和拒收退款条款，但设计值及未测试的性能仍有限制。这些信息没有说明购买对我明天通勤的必要性，我选择保留积分、继续用免费旧瓶。&quot;
+  },
+  &quot;seller&quot;: null,
+  &quot;review&quot;: null,
+  &quot;market&quot;: {
+    &quot;balances&quot;: {
+      &quot;buyer&quot;: 90,
+      &quot;seller&quot;: 40,
+      &quot;provider&quot;: 0
+    },
+    &quot;initial_total&quot;: 130,
+    &quot;orders&quot;: [],
+    &quot;events&quot;: [],
+    &quot;journal&quot;: []
+  }
+}</pre></details></section><section><h2>R2 · X17 · 顺序2</h2><p>{&quot;decision&quot;: &quot;leave&quot;, &quot;reason&quot;: &quot;500ml和标称220g符合需求，但我已有免费旧饮料瓶，没有明确理由为这次通勤花32积分。未量化的错装风险还需要到货核对，我选择继续用旧瓶。&quot;}</p><p>积分转账 0 笔</p><details><summary>卖家、验收与完整账本</summary><pre>{
+  &quot;role&quot;: &quot;R2&quot;,
+  &quot;variant&quot;: &quot;X17&quot;,
+  &quot;position&quot;: 2,
+  &quot;buyer&quot;: {
+    &quot;decision&quot;: &quot;leave&quot;,
+    &quot;reason&quot;: &quot;500ml和标称220g符合需求，但我已有免费旧饮料瓶，没有明确理由为这次通勤花32积分。未量化的错装风险还需要到货核对，我选择继续用旧瓶。&quot;
+  },
+  &quot;seller&quot;: null,
+  &quot;review&quot;: null,
+  &quot;market&quot;: {
+    &quot;balances&quot;: {
+      &quot;buyer&quot;: 90,
+      &quot;seller&quot;: 40,
+      &quot;provider&quot;: 0
+    },
+    &quot;initial_total&quot;: 130,
+    &quot;orders&quot;: [],
+    &quot;events&quot;: [],
+    &quot;journal&quot;: []
+  }
+}</pre></details></section><details><summary>全部原始模型回答，含未进入阶段</summary><pre>{
+  &quot;R1&quot;: {
+    &quot;raw&quot;: &quot;{\&quot;X17\&quot;:{\&quot;decision\&quot;:\&quot;leave\&quot;,\&quot;reason\&quot;:\&quot;500ml、标称220g和32积分符合我的容量、重量偏好与预算，但封装后未复核且错装风险未量化。已有免费旧饮料瓶，我没有看到足够理由为明早通勤额外花32积分；可退款也不能消除到货不符带来的麻烦。\&quot;},\&quot;Y62\&quot;:{\&quot;decision\&quot;:\&quot;leave\&quot;,\&quot;reason\&quot;:\&quot;容量、重量和价格符合要求，新增尺寸、清洗方案及逐项核对记录让我更容易判断和验货。不过，这些信息没有形成我愿意花32积分替换已有免费旧饮料瓶的理由，且清洁效果和材质安全尚未测试。我选择暂时沿用已有瓶子，不购买。\&quot;}}&quot;,
+    &quot;sha256&quot;: &quot;a249f96278d14af96e508ac91cc5dc76f0f5c49c31f01c1e48c52902b5f4d2b3&quot;,
+    &quot;status&quot;: &quot;valid&quot;,
+    &quot;parsed&quot;: {
+      &quot;X17&quot;: {
+        &quot;decision&quot;: &quot;leave&quot;,
+        &quot;reason&quot;: &quot;500ml、标称220g和32积分符合我的容量、重量偏好与预算，但封装后未复核且错装风险未量化。已有免费旧饮料瓶，我没有看到足够理由为明早通勤额外花32积分；可退款也不能消除到货不符带来的麻烦。&quot;
+      },
+      &quot;Y62&quot;: {
+        &quot;decision&quot;: &quot;leave&quot;,
+        &quot;reason&quot;: &quot;容量、重量和价格符合要求，新增尺寸、清洗方案及逐项核对记录让我更容易判断和验货。不过，这些信息没有形成我愿意花32积分替换已有免费旧饮料瓶的理由，且清洁效果和材质安全尚未测试。我选择暂时沿用已有瓶子，不购买。&quot;
+      }
+    }
+  },
+  &quot;R1-X17-seller&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  },
+  &quot;R1-X17-review&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  },
+  &quot;R1-Y62-seller&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  },
+  &quot;R1-Y62-review&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  },
+  &quot;R2&quot;: {
+    &quot;raw&quot;: &quot;{\n  \&quot;X17\&quot;: {\n    \&quot;decision\&quot;: \&quot;leave\&quot;,\n    \&quot;reason\&quot;: \&quot;500ml和标称220g符合需求，但我已有免费旧饮料瓶，没有明确理由为这次通勤花32积分。未量化的错装风险还需要到货核对，我选择继续用旧瓶。\&quot;\n  },\n  \&quot;Y62\&quot;: {\n    \&quot;decision\&quot;: \&quot;leave\&quot;,\n    \&quot;reason\&quot;: \&quot;容量和标称重量符合需求，卡片提供了可逐项比对的检查记录、清洗方案和拒收退款条款，但设计值及未测试的性能仍有限制。这些信息没有说明购买对我明天通勤的必要性，我选择保留积分、继续用免费旧瓶。\&quot;\n  }\n}&quot;,
+    &quot;sha256&quot;: &quot;70f00f488ee2397b8200e9744ffd34d4b9c30aa63fd9eb91f793f7c49e12d20f&quot;,
+    &quot;status&quot;: &quot;valid&quot;,
+    &quot;parsed&quot;: {
+      &quot;X17&quot;: {
+        &quot;decision&quot;: &quot;leave&quot;,
+        &quot;reason&quot;: &quot;500ml和标称220g符合需求，但我已有免费旧饮料瓶，没有明确理由为这次通勤花32积分。未量化的错装风险还需要到货核对，我选择继续用旧瓶。&quot;
+      },
+      &quot;Y62&quot;: {
+        &quot;decision&quot;: &quot;leave&quot;,
+        &quot;reason&quot;: &quot;容量和标称重量符合需求，卡片提供了可逐项比对的检查记录、清洗方案和拒收退款条款，但设计值及未测试的性能仍有限制。这些信息没有说明购买对我明天通勤的必要性，我选择保留积分、继续用免费旧瓶。&quot;
+      }
+    }
+  },
+  &quot;R2-X17-seller&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  },
+  &quot;R2-X17-review&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  },
+  &quot;R2-Y62-seller&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  },
+  &quot;R2-Y62-review&quot;: {
+    &quot;status&quot;: &quot;missing&quot;,
+    &quot;parsed&quot;: null
+  }
+}</pre></details><p>所有尺寸、清洗方案和检查记录均为假设，不是实物性能。两个上下文不是四个独立顾客；不能把差异当作已证明的信息或顺序效应。</p></html>

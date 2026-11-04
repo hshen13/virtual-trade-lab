@@ -1,0 +1,28 @@
+{
+  "schema": "channel-customer-journey/v1",
+  "frozen_at_utc": "2026-11-04T16:50:54.073790+00:00",
+  "customer_id": "fictional-commuter-01",
+  "product_id": "fictional-bottle-A",
+  "price": 32,
+  "delivery_cost": 4,
+  "buyer_credits": 90,
+  "seller_credits": 40,
+  "delivery": {
+    "id": "A",
+    "unit_id": "unit-B",
+    "capacity_ml": 500,
+    "weight_g": 320,
+    "leaks": false
+  },
+  "stop_rule": "At most four actual role calls: buyer entry; only open_product -> same buyer product; only buy -> fresh seller; only accept_dispatch -> scripted ledger delivery then same buyer review. Preserve every leave, defer, invalid or missing. No replacement/retry/selective omission.",
+  "provenance": "Original fictional textual storyboard advertisement, not a rendered/watched video. Actual current conversation-model roles, SKU/seed unverified. No human market validation. Predetermined delivery mismatch is environment data, not predetermined customer action.",
+  "refund_scope": "Preauthorized preacceptance refund, no modeled physical return custody in this distinct journey.",
+  "sha256": {
+    "advertisement.txt": "edf4f94e7e2587fdfe177930c32e6243048aad734758fb14544f183d27155dba",
+    "product-page.txt": "eabff0356fc98fbff24ca1b37d02ebedcbbcf046acd6b35c2638d9f896b77eec",
+    "prompts/buyer_entry.txt": "6367670b4ff700ab2c50a54734b85dd935d3ed88ebb48b974fb9446a3daec209",
+    "prompts/buyer_product_template.txt": "fb8bfd521aed427edb239d6e5e84bac202dfeb040413cc39b3569450ae6c0e19",
+    "prompts/buyer_review_template.txt": "6d651ba40f1b920d6d9f88bd57492aed5f0dfa36db474746231ad4214d5e9b5f",
+    "prompts/seller_offer_template.txt": "1370596b6e3ee3336a8a3746f9eaa18c63d0fa188e8522a7ae2de3433e467b43"
+  }
+}

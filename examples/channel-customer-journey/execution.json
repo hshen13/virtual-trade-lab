@@ -1,0 +1,11 @@
+{
+  "method": "actual conversation-model role, isolated initial context and same-context continuation",
+  "role": "fictional-commuter-01",
+  "calls": 2,
+  "exact_model_sku": "unverified",
+  "sampling_seed": "unverified",
+  "retries": 0,
+  "seller_calls": 0,
+  "stop": "buyer deferred; no seller/ledger/delivery/review calls",
+  "protocol_sha256": "6498838ddce766839dfaaa2c6c3646af926674a100d8617da17114a3a5652157"
+}
