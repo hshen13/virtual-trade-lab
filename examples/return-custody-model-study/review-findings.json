@@ -1,0 +1,20 @@
+[
+  {
+    "issue": "Cross-order receipt reuse at low-level market API",
+    "observed": "Review reproduced an unrelated-order refund with this case receipt",
+    "fix": "All commands bind order identity; fee and settlement bind delivered unit",
+    "regression": "test_receipt_cannot_refund_other_order_or_unit",
+    "status": "fixed"
+  },
+  {
+    "issue": "Custom return identity/timing lost on event replay",
+    "fix": "Explicit replay configuration and custom identity/timing regression",
+    "status": "fixed"
+  },
+  {
+    "issue": "Backward tick test expected ValueError but safe storage replay raised StorageError",
+    "observed": "No transaction was changed; later-state database cannot be replayed using earlier receipt context",
+    "fix": "Assert rejection and verify final tick3 replay remains intact; document old-stage snapshots",
+    "status": "resolved_test_expectation"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "schema": "return-custody-execution/v1",
+  "observed_date_utc": "2026-11-04",
+  "actual_model_calls": 3,
+  "buyer_calls": 2,
+  "seller_calls": 1,
+  "contexts": "fresh independent buyer/seller; buyer continuation same context",
+  "reasoning": "xhigh",
+  "model_sku": "unverified current conversation model",
+  "retries": 0,
+  "replacements": 0,
+  "missing_responses": 0,
+  "carrier_model_calls": 0,
+  "real_shipping": 0,
+  "real_payments": 0
+}

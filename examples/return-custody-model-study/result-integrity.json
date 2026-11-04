@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "examples/return-custody-model-study/report.json": "d7de4017d8ff2555be22bfc5ff4dc83ab7472d3c6ef80180d6c01973cd43cb3a",
+    "examples/return-custody-model-study/overview.html": "15cf779b094263f59c46016723bf8b1294020f0b4ce8e53b98f3839df3a149bc",
+    "examples/return-custody-model-study/render_overview.py": "6bcdc1af03e8f7b30d225c22dd2718ac802412cf1aa7930401d88c64c0d4278f",
+    "examples/return-custody-model-study/review-findings.json": "a2f228abea7101468dd23137739cf6fe5359a5b2ce4b66f7c554bcd0c73653dc",
+    "examples/return-custody-model-study/snapshots/approval_not_refund.json": "b2603ca6af37c710d811c0c4a1ea61c35d9a4352f918ae6a17e04b89323d952e",
+    "examples/return-custody-model-study/snapshots/handed_off_not_received.json": "3fff68e79ab9a55a8b6d065e35fab22fc1445f36394aa018ea6fc16e294bfb30",
+    "virtual_trade_lab/return_custody.py": "7482e23c30bc37d4853e2441c90d96ec16a18e1a421a045014166116c64c5ba2",
+    "virtual_trade_lab/return_custody_study.py": "4ce7f6945ccf95fb56e97d1489802d7b8c16a5d0e91aac537166b7e9f826e7f4",
+    "tests/test_return_custody.py": "503746acdac8fd402311af0b005b01aa96312444451cd8fa1ea8b33dd754dc96",
+    "tests/test_return_custody_study.py": "49dd805ce9db7fec7e681d427f66c814fbf0336f90013764c0f2934dc566db00"
+  }
+}

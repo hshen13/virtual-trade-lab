@@ -1,0 +1,41 @@
+{
+  "schema": "return-custody-model/v1",
+  "frozen_at_utc": "2026-11-04T11:03:13.676927+00:00",
+  "scope": "independent seeded postdelivery order, not rewriting earlier instant-refund study",
+  "price": 32,
+  "initial_balances": {
+    "buyer": 90,
+    "seller": 40
+  },
+  "delivery_fee": 4,
+  "return_fee": 4,
+  "shipping_deadline_tick": 2,
+  "shipping_tick": 1,
+  "receipt_tick": 3,
+  "return_label": "return-A",
+  "order_id": "return-order",
+  "delivery": {
+    "id": "A",
+    "unit_id": "unit-B",
+    "capacity_ml": 500,
+    "weight_g": 320,
+    "leaks": false
+  },
+  "evidence": {
+    "kind": "synthetic inspection records; not real photos",
+    "weight_g": 320,
+    "unit_id": "unit-B",
+    "expected_unit": "unit-A",
+    "buyer_weight_limit_g": 250
+  },
+  "stop_rule": "One buyer request call; only request_refund permits one fresh independent seller review call; only approve_return permits one continuation of same buyer context for shipping. At most3 calls, no retries/replacements. Preserve keep/defer/deny/request_evidence/invalid/missing; no forced shipping or refund.",
+  "carrier": "Only actual model ship authorizes deterministic synthetic handoff tick1. No receipt at tick2; matching order+label+unit receipt at tick3. Carrier events are scripted fixtures, not another model or real shipping.",
+  "policy": "Return approval never refunds. Charge seller return_fee only on handoff. Refund escrow only after timely handoff plus matching receipt; repeat handoff/receipt/refund must be idempotent. Missing receipt unresolved, not failure. Keep is explicit disclosed-mismatch acceptance. Unknown/invalid model reply never consent.",
+  "limits": "Logistics cost and10min effort assumed, no physical parcel, no empirical waiting time, no actual authentication. Unit acquisition cost not modeled, no profit claim. Prior purchase/fulfillment are seeded simulation, not fresh role decisions. No causal comparison.",
+  "execution": "current conversation-model family, fresh buyer and seller contexts, xhigh reasoning, buyer continuation same context; SKU/seed unverified; no external API or spending",
+  "prompt_sha256": {
+    "buyer_request.txt": "9c426adb6ed9e64f58c7e3536d07a482fad9386bf8674ad2e443e779082f3867",
+    "buyer_shipping_template.txt": "28eebb615bd383f90152278d46a8e489b1c2055ac18e7a579de2dae54b08d406",
+    "seller_review_template.txt": "decf0f3dbc94f25f4e55517f75fd341f90cdfa11a09357421f89ae5f5d7a29e1"
+  }
+}

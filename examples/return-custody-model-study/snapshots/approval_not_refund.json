@@ -1,0 +1,160 @@
+{
+  "schema": "return-custody-result/v1",
+  "protocol_sha256": "efc7656c21b216deb047de6cf9436572c3eee858a8c78ab0da68d0cd6cdb208c",
+  "observation_tick": 0,
+  "records": {
+    "buyer_request": {
+      "raw": "{\"decision\":\"request_refund\",\"reason\":\"合成记录显示320g，超过我的250g上限，且unit-B不符约定unit-A。提交记录申请退货，愿花约10分钟交回，期间可用旧饮料瓶替代。\"}",
+      "sha256": "02675bcbae7c703f71f88c0a809929359f407a375a83a5f5506431ca038f3ec7",
+      "status": "valid",
+      "parsed": {
+        "decision": "request_refund",
+        "reason": "合成记录显示320g，超过我的250g上限，且unit-B不符约定unit-A。提交记录申请退货，愿花约10分钟交回，期间可用旧饮料瓶替代。"
+      }
+    },
+    "seller_review": {
+      "raw": "{\"decision\":\"approve_return\",\"reason\":\"可见合成记录显示重量超限且商品编号不符，同意按约定退货。买家须在2个模拟tick内交回；实际交回时我承担4积分返程费，匹配收件证据到达后才退32积分。目前未收件，款项继续托管。\"}",
+      "sha256": "9f54b642d8068cde2efb4935a5cc22343b32aedd6da2a6f7e1cdbac337246e8e",
+      "status": "valid",
+      "parsed": {
+        "decision": "approve_return",
+        "reason": "可见合成记录显示重量超限且商品编号不符，同意按约定退货。买家须在2个模拟tick内交回；实际交回时我承担4积分返程费，匹配收件证据到达后才退32积分。目前未收件，款项继续托管。"
+      }
+    },
+    "buyer_shipping": {
+      "status": "missing",
+      "parsed": null
+    }
+  },
+  "return_protocol": {
+    "status": "awaiting_buyer_shipping",
+    "request": "request_refund",
+    "review": "approve_return",
+    "shipping": null,
+    "custody": "buyer",
+    "refund_ready": false,
+    "label": "return-A",
+    "handoff": null,
+    "receipt": null,
+    "events": [
+      {
+        "key": "buyer_request",
+        "actor": "buyer",
+        "action": "request",
+        "value": "request_refund"
+      },
+      {
+        "key": "seller_review",
+        "actor": "seller",
+        "action": "review",
+        "value": "approve_return"
+      }
+    ]
+  },
+  "market": {
+    "balances": {
+      "buyer": 58,
+      "seller": 36,
+      "provider": 4,
+      "escrow:return-order": 32
+    },
+    "initial_total": 130,
+    "orders": [
+      {
+        "id": "return-order",
+        "source": [
+          {
+            "id": "A"
+          }
+        ],
+        "criteria": {
+          "budget": 90,
+          "max_revisions": 0,
+          "max_title_length": 80
+        },
+        "quote": {
+          "price": 32,
+          "cost_per_attempt": 4,
+          "service": "return-custody-fixture/v1"
+        },
+        "state": "delivered",
+        "attempts": 1,
+        "revisions": 0,
+        "result": [
+          {
+            "id": "A",
+            "unit_id": "unit-B",
+            "capacity_ml": 500,
+            "weight_g": 320,
+            "leaks": false
+          }
+        ],
+        "issues": [],
+        "cost": 4
+      }
+    ],
+    "events": [
+      {
+        "sequence": 1,
+        "action": "quote",
+        "order": "return-order",
+        "state": "quoted",
+        "key": "quote",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 2,
+        "action": "fund",
+        "order": "return-order",
+        "state": "funded",
+        "key": "fund",
+        "issues": [],
+        "attempts": 0,
+        "cost_credits": 0
+      },
+      {
+        "sequence": 3,
+        "action": "deliver",
+        "order": "return-order",
+        "state": "delivered",
+        "key": "deliver",
+        "issues": [],
+        "attempts": 1,
+        "cost_credits": 4
+      }
+    ],
+    "journal": [
+      {
+        "sequence": 1,
+        "order": "return-order",
+        "from": "buyer",
+        "to": "escrow:return-order",
+        "credits": 32,
+        "reason": "fund"
+      },
+      {
+        "sequence": 2,
+        "order": "return-order",
+        "from": "seller",
+        "to": "provider",
+        "credits": 4,
+        "reason": "compute"
+      }
+    ]
+  },
+  "command_count": 3,
+  "seeded_commands": [
+    "quote",
+    "fund",
+    "deliver"
+  ],
+  "model_calls_recorded": 2,
+  "carrier_source": "scripted matched handoff/receipt fixtures; not model or real shipping",
+  "total_simulated_fees": 4,
+  "conserved_total": 130,
+  "replay_identical": true,
+  "real_payments": 0,
+  "limits": "Independent seeded postdelivery case; prior purchase not model-driven in this experiment. Model request/review/shipping separate from scripted carrier evidence. No physical return, real users, profit or empirical timing claim; acquisition cost excluded."
+}

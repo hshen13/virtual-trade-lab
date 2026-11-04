@@ -1,0 +1,1 @@
+{"decision":"request_refund","reason":"合成记录显示320g，超过我的250g上限，且unit-B不符约定unit-A。提交记录申请退货，愿花约10分钟交回，期间可用旧饮料瓶替代。"}
