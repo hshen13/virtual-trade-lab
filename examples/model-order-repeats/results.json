@@ -1,0 +1,125 @@
+{
+  "study_id": "model-order-repeats-v1",
+  "source": "actual isolated conversation-model role outputs",
+  "rows": [
+    {
+      "case_id": "L_AB_r1",
+      "condition": "L_AB",
+      "decision": "A",
+      "status": "valid",
+      "raw": "{\"decision\":\"A\",\"reason\":\"A容量符合需求，比B轻100克且便宜10积分，48积分也在预算内。虽缺乏独立防漏测试，但正常使用漏水可在验收前全额退款。\"}",
+      "sha256": "7405b14d2aafba66a198484dbc7e249a7f5d9b06cde98a78a085cd252221fc9f",
+      "reason": "A容量符合需求，比B轻100克且便宜10积分，48积分也在预算内。虽缺乏独立防漏测试，但正常使用漏水可在验收前全额退款。"
+    },
+    {
+      "case_id": "L_BA_r1",
+      "condition": "L_BA",
+      "decision": "A",
+      "status": "valid",
+      "raw": "{\"decision\":\"A\",\"reason\":\"A容量符合需求，比B轻100克且便宜10积分，更符合轻便和性价比偏好。防漏尚无独立验证，但正常使用漏水可在验收前全额退款。\"}",
+      "sha256": "0f92a06527adb65bdbd25fa01140903eff79fb0afdb313be4d437644b57bde0c",
+      "reason": "A容量符合需求，比B轻100克且便宜10积分，更符合轻便和性价比偏好。防漏尚无独立验证，但正常使用漏水可在验收前全额退款。"
+    },
+    {
+      "case_id": "H_AB_r1",
+      "condition": "H_AB",
+      "decision": "no_buy",
+      "status": "valid",
+      "raw": "{\"decision\":\"no_buy\",\"reason\":\"干净的旧饮料瓶可零成本满足明天通勤需求；两款新瓶的防漏声明都未经独立验证，暂时不值得花费58或88虚拟积分。\"}",
+      "sha256": "e1606edc52734cf5cb0c8ab19d8e899c3ea7027b65507b7acf9662dce48daff1",
+      "reason": "干净的旧饮料瓶可零成本满足明天通勤需求；两款新瓶的防漏声明都未经独立验证，暂时不值得花费58或88虚拟积分。"
+    },
+    {
+      "case_id": "H_BA_r1",
+      "condition": "H_BA",
+      "decision": "B",
+      "status": "valid",
+      "raw": "{\"decision\":\"B\",\"reason\":\"B满足500ml需求，虽比A重100克，但便宜30虚拟积分，更符合性价比偏好。防漏尚无独立验证，但正常使用漏水可在验收前全额退款。\"}",
+      "sha256": "9e65012158d91e7cc0f66b14aaa0b9d1afdb06b0451bba3388cfe944572bc2bf",
+      "reason": "B满足500ml需求，虽比A重100克，但便宜30虚拟积分，更符合性价比偏好。防漏尚无独立验证，但正常使用漏水可在验收前全额退款。"
+    },
+    {
+      "case_id": "L_AB_r2",
+      "condition": "L_AB",
+      "decision": "A",
+      "status": "valid",
+      "raw": "{\"decision\":\"A\",\"reason\":\"A容量符合需求，比B轻100克且便宜10虚拟积分，在两者防漏都未经独立验证的情况下更划算；若正常使用漏水，可在验收前全额退款。\"}",
+      "sha256": "e631a3bd1741686a35cefe095554623313b847a921f98307c4ad7a34cc470dfd",
+      "reason": "A容量符合需求，比B轻100克且便宜10虚拟积分，在两者防漏都未经独立验证的情况下更划算；若正常使用漏水，可在验收前全额退款。"
+    },
+    {
+      "case_id": "L_BA_r2",
+      "condition": "L_BA",
+      "decision": "A",
+      "status": "valid",
+      "raw": "{\"decision\":\"A\",\"reason\":\"A容量合适，比B更轻且便宜，符合通勤和性价比偏好。防漏虽未经独立验证，但正常使用漏水可在验收前全额退款。\"}",
+      "sha256": "1914c59712707174ee23c158ef475c81b56578c0def6ca81245d9437fe95ff6c",
+      "reason": "A容量合适，比B更轻且便宜，符合通勤和性价比偏好。防漏虽未经独立验证，但正常使用漏水可在验收前全额退款。"
+    },
+    {
+      "case_id": "H_AB_r2",
+      "condition": "H_AB",
+      "decision": "B",
+      "status": "valid",
+      "raw": "{\"decision\":\"B\",\"reason\":\"B容量符合需求，虽比A重100克，但便宜30虚拟积分，更符合性价比偏好。两者防漏都未经独立验证，A的高价没有提供更可靠的防漏依据。\"}",
+      "sha256": "1e1590361c8a8bb06fdd6fe598fb3b0eba74574ee8e34c0a6af5ad9af88179c3",
+      "reason": "B容量符合需求，虽比A重100克，但便宜30虚拟积分，更符合性价比偏好。两者防漏都未经独立验证，A的高价没有提供更可靠的防漏依据。"
+    },
+    {
+      "case_id": "H_BA_r2",
+      "condition": "H_BA",
+      "decision": "no_buy",
+      "status": "valid",
+      "raw": "{\"decision\":\"no_buy\",\"reason\":\"明天可先用干净的旧饮料瓶，零成本满足通勤需要。A更轻但几乎耗尽预算，B较便宜却更重，两者的防漏表现均未经独立验证，暂不购买更划算。\"}",
+      "sha256": "89ec1e9176371aed745b0f74279e0f65ef4a92dd0d13cef67c67ed21655df0f3",
+      "reason": "明天可先用干净的旧饮料瓶，零成本满足通勤需要。A更轻但几乎耗尽预算，B较便宜却更重，两者的防漏表现均未经独立验证，暂不购买更划算。"
+    }
+  ],
+  "cells": {
+    "L_AB": {
+      "planned_n": 2,
+      "valid_n": 2,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "no_buy": 0
+      },
+      "within_prompt_disagreement": false
+    },
+    "L_BA": {
+      "planned_n": 2,
+      "valid_n": 2,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "no_buy": 0
+      },
+      "within_prompt_disagreement": false
+    },
+    "H_AB": {
+      "planned_n": 2,
+      "valid_n": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "no_buy": 1
+      },
+      "within_prompt_disagreement": true
+    },
+    "H_BA": {
+      "planned_n": 2,
+      "valid_n": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "no_buy": 1
+      },
+      "within_prompt_disagreement": true
+    }
+  },
+  "failures": 0,
+  "executed_ledger_commands": 0,
+  "real_payments": 0,
+  "real_revenue": 0,
+  "limits": "Two new roles per cell; no pooling previous study. Shared model family, unverified seeds; within-prompt disagreement is descriptive, no causal order or human calibration claim."
+}

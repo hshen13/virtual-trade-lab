@@ -1,0 +1,40 @@
+{
+  "study_id": "model-order-sensitivity-v1",
+  "kind": "conversation_model_role_simulation",
+  "frozen_at_utc": "2026-11-03T15:38:59.739854+00:00",
+  "cases": [
+    {
+      "id": "L_AB",
+      "a_price": 48,
+      "display_order": "AB",
+      "prompt_file": "L_AB.prompt.txt"
+    },
+    {
+      "id": "L_BA",
+      "a_price": 48,
+      "display_order": "BA",
+      "prompt_file": "L_BA.prompt.txt"
+    },
+    {
+      "id": "H_AB",
+      "a_price": 88,
+      "display_order": "AB",
+      "prompt_file": "H_AB.prompt.txt"
+    },
+    {
+      "id": "H_BA",
+      "a_price": 88,
+      "display_order": "BA",
+      "prompt_file": "H_BA.prompt.txt"
+    }
+  ],
+  "design": "2 prices x 2 display orders; four isolated model-role contexts, one response per cell; exploration only",
+  "outcomes": [
+    "choice per case",
+    "same-price order agreement",
+    "price-condition choice comparison within display order"
+  ],
+  "stopping_rule": "Exactly four initial responses; no retries for undesirable or invalid choice. Missing/invalid responses remain failures. No follow-up transactions.",
+  "limits": "Same model family, no verified model SKU or sampling seed. No human calibration, causal identification, elasticity, independent population or deterministic model replay claim. Inputs fictional. Prices and descriptions remain identical within order pair.",
+  "ledger_execution": false
+}

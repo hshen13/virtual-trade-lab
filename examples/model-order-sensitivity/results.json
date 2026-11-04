@@ -1,0 +1,51 @@
+{
+  "study_id": "model-order-sensitivity-v1",
+  "source": "actual isolated conversation-model role outputs",
+  "rows": [
+    {
+      "case_id": "L_AB",
+      "decision": "A",
+      "status": "valid",
+      "raw": "{\"decision\":\"A\",\"reason\":\"A满足500ml需求，比B轻100g且便宜10虚拟积分，更符合轻便和性价比偏好。防漏尚无独立验证，但正常使用漏水可在验收前全额退款。\"}",
+      "sha256": "42d336464a2f9b65f025f9e8e14ddb14f24d1bdcfa82f389f707c57e91067b02",
+      "reason": "A满足500ml需求，比B轻100g且便宜10虚拟积分，更符合轻便和性价比偏好。防漏尚无独立验证，但正常使用漏水可在验收前全额退款。"
+    },
+    {
+      "case_id": "L_BA",
+      "decision": "A",
+      "status": "valid",
+      "raw": "{\"decision\":\"A\",\"reason\":\"A符合500ml需求，比B轻100g且便宜10积分，更符合轻便和性价比偏好。防漏虽未经独立验证，但正常使用漏水可在验收前全额退款。\"}",
+      "sha256": "03413260bfa53ba2ed1ef2f7a23b0102fbdf8435fe6d9b72704670dbe68f6278",
+      "reason": "A符合500ml需求，比B轻100g且便宜10积分，更符合轻便和性价比偏好。防漏虽未经独立验证，但正常使用漏水可在验收前全额退款。"
+    },
+    {
+      "case_id": "H_AB",
+      "decision": "B",
+      "status": "valid",
+      "raw": "{\"decision\":\"B\",\"reason\":\"B满足500ml需求，价格58虚拟积分，比A省30积分。虽然重100克，但我更看重性价比；两款的防漏声明都未经独立验证。\"}",
+      "sha256": "568e0549790c3ef60230a3068eb6586ef2cc2aa7ad11856ab1b242551c11dbd7",
+      "reason": "B满足500ml需求，价格58虚拟积分，比A省30积分。虽然重100克，但我更看重性价比；两款的防漏声明都未经独立验证。"
+    },
+    {
+      "case_id": "H_BA",
+      "decision": "no_buy",
+      "status": "valid",
+      "raw": "{\"decision\":\"no_buy\",\"reason\":\"干净的旧饮料瓶可免费满足明天通勤需求。A更轻但几乎用完预算，B较便宜但更重，两者防漏均未经独立验证，暂不购买更划算。\"}",
+      "sha256": "60c2c74db792ba3291401b45bd837d97d37e6775a228909437c615969606fc48",
+      "reason": "干净的旧饮料瓶可免费满足明天通勤需求。A更轻但几乎用完预算，B较便宜但更重，两者防漏均未经独立验证，暂不购买更划算。"
+    }
+  ],
+  "order_agreement": {
+    "L": true,
+    "H": false
+  },
+  "same_choice_across_prices": {
+    "AB": false,
+    "BA": false
+  },
+  "failures": 0,
+  "executed_ledger_commands": 0,
+  "real_payments": 0,
+  "real_revenue": 0,
+  "limits": "One role per cell, same model family, no sampling seed; exploratory comparisons only, no human calibration or elasticity estimate."
+}
